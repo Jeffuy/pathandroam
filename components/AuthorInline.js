@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function AuthorInline({ author, publishedAt, updatedAt }) {
+export default function AuthorInline({ author, publishedAt, updatedAt, draft = false }) {
   return (
     <div className="author-inline">
       <span className="author-initials" aria-hidden="true">{author.initials}</span>
@@ -10,9 +10,11 @@ export default function AuthorInline({ author, publishedAt, updatedAt }) {
           <span aria-hidden="true"> · </span>{author.role}
         </p>
         <p>
-          <time dateTime={publishedAt.iso}>Drafted {publishedAt.label}</time>
+          {publishedAt && (
+            <time dateTime={publishedAt.iso}>{draft ? "Drafted" : "Published"} {publishedAt.label}</time>
+          )}
           {updatedAt && (
-            <><span aria-hidden="true"> · </span><time dateTime={updatedAt.iso}>Updated {updatedAt.label}</time></>
+            <>{publishedAt && <span aria-hidden="true"> · </span>}<time dateTime={updatedAt.iso}>Updated {updatedAt.label}</time></>
           )}
         </p>
       </div>

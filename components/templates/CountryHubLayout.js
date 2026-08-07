@@ -8,10 +8,10 @@ export default function CountryHubLayout({ country, children }) {
       <div className="page-width template-breadcrumbs"><Breadcrumbs items={country.breadcrumbs} /></div>
       <header className="hub-hero page-width">
         <div className="hub-hero__copy">
-          <p className="eyebrow">Country hub · Draft preview</p>
+          <p className="eyebrow">Country guide{country.draft ? " · Draft preview" : ""}</p>
           <h1>{country.name}</h1>
           <p>{country.introduction}</p>
-          <span className="draft-pill">Draft · Noindex</span>
+          {(country.draft || country.noindex) && <span className="draft-pill">Draft · Noindex</span>}
         </div>
         <div className="hub-hero__image">
           <Image src={country.heroImage} alt={country.heroAlt} fill sizes="(min-width: 768px) 55vw, 100vw" loading="eager" />

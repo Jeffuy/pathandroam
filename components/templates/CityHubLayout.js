@@ -13,10 +13,10 @@ export default function CityHubLayout({ city, children }) {
           <span className="image-note">Illustrative image</span>
         </div>
         <div className="city-hero__copy page-width">
-          <p className="eyebrow eyebrow--light">City hub · Draft preview</p>
+          <p className="eyebrow eyebrow--light">City guide{city.draft ? " · Draft preview" : ""}</p>
           <h1>{city.name}</h1>
           <p>{city.introduction}</p>
-          <span className="draft-pill draft-pill--light">Draft · Noindex</span>
+          {(city.draft || city.noindex) && <span className="draft-pill draft-pill--light">Draft · Noindex</span>}
         </div>
       </header>
       <div className="city-template__content page-width">

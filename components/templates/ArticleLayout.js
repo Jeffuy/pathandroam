@@ -14,10 +14,10 @@ export default function ArticleLayout({ article, children }) {
       <article>
         <header className="article-header page-width">
           <Breadcrumbs items={article.breadcrumbs} />
-          <p className="eyebrow">{article.category} · {article.destination} · Draft preview</p>
+          <p className="eyebrow">{article.category} · {article.destination}{article.draft ? " · Draft preview" : ""}</p>
           <h1>{article.title}</h1>
           <p className="article-header__subtitle">{article.subtitle}</p>
-          <AuthorInline author={article.author} publishedAt={article.publishedAt} updatedAt={article.updatedAt} />
+          <AuthorInline author={article.author} publishedAt={article.publishedAt} updatedAt={article.updatedAt} draft={article.draft} />
         </header>
 
         <div className="article-hero page-width">
@@ -39,7 +39,7 @@ export default function ArticleLayout({ article, children }) {
             {article.practicalSummary && (
               <PracticalInfoBlock title="Quick planning summary" items={article.practicalSummary} />
             )}
-            <div className="article-body">{children}</div>
+            <div className="article-body">{article.html || children}</div>
             {article.monetizationSlots?.map((slot) => (
               <aside className="monetization-slot" key={slot.title}>
                 <p className="story-label">Contextual recommendation slot</p>
