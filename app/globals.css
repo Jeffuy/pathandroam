@@ -937,6 +937,162 @@ summary {
   font-size: 1.12rem;
 }
 
+.affiliate-disclosure {
+  padding: 1.25rem 1.4rem;
+  border-left: 3px solid var(--rust);
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 0.84rem;
+}
+
+.affiliate-disclosure p {
+  margin: 0.35rem 0 0;
+}
+
+.affiliate-disclosure a {
+  font-weight: 800;
+  text-underline-offset: 0.2rem;
+}
+
+.affiliate-disclosure--compact {
+  padding: 0.9rem 1rem;
+}
+
+.affiliate-card {
+  padding: clamp(1.6rem, 4vw, 2.5rem);
+  border-top: 2px solid var(--rust);
+  background: var(--white);
+}
+
+.affiliate-card .affiliate-disclosure {
+  margin-bottom: 1.5rem;
+}
+
+.affiliate-card h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.affiliate-card > p:not(.story-label) {
+  max-width: 38rem;
+  margin: 0.8rem 0 1.4rem;
+  color: var(--muted);
+}
+
+.affiliate-button-group .affiliate-disclosure {
+  margin-bottom: 1rem;
+}
+
+.affiliate-button {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.75rem 1rem;
+  background: var(--forest);
+  color: var(--white);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.affiliate-recommendations {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.legal-page {
+  max-width: 62rem;
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.legal-page h1,
+.affiliate-examples h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+}
+
+.legal-page__intro {
+  max-width: 38rem;
+  margin: 1.5rem 0 2.5rem;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 1.3rem;
+}
+
+.legal-page > section {
+  max-width: 46rem;
+  padding-top: 3rem;
+}
+
+.legal-page > section h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.legal-page > section p {
+  color: var(--muted);
+}
+
+.affiliate-examples {
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.affiliate-examples > p:not(.eyebrow) {
+  max-width: 40rem;
+  color: var(--muted);
+}
+
+.affiliate-examples__grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.affiliate-examples__grid section {
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+}
+
+.affiliate-examples__grid h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+}
+
+.affiliate-examples__grid section > p {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.affiliate-example__output:empty::after {
+  color: var(--rust);
+  content: "No CTA rendered";
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 48rem) {
+  .affiliate-examples__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1325,18 +1481,6 @@ summary {
 
 .article-main > * + * {
   margin-top: 3rem;
-}
-
-.affiliate-disclosure-preview {
-  padding: 1rem 1.2rem;
-  border-left: 3px solid var(--rust);
-  background: var(--white);
-  font-size: 0.82rem;
-}
-
-.affiliate-disclosure-preview p {
-  margin: 0.35rem 0 0;
-  color: var(--muted);
 }
 
 .article-body {

@@ -14,6 +14,7 @@ export default function Footer() {
           <Link href="/#guides">Travel Guides</Link>
           <Link href="/#planning">Trip Planning</Link>
           <Link href="/#about">About</Link>
+          <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
         </nav>
       </div>
       <div className="site-footer__base page-width">

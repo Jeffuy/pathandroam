@@ -57,9 +57,8 @@ export default async function ArticlePage({ params }) {
       { label: entry.city, href: `/${country}/${city}` },
       { label: entry.title },
     ],
-    affiliateDisclosure: entry.affiliateDisclosure
-      ? "This article may contain affiliate recommendations."
-      : null,
+    affiliateDisclosure: entry.affiliateDisclosure,
+    affiliateKeys: entry.affiliateKeys,
     practicalSummary: [
       { label: "Status", value: entry.draft ? "Draft" : "Published" },
       { label: "Region", value: entry.region || "Not specified" },

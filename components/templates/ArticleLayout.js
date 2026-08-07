@@ -7,8 +7,13 @@ import PracticalInfoBlock from "../PracticalInfoBlock";
 import RelatedArticles from "../RelatedArticles";
 import SourcesList from "../SourcesList";
 import TableOfContents from "../TableOfContents";
+import AffiliateCard from "../affiliate/AffiliateCard";
+import AffiliateDisclosure from "../affiliate/AffiliateDisclosure";
+import { getEnabledAffiliates } from "../../data/affiliates";
 
 export default function ArticleLayout({ article, children }) {
+  const activeAffiliates = getEnabledAffiliates(article.affiliateKeys);
+
   return (
     <main id="main-content" className="article-template">
       <article>
@@ -30,16 +35,22 @@ export default function ArticleLayout({ article, children }) {
             <TableOfContents items={article.tableOfContents} />
           </aside>
           <div className="article-main">
-            {article.affiliateDisclosure && (
-              <aside className="affiliate-disclosure-preview">
-                <strong>Affiliate disclosure placeholder</strong>
-                <p>{article.affiliateDisclosure}</p>
-              </aside>
-            )}
             {article.practicalSummary && (
               <PracticalInfoBlock title="Quick planning summary" items={article.practicalSummary} />
             )}
             <div className="article-body">{article.html || children}</div>
+            {activeAffiliates.length > 0 && (
+              <div className="affiliate-recommendations">
+                {article.affiliateDisclosure !== false && <AffiliateDisclosure compact />}
+                {activeAffiliates.map((entry) => (
+                  <AffiliateCard
+                    affiliateKey={entry.key}
+                    key={entry.key}
+                    showDisclosure={false}
+                  />
+                ))}
+              </div>
+            )}
             {article.monetizationSlots?.map((slot) => (
               <aside className="monetization-slot" key={slot.title}>
                 <p className="story-label">Contextual recommendation slot</p>
