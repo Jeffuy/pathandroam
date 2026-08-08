@@ -15,5 +15,5 @@ const author = {
 export const metadata = { title: "Author Page Template" };
 
 export default function AuthorTemplatePreviewPage() {
-  return <AuthorPageLayout author={author} />;
+  return <AuthorPageLayout author={author} preview />;
 }

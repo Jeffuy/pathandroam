@@ -6,7 +6,7 @@ const links = [
   ["Destinations", "/#destinations"],
   ["Travel Guides", "/#guides"],
   ["Trip Planning", "/#planning"],
-  ["About", "/#about"],
+  ["About", "/about"],
 ];
 
 export default function Header() {

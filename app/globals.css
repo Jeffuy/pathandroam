@@ -901,8 +901,8 @@ summary {
   }
 
   .site-footer nav {
-    display: flex;
-    gap: 2.5rem;
+    grid-template-columns: repeat(3, max-content);
+    gap: 1.25rem 2.5rem;
   }
 }
 
@@ -1067,6 +1067,20 @@ summary {
 }
 
 .legal-page > section p {
+  color: var(--muted);
+}
+
+.legal-page > section li {
+  max-width: 42rem;
+  margin-bottom: 0.7rem;
+  color: var(--muted);
+}
+
+.legal-review-note {
+  max-width: 46rem;
+  margin: 2rem 0 0;
+  padding: 1rem 0 1rem 1.25rem;
+  border-left: 3px solid var(--rust);
   color: var(--muted);
 }
 

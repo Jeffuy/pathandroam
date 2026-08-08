@@ -3,7 +3,7 @@ const authors = {
     name: "Mara Vale",
     role: "Travel Editor",
     initials: "MV",
-    href: "/templates/author",
+    href: "/authors/mara-vale",
     bio: "Mara Vale is the editorial pen name used by Path & Roam for destination guides, itineraries and travel research.",
   },
 };
