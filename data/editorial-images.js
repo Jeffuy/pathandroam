@@ -90,6 +90,26 @@ const editorialImages = {
     illustrative: true,
     label: "Illustrative private airport transfer with luggage",
   },
+  "/images/articles/limerick-to-cliffs-of-moher-without-a-car/cliffs-of-moher.webp": {
+    alt: "The Cliffs of Moher on Ireland's Atlantic coast",
+    credit: {
+      author: "liamgrehan",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:TheCliffs_of_Moher.jpg",
+      license: "CC0 1.0",
+      licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/limerick-to-cliffs-of-moher-without-a-car/public-bus-connection-illustration.png": {
+    alt: "Illustrated traveller waiting beside a coach at a bus station",
+    illustrative: true,
+    label: "Illustrative public bus connection",
+  },
+  "/images/articles/limerick-to-cliffs-of-moher-without-a-car/coastal-cliff-path-illustration.png": {
+    alt: "Illustrated traveller walking on a clifftop path above the Atlantic",
+    illustrative: true,
+    label: "Illustrative clifftop walk",
+  },
 };
 
 export function getEditorialImage(src) {

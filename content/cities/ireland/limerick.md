@@ -29,6 +29,7 @@ relatedSlugs:
   - limerick-without-a-car
   - one-day-itinerary
   - shannon-airport-to-limerick
+  - limerick-to-cliffs-of-moher-without-a-car
 sources:
   - label: Limerick.ie official walking and tourism information
     url: https://www.limerick.ie/discover/eat-see-do/sports-recreation/activities/walking
@@ -118,13 +119,13 @@ Clayton Hotel Limerick and Limerick Strand Hotel are examples of riverfront loca
 
 ## Day trips from Limerick
 
-Limerick can be a base for visiting places elsewhere in western Ireland. Common possibilities include the Cliffs of Moher, Bunratty, Adare, Galway and destinations around Dingle or the west coast.
+Limerick can be a base for visiting places elsewhere in western Ireland. Common possibilities include the Cliffs of Moher, Bunratty, Adare, Galway and destinations around Dingle or the west coast. Our [Limerick to the Cliffs of Moher bus guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) explains the public transport connection through Ennis.
 
 These trips require different levels of planning. Some have direct or organised transport options, while rural routes may be inconvenient without a car. Check current connections before choosing Limerick as a base, especially when trying to combine several places in one day.
 
 ## Limerick travel guides
 
-Use [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/) for walking, local buses and broad car-free planning. For a chronological sightseeing route through the centre, follow [One Day in Limerick: The Perfect Walking Itinerary](/ireland/limerick/one-day-itinerary/). For a focused comparison of the airport bus, taxi and private transfer, read [Shannon Airport to Limerick: Bus, Taxi and Transfer Options](/ireland/limerick/shannon-airport-to-limerick/).
+Use [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/) for walking, local buses and broad car-free planning. For a chronological sightseeing route through the centre, follow [One Day in Limerick: The Perfect Walking Itinerary](/ireland/limerick/one-day-itinerary/). For a day trip by public transport, read [Limerick to the Cliffs of Moher Without a Car: Bus Guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/). For a focused comparison of the airport bus, taxi and private transfer, use [Shannon Airport to Limerick: Bus, Taxi and Transfer Options](/ireland/limerick/shannon-airport-to-limerick/).
 
 ## Frequently asked questions
 

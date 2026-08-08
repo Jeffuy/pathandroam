@@ -25,6 +25,12 @@ const destinations = [
 
 const latest = [
   {
+    label: "Day trip",
+    title: "Limerick to the Cliffs of Moher Without a Car: Bus Guide",
+    description: "Use Route 51 and Route 350 for a public transport day trip through Ennis.",
+    href: "/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/",
+  },
+  {
     label: "Airport transport",
     title: "Shannon Airport to Limerick: Bus, Taxi and Transfer Options",
     description: "Compare Route 343, taxis and private transfers for the journey into Limerick.",
@@ -35,12 +41,6 @@ const latest = [
     title: "One Day in Limerick: The Perfect Walking Itinerary",
     description: "Follow a day on foot through the market, medieval quarter and River Shannon.",
     href: "/ireland/limerick/one-day-itinerary/",
-  },
-  {
-    label: "Car-free travel",
-    title: "Limerick Without a Car: Complete Visitor Guide",
-    description: "Walking, buses, airport connections and a practical city itinerary.",
-    href: "/ireland/limerick/limerick-without-a-car/",
   },
 ];
 

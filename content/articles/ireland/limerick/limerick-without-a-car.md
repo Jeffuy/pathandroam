@@ -46,6 +46,7 @@ relatedSlugs:
   - limerick
   - one-day-itinerary
   - shannon-airport-to-limerick
+  - limerick-to-cliffs-of-moher-without-a-car
 sources:
   - label: "King John's Castle official visitor information"
     url: https://kingjohnscastle.ie/visitor-information/
@@ -74,6 +75,8 @@ Limerick is one of the easier Irish cities to visit without renting a car.
 Most of the places a first-time visitor is likely to see in the city centre are close enough to reach on foot. King John’s Castle, the Medieval Quarter, the Milk Market, the River Shannon and several of Limerick’s best-known traditional pubs can all be combined into a day of walking.
 
 A car becomes more useful if you want to explore County Limerick or rural destinations farther away. For Limerick city itself, however, it is usually unnecessary.
+
+For a car-free day trip beyond the city, our [Limerick to the Cliffs of Moher bus guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) covers the connection through Ennis and the return-timing trade-off.
 
 This guide combines local experience in Limerick with current information from official transport, tourism and attraction sources.
 

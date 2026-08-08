@@ -1,0 +1,9 @@
+
+> path-and-roam@0.1.0 start
+> next start -p 3103
+
+▲ Next.js 16.3.0
+- Local:         http://localhost:3103
+- Network:       http://172.20.10.4:3103
+✓ Ready in 418ms
+✓ Running next.config.mjs took 41ms
