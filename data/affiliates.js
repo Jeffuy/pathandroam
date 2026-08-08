@@ -26,12 +26,102 @@ export const affiliateRegistry = Object.freeze({
     destination: null,
     enabled: false,
   }),
+  klook: Object.freeze({
+    key: "klook",
+    provider: "Klook",
+    url: "",
+    label: "Browse relevant activities",
+    description: "A contextual activity option for the destination being discussed.",
+    destination: null,
+    enabled: false,
+  }),
+  tiqets: Object.freeze({
+    key: "tiqets",
+    provider: "Tiqets",
+    url: "",
+    label: "Browse relevant attraction tickets",
+    description: "A contextual ticket option for an attraction being discussed.",
+    destination: null,
+    enabled: false,
+  }),
+  yesim: Object.freeze({
+    key: "yesim",
+    provider: "Yesim",
+    url: "",
+    label: "Review eSIM options",
+    description: "A connectivity option for travellers who need mobile data.",
+    destination: null,
+    enabled: false,
+  }),
+  welcomepickups: Object.freeze({
+    key: "welcomepickups",
+    provider: "Welcome Pickups",
+    url: "",
+    label: "Review transfer options",
+    description: "A contextual transfer option for the route being discussed.",
+    destination: null,
+    enabled: false,
+  }),
+  kiwitaxi: Object.freeze({
+    key: "kiwitaxi",
+    provider: "Kiwitaxi",
+    url: "",
+    label: "Review transfer options",
+    description: "A contextual transfer option for the route being discussed.",
+    destination: null,
+    enabled: false,
+  }),
+  radicalstorage: Object.freeze({
+    key: "radicalstorage",
+    provider: "Radical Storage",
+    url: "",
+    label: "Review luggage storage options",
+    description: "A contextual luggage storage option for the destination being discussed.",
+    destination: null,
+    enabled: false,
+  }),
   airalo: Object.freeze({
     key: "airalo",
     provider: "Airalo",
     url: "",
     label: "Review eSIM options",
     description: "A connectivity option for travellers who need mobile data.",
+    destination: null,
+    enabled: false,
+  }),
+  saily: Object.freeze({
+    key: "saily",
+    provider: "Saily",
+    url: "",
+    label: "Review eSIM options",
+    description: "A connectivity option for travellers who need mobile data.",
+    destination: null,
+    enabled: false,
+  }),
+  gocity: Object.freeze({
+    key: "gocity",
+    provider: "Go City",
+    url: "",
+    label: "Review attraction pass options",
+    description: "A contextual attraction pass option for the destination being discussed.",
+    destination: null,
+    enabled: false,
+  }),
+  airhelp: Object.freeze({
+    key: "airhelp",
+    provider: "AirHelp",
+    url: "",
+    label: "Review passenger rights support",
+    description: "A relevant passenger rights service for the travel issue being discussed.",
+    destination: null,
+    enabled: false,
+  }),
+  autoeurope: Object.freeze({
+    key: "autoeurope",
+    provider: "Auto Europe",
+    url: "",
+    label: "Compare car rental options",
+    description: "A car rental option for routes where driving is relevant.",
     destination: null,
     enabled: false,
   }),
@@ -64,7 +154,7 @@ export const affiliateRegistry = Object.freeze({
   }),
 });
 
-function hasSafeUrl(value) {
+export function isValidAffiliateUrl(value) {
   if (!value) return false;
   try {
     return new URL(value).protocol === "https:";
@@ -79,7 +169,7 @@ export function getAffiliate(key) {
 
 export function getEnabledAffiliate(key) {
   const entry = getAffiliate(key);
-  return entry?.enabled && hasSafeUrl(entry.url) ? entry : null;
+  return entry?.enabled && isValidAffiliateUrl(entry.url) ? entry : null;
 }
 
 export function getEnabledAffiliates(keys = []) {

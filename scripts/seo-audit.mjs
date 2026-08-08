@@ -5,7 +5,11 @@ import matter from "gray-matter";
 process.env.NEXT_PUBLIC_INDEXING_ENABLED = "true";
 process.env.NEXT_PUBLIC_SITE_URL ||= "https://seo-audit.invalid";
 
-const [{ affiliateRegistry }, { getContentRoute }, { default: createSitemap }] =
+const [
+  { affiliateRegistry, isValidAffiliateUrl },
+  { getContentRoute },
+  { default: createSitemap },
+] =
   await Promise.all([
     import("../data/affiliates.js"),
     import("../lib/content.js"),
@@ -208,6 +212,8 @@ for (const entry of entries) {
 for (const [registryKey, affiliate] of Object.entries(affiliateRegistry)) {
   if (affiliate.enabled && !String(affiliate.url || "").trim()) {
     addError(`affiliate:${registryKey}`, "enabled entry is missing a URL");
+  } else if (affiliate.enabled && !isValidAffiliateUrl(affiliate.url)) {
+    addError(`affiliate:${registryKey}`, "enabled entry requires a valid HTTPS URL");
   }
 }
 
