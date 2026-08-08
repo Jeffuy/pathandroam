@@ -57,6 +57,8 @@ That guide explains how to travel from Shannon Airport, when local buses are use
 
 King John's Castle is the main historical attraction in the city. The castle stands beside the River Shannon on King's Island, with exhibitions, reconstructed spaces and views across central Limerick. It is a natural anchor for a first visit to the Medieval Quarter.
 
+![Exterior view of King John's Castle beside the River Shannon in Limerick](/images/articles/limerick-without-a-car/king-johns-castle.webp)
+
 ### River Shannon and riverside walks
 
 The Shannon shapes the centre of Limerick and provides several useful walking routes. A riverside walk can connect the historic quarter, city bridges and central streets while giving a clear sense of the city's layout. The Three Bridges area is one of the established options.
@@ -73,6 +75,8 @@ The Medieval Quarter includes King John's Castle, St Mary's Cathedral and street
 
 Limerick has several established pubs with traditional music. Dolan's, The Locke and JJ Bowles offer different settings, from scheduled music sessions to riverside seating and an older pub atmosphere. Check current programmes directly because performance times can change.
 
+![Traditional live music session inside a pub in Limerick](/images/articles/limerick-without-a-car/traditional-pub.webp)
+
 ### University of Limerick and the Plassey riverside
 
 The University of Limerick and the riverside around Plassey provide a quieter alternative to the historic centre. This area is optional on a short visit, but it can suit travellers who want parkland, a longer river walk or a slower morning outside the main sightseeing area.
@@ -80,6 +84,8 @@ The University of Limerick and the riverside around Plassey provide a quieter al
 ## Getting around Limerick
 
 Central Limerick is very walkable. For most visitors, walking is the simplest way to move between the riverfront, Medieval Quarter, O'Connell Street, the Milk Market and Colbert Station.
+
+![Riverside promenade along the River Shannon in central Limerick](/images/articles/limerick-without-a-car/shannon-river.webp)
 
 Buses are more useful for places farther from the centre, including the University of Limerick and Castletroy. Colbert Station is centrally located and brings the main bus and rail services together in one practical arrival point.
 
@@ -114,8 +120,6 @@ These trips require different levels of planning. Some have direct or organised 
 ## Limerick travel guides
 
 The current collection begins with [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/), covering airport transport, walking, local buses, central sights and a practical one-day plan.
-
-Future Limerick guides will be added here only after publication. Unpublished attraction, itinerary and day-trip pages are not linked in advance.
 
 ## Frequently asked questions
 
