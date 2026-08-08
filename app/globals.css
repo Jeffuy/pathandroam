@@ -1534,17 +1534,17 @@ summary {
 
 .article-header {
   max-width: 72rem;
-  padding-top: clamp(2.5rem, 7vw, 5rem);
-  padding-bottom: clamp(2.5rem, 7vw, 5rem);
+  padding-top: clamp(2.5rem, 5vw, 3.5rem);
+  padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
 }
 
 .article-header .breadcrumbs {
-  margin-bottom: clamp(3rem, 7vw, 5rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 .article-header h1 {
   max-width: 14ch;
-  font-size: clamp(3.4rem, 8vw, 7rem);
+  font-size: clamp(3.4rem, 8vw, 6.25rem);
   line-height: 0.94;
 }
 
@@ -1593,7 +1593,7 @@ summary {
 
 .article-hero {
   aspect-ratio: 16 / 9;
-  max-height: 48rem;
+  max-height: 38rem;
 }
 
 .article-shell {
@@ -1854,6 +1854,10 @@ summary {
     grid-template-columns: minmax(0, 1.4fr) minmax(17rem, 0.6fr);
     gap: clamp(3rem, 8vw, 7rem);
   }
+
+  .article-hero {
+    aspect-ratio: 2 / 1;
+  }
 }
 
 @media (min-width: 64rem) {
@@ -1866,5 +1870,11 @@ summary {
     align-self: start;
     position: sticky;
     top: 1.5rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .article-header {
+    padding-inline-start: clamp(2.5rem, 3vw, 2.75rem);
   }
 }

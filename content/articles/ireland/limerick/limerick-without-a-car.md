@@ -1,5 +1,6 @@
 ---
 title: "Limerick Without a Car: Complete Visitor Guide"
+breadcrumbLabel: Limerick Without a Car
 slug: limerick-without-a-car
 description: Visiting Limerick without a car? Learn how to explore the city on foot, use local buses, reach Shannon Airport and plan the best places to visit.
 country: Ireland
@@ -104,8 +105,6 @@ Prefer a door-to-door transfer? You can check private transfer options from Shan
 
 ## Getting around Limerick on foot
 
-![The River Shannon and Thomond Bridge in Limerick](/images/limerick/river-shannon.webp)
-
 Walking is the easiest way to explore central Limerick.
 
 It also makes more sense than repeatedly waiting for buses when several attractions are relatively close to each other.
@@ -202,7 +201,7 @@ If you stay in a pub after local buses have finished, a regular taxi is the simp
 
 ## Staying connected in Ireland
 
-Travellers who need mobile data may consider arranging an eSIM before departure or during the trip, provided their device supports eSIMs.
+Travellers who need mobile data may consider arranging an eSIM before departure or during the trip, provided their device supports eSIMs. Before purchasing, confirm that your phone supports eSIM and is unlocked for use with another mobile provider.
 
 {{affiliate-link:airalo-ireland}}
 

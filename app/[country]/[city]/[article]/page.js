@@ -45,7 +45,7 @@ export default async function ArticlePage({ params }) {
 
   const author = getAuthor(entry.author);
   if (!author) notFound();
-  const related = await getRelatedContent(entry.relatedSlugs);
+  const related = await getRelatedContent(entry.relatedSlugs, entry.slug);
   const articleContent = {
     category: entry.contentType === "article" ? "Travel guide" : entry.contentType,
     destination: entry.city,
@@ -61,7 +61,7 @@ export default async function ArticlePage({ params }) {
       { label: "Home", href: "/" },
       { label: entry.country, href: `/${country}` },
       { label: entry.city, href: `/${country}/${city}` },
-      { label: entry.title },
+      { label: entry.breadcrumbLabel || entry.title },
     ],
     affiliateDisclosure: entry.affiliateDisclosure,
     affiliateKeys: entry.affiliateKeys,
