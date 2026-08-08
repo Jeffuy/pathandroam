@@ -6,7 +6,7 @@ export default function AuthorPageLayout({ author, preview = false }) {
   const relatedArticles = author.relatedArticles || [];
 
   return (
-    <main id="main-content" className="author-template page-width">
+    <main id="main-content" className="author-template page-width" tabIndex={-1}>
       <div className="template-breadcrumbs"><Breadcrumbs items={author.breadcrumbs} /></div>
       <header className="author-template__header">
         <span className="author-template__monogram" aria-hidden="true">{author.initials}</span>

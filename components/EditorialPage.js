@@ -1,6 +1,6 @@
 export default function EditorialPage({ eyebrow, title, intro, notice, children }) {
   return (
-    <main id="main-content" className="legal-page page-width">
+    <main id="main-content" className="legal-page page-width" tabIndex={-1}>
       <header>
         <p className="eyebrow">{eyebrow}</p>
         <h1>{title}</h1>

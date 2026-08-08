@@ -12,7 +12,7 @@ secondaryKeywords:
 publishedAt: 2026-08-07
 updatedAt: 2026-08-07
 author: mara-vale
-heroImage: /images/articles/coastal-town-placeholder.png
+heroImage: /images/articles/coastal-town-placeholder.webp
 heroAlt: Illustrative stone street used for the Limerick draft hub
 featured: false
 draft: true

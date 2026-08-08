@@ -12,7 +12,7 @@ secondaryKeywords:
 publishedAt: 2026-08-07
 updatedAt: 2026-08-07
 author: mara-vale
-heroImage: /images/articles/rail-journey-placeholder.png
+heroImage: /images/articles/rail-journey-placeholder.webp
 heroAlt: Illustrative train window scene used for the draft article
 featured: false
 draft: true

@@ -5,7 +5,7 @@ import { relatedTemplatePreviews } from "../../../data/template-previews";
 const city = {
   name: "Limerick",
   introduction: "A draft city hub preview for testing hierarchy, imagery and practical planning modules before real editorial content is added.",
-  heroImage: "/images/articles/coastal-town-placeholder.png",
+  heroImage: "/images/articles/coastal-town-placeholder.webp",
   heroAlt: "Illustrative stone street used as a city hub template placeholder",
   breadcrumbs: [{ label: "Home", href: "/" }, { label: "Ireland", href: "/templates/country-hub" }, { label: "Limerick" }],
   practicalInfo: [

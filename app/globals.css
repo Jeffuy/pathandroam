@@ -25,7 +25,6 @@ body {
   min-width: 20rem;
   min-height: 100vh;
   margin: 0;
-  overflow-x: hidden;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
@@ -94,8 +93,10 @@ summary {
 
 .logo {
   display: inline-flex;
+  min-height: 2.75rem;
   align-items: baseline;
   gap: 0.24em;
+  padding-block: 0.65rem;
   color: var(--ink);
   font-family: var(--serif);
   font-size: 1.45rem;
@@ -125,6 +126,9 @@ summary {
 .desktop-nav a,
 .site-footer nav a {
   position: relative;
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -295,6 +299,7 @@ summary {
 
 .text-link {
   display: inline-flex;
+  min-height: 2.75rem;
   align-items: center;
   gap: 0.7rem;
   padding-bottom: 0.28rem;
@@ -363,6 +368,7 @@ summary {
   grid-auto-flow: column;
   gap: 1rem;
   overflow-x: auto;
+  overscroll-behavior-inline: contain;
   padding-bottom: 1rem;
   scroll-snap-type: x proximity;
   scrollbar-color: var(--rust) transparent;
@@ -910,6 +916,12 @@ summary {
   margin-top: 0;
 }
 
+.markdown-content {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .markdown-content > * + * {
   margin-top: 1.3rem;
 }
@@ -944,6 +956,34 @@ summary {
 .markdown-content a {
   color: var(--rust);
   text-underline-offset: 0.2rem;
+  overflow-wrap: anywhere;
+}
+
+.markdown-content table {
+  width: 100%;
+  min-width: 36rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.markdown-content th,
+.markdown-content td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.markdown-content th {
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sources-list a,
+.legal-page a,
+.practical-info dd {
   overflow-wrap: anywhere;
 }
 
@@ -1139,6 +1179,8 @@ summary {
   *,
   *::before,
   *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
 }
@@ -1515,6 +1557,31 @@ summary {
 
 .article-main {
   min-width: 0;
+}
+
+.section-heading > *,
+.planning-section__layout > *,
+.featured-article > *,
+.car-free > *,
+.newsletter__layout > *,
+.hub-hero > *,
+.city-template__content > *,
+.author-template__body > * {
+  min-width: 0;
+}
+
+.hero h1,
+.section-heading h2,
+.planning-section h2,
+.featured-article h3,
+.car-free h2,
+.about-section h2,
+.newsletter h2,
+.hub-hero h1,
+.city-hero h1,
+.article-header h1,
+.author-template h1 {
+  overflow-wrap: break-word;
 }
 
 .article-main > * + * {

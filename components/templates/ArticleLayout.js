@@ -15,7 +15,7 @@ export default function ArticleLayout({ article, children }) {
   const activeAffiliates = getEnabledAffiliates(article.affiliateKeys);
 
   return (
-    <main id="main-content" className="article-template">
+    <main id="main-content" className="article-template" tabIndex={-1}>
       <article>
         <header className="article-header page-width">
           <Breadcrumbs items={article.breadcrumbs} />
@@ -26,7 +26,12 @@ export default function ArticleLayout({ article, children }) {
         </header>
 
         <div className="article-hero page-width">
-          <Image src={article.heroImage} alt={article.heroAlt} fill sizes="(min-width: 1320px) 1280px, 100vw" loading="eager" />
+          <Image
+            src={article.heroImage}
+            alt={article.heroAlt}
+            fill
+            sizes="(min-width: 1320px) 1280px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)"
+          />
           <span className="image-note">Illustrative image</span>
         </div>
 
@@ -36,7 +41,11 @@ export default function ArticleLayout({ article, children }) {
           </aside>
           <div className="article-main">
             {article.practicalSummary && (
-              <PracticalInfoBlock title="Quick planning summary" items={article.practicalSummary} />
+              <PracticalInfoBlock
+                title="Quick planning summary"
+                titleId="quick-planning-summary-title"
+                items={article.practicalSummary}
+              />
             )}
             <div className="article-body">{article.html || children}</div>
             {activeAffiliates.length > 0 && (
@@ -59,7 +68,10 @@ export default function ArticleLayout({ article, children }) {
                 <span>Disabled in template preview</span>
               </aside>
             ))}
-            <PracticalInfoBlock items={article.practicalInfo} />
+            <PracticalInfoBlock
+              items={article.practicalInfo}
+              titleId="practical-information-title"
+            />
             <SourcesList sources={article.sources} />
           </div>
         </div>

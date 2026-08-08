@@ -22,7 +22,7 @@ const examples = [
 
 export default function AffiliateExamplesPage() {
   return (
-    <main id="main-content" className="affiliate-examples page-width">
+    <main id="main-content" className="affiliate-examples page-width" tabIndex={-1}>
       <p className="eyebrow">Development preview</p>
       <h1>Disabled affiliate examples</h1>
       <p>Every registry entry is disabled. No monetized CTA or sponsored link should render below.</p>

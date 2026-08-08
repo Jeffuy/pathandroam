@@ -5,7 +5,7 @@ import { relatedTemplatePreviews } from "../../../data/template-previews";
 const country = {
   name: "Ireland",
   introduction: "A visual preview of the country hub structure. Destination research and publishable guidance will be added in a later phase.",
-  heroImage: "/images/destinations/ireland-coast-placeholder.png",
+  heroImage: "/images/destinations/ireland-coast-placeholder.webp",
   heroAlt: "Illustrative green coastal landscape used for the Ireland template preview",
   breadcrumbs: [{ label: "Home", href: "/" }, { label: "Template previews" }, { label: "Ireland" }],
   relatedArticles: relatedTemplatePreviews.slice(1),

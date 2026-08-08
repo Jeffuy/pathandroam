@@ -9,7 +9,7 @@ export const metadata = createPageMetadata({
 
 export default function AffiliateDisclosurePage() {
   return (
-    <main id="main-content" className="legal-page page-width">
+    <main id="main-content" className="legal-page page-width" tabIndex={-1}>
       <p className="eyebrow">Transparency</p>
       <h1>Affiliate disclosure</h1>
       <p className="legal-page__intro">

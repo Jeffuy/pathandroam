@@ -4,7 +4,7 @@ import RelatedArticles from "../RelatedArticles";
 
 export default function CountryHubLayout({ country, children }) {
   return (
-    <main id="main-content" className="hub-template">
+    <main id="main-content" className="hub-template" tabIndex={-1}>
       <div className="page-width template-breadcrumbs"><Breadcrumbs items={country.breadcrumbs} /></div>
       <header className="hub-hero page-width">
         <div className="hub-hero__copy">
@@ -14,7 +14,14 @@ export default function CountryHubLayout({ country, children }) {
           {(country.draft || country.noindex) && <span className="draft-pill">Draft · Noindex</span>}
         </div>
         <div className="hub-hero__image">
-          <Image src={country.heroImage} alt={country.heroAlt} fill sizes="(min-width: 768px) 55vw, 100vw" loading="eager" />
+          <Image
+            src={country.heroImage}
+            alt={country.heroAlt}
+            fill
+            sizes="(min-width: 1320px) 720px, (min-width: 768px) 55vw, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)"
+            loading="eager"
+            fetchPriority="high"
+          />
           <span className="image-note">Illustrative image</span>
         </div>
       </header>

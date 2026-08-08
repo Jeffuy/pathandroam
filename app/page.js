@@ -11,14 +11,14 @@ export const metadata = createPageMetadata({
   title: "Independent Travel Guides & Trip Planning",
   description: "Independent travel guides, practical itineraries and clear planning advice for thoughtful journeys.",
   pathname: "/",
-  image: "/images/destinations/ireland-coast-placeholder.png",
+  image: "/images/destinations/ireland-coast-placeholder.webp",
   imageAlt: "Illustrative green coastal landscape with a winding road",
 });
 
 const destinationImages = [
-  "/images/destinations/ireland-coast-placeholder.png",
-  "/images/articles/coastal-town-placeholder.png",
-  "/images/articles/rail-journey-placeholder.png",
+  "/images/destinations/ireland-coast-placeholder.webp",
+  "/images/articles/coastal-town-placeholder.webp",
+  "/images/articles/rail-journey-placeholder.webp",
 ];
 
 const destinations = [
@@ -36,7 +36,7 @@ const inspiration = [
     title: "Follow the shape of a place",
     description:
       "Build a trip around rhythm, connection and time—not a race through a checklist.",
-    image: "/images/articles/coastal-town-placeholder.png",
+    image: "/images/articles/coastal-town-placeholder.webp",
     imageAlt: "Illustrative view down a warm stone lane toward the sea",
   },
   {
@@ -44,7 +44,7 @@ const inspiration = [
     title: "Leave room for the unexpected",
     description:
       "A clear plan can create the space to notice what is already around you.",
-    image: "/images/destinations/ireland-coast-placeholder.png",
+    image: "/images/destinations/ireland-coast-placeholder.webp",
     imageAlt: "Illustrative coastal landscape with a quiet winding road",
   },
 ];
@@ -69,7 +69,7 @@ const latest = [
 
 export default function Home() {
   return (
-    <main id="main-content">
+    <main id="main-content" tabIndex={-1}>
       <Hero />
 
       <section className="section page-width" id="destinations" aria-labelledby="destinations-title">
@@ -126,7 +126,7 @@ export default function Home() {
             title: "Ireland, one thoughtful trip at a time",
             description:
               "Research-led destination notes, itinerary frameworks and planning tools are taking shape.",
-            image: "/images/destinations/ireland-coast-placeholder.png",
+            image: "/images/destinations/ireland-coast-placeholder.webp",
             imageAlt: "Illustrative green landscape on Ireland's Atlantic coast",
           }}
         />
@@ -135,7 +135,7 @@ export default function Home() {
       <section className="car-free page-width" aria-labelledby="car-free-title">
         <div className="car-free__image">
           <Image
-            src="/images/articles/rail-journey-placeholder.png"
+            src="/images/articles/rail-journey-placeholder.webp"
             alt="Illustrative train journey with a map and cup beside the window"
             fill
             sizes="(min-width: 768px) 55vw, 100vw"

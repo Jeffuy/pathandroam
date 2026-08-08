@@ -5,11 +5,18 @@ import RelatedArticles from "../RelatedArticles";
 
 export default function CityHubLayout({ city, children }) {
   return (
-    <main id="main-content" className="hub-template city-template">
+    <main id="main-content" className="hub-template city-template" tabIndex={-1}>
       <div className="page-width template-breadcrumbs"><Breadcrumbs items={city.breadcrumbs} /></div>
       <header className="city-hero">
         <div className="city-hero__image">
-          <Image src={city.heroImage} alt={city.heroAlt} fill sizes="100vw" loading="eager" />
+          <Image
+            src={city.heroImage}
+            alt={city.heroAlt}
+            fill
+            sizes="100vw"
+            loading="eager"
+            fetchPriority="high"
+          />
           <span className="image-note">Illustrative image</span>
         </div>
         <div className="city-hero__copy page-width">

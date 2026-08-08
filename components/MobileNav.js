@@ -10,11 +10,11 @@ const links = [
 export default function MobileNav() {
   return (
     <details className="mobile-nav">
-      <summary>
+      <summary aria-controls="mobile-navigation">
         <span className="mobile-nav__label">Menu</span>
         <span className="mobile-nav__icon" aria-hidden="true" />
       </summary>
-      <nav aria-label="Mobile navigation">
+      <nav id="mobile-navigation" aria-label="Mobile navigation">
         {links.map(([label, href]) => (
           <Link href={href} key={label}>
             {label}

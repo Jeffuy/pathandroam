@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <Script
           id="travelpayouts-drive"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           nowprocket=""
           data-noptimize="1"
           data-cfasync="false"

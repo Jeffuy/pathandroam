@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero__image">
         <Image
-          src="/images/destinations/ireland-coast-placeholder.png"
+          src="/images/destinations/ireland-coast-placeholder.webp"
           alt="Illustrative view of a winding road through a green coastal landscape"
           fill
           loading="eager"

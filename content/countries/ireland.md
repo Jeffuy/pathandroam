@@ -12,7 +12,7 @@ secondaryKeywords:
 publishedAt: 2026-08-07
 updatedAt: 2026-08-07
 author: mara-vale
-heroImage: /images/destinations/ireland-coast-placeholder.png
+heroImage: /images/destinations/ireland-coast-placeholder.webp
 heroAlt: Illustrative green coastal landscape used for the Ireland draft hub
 featured: true
 draft: true

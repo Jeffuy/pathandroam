@@ -10,7 +10,7 @@ const article = {
   author: previewAuthor,
   publishedAt: { iso: "2026-08-07", label: "August 7, 2026" },
   updatedAt: null,
-  heroImage: "/images/articles/rail-journey-placeholder.png",
+  heroImage: "/images/articles/rail-journey-placeholder.webp",
   heroAlt: "Illustrative train window scene used for an article layout preview",
   breadcrumbs: [{ label: "Home", href: "/" }, { label: "Ireland", href: "/templates/country-hub" }, { label: "Article template" }],
   affiliateDisclosure: "Future affiliate recommendations will be clearly disclosed and will only render when a verified, enabled entry exists.",
