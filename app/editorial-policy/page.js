@@ -26,8 +26,8 @@ export default function EditorialPolicyPage() {
         <h2>Firsthand information</h2>
         <p>
           Firsthand input is included only when it is genuinely available and clearly
-          relevant. We do not imply personal visits, stays, tours or testing where none
-          has been supplied.
+          relevant. We never imply that a place, hotel, tour or service was personally
+          experienced when it was not.
         </p>
       </section>
       <section>

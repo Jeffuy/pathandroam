@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <EditorialPage
       eyebrow="About Path & Roam"
-      title="Travel information for planning the route."
+      title="Travel guides that help you plan."
       intro="Path & Roam is an independent travel publication covering destinations, itineraries and transport."
     >
       <section>

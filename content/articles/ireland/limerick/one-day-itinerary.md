@@ -165,9 +165,7 @@ If Sunday is your only day in Limerick, do not treat that as a major problem. Sk
 
 ## Around 12:00: stop for lunch
 
-Keep lunch central.
-
-Keep lunch close to the route because the next major part of the itinerary is around King's Island and the Medieval Quarter.
+Keep lunch central, since the next part of the itinerary is around King's Island and the Medieval Quarter.
 
 Allow around one hour.
 

@@ -76,7 +76,7 @@ export default function Home() {
           <ol className="planning-list">
             <li>
               <span>01</span>
-              <div><h3>Choose a place</h3><p>Start with destination guides linked to published local content.</p></div>
+              <div><h3>Choose a place</h3><p>Choose a destination and start with the guides that help you plan the trip.</p></div>
             </li>
             <li>
               <span>02</span>
