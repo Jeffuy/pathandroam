@@ -5,7 +5,7 @@ export default function ImageCaption({ details, illustrative = false, as: Captio
 
   if (!details?.credit) return null;
 
-  const { author, sourceUrl, license, licenseUrl } = details.credit;
+  const { author, sourceUrl, license, licenseUrl, modification } = details.credit;
 
   return (
     <Caption className="image-note image-credit">
@@ -14,6 +14,7 @@ export default function ImageCaption({ details, illustrative = false, as: Captio
       <a href={sourceUrl} rel="noopener noreferrer" target="_blank">Wikimedia Commons</a>
       {" / "}
       <a href={licenseUrl} rel="noopener noreferrer" target="_blank">{license}</a>
+      {modification && ` / ${modification}`}
     </Caption>
   );
 }

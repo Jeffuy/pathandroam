@@ -122,7 +122,7 @@ These trips require different levels of planning. Some have direct or organised 
 
 ## Limerick travel guides
 
-The current collection begins with [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/), covering airport transport, walking, local buses, central sights and a practical one-day plan.
+Use [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/) for airport transport, walking and local buses. For a chronological sightseeing route through the centre, follow [One Day in Limerick: The Perfect Walking Itinerary](/ireland/limerick/one-day-itinerary/).
 
 ## Frequently asked questions
 

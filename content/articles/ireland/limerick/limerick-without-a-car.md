@@ -229,6 +229,8 @@ There is little reason for a normal visitor to avoid walking around the main cen
 
 ## A simple one-day Limerick itinerary without a car
 
+For a more detailed sightseeing schedule, follow our [one-day Limerick walking itinerary](/ireland/limerick/one-day-itinerary/).
+
 If the weather is good, spend the morning around the Shannon or take a bus toward the University of Limerick and the Plassey riverside area.
 
 Return to the centre for lunch and spend the main part of the afternoon at King John’s Castle. Allow enough time to see the exhibitions and climb the castle rather than rushing through it.
