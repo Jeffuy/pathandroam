@@ -97,7 +97,7 @@ For detailed stop, ticket, luggage and nighttime-arrival advice, see our [Shanno
 
 Bus Éireann Route 343 connects Shannon Airport with Limerick and Colbert Station. The service operates 24 hours a day, seven days a week, with buses running as frequently as every 20 minutes during weekday peak periods and every 30 minutes at many other times. Overnight services continue at a lower frequency.
 
-Based on local experience, the journey typically feels straightforward and there are several stops in Limerick before or around the main station. Allow roughly an hour rather than planning a tight connection, since journey time can vary with traffic and the number of stops.
+The journey has several stops in Limerick before or around the main station. Allow roughly an hour rather than planning a tight connection, since journey time can vary with traffic and the number of stops.
 
 For most independent travellers, the 343 makes renting a car at Shannon Airport unnecessary if Limerick is the first destination.
 
@@ -120,6 +120,16 @@ There are several official walking routes around the city, including riverside t
 Wear comfortable shoes and keep one thing in mind: the weather can change quickly.
 
 A morning that looks dry does not guarantee a dry afternoon. Check the forecast before leaving, but plan on the possibility that conditions will change while you are outside.
+
+## Where to stay without a car
+
+Central location matters more than parking. Look for accommodation in or immediately around the city centre, particularly near the River Shannon, O'Connell Street, the Medieval Quarter or the central station area.
+
+Clayton Hotel Limerick and Limerick Strand Hotel are examples of riverfront hotels in central locations, but there are also less expensive accommodation options.
+
+{{affiliate-link:limerick-strand-klook}}
+
+The important decision is not the hotel brand. It is whether the location lets you explore during the day, return to your room and go back out for dinner or music without arranging transport each time.
 
 ## King John's Castle is the main historical stop
 
@@ -161,7 +171,7 @@ Dolan’s is particularly good for travellers interested in traditional Irish mu
 
 It is a traditional pub and live music venue on Dock Road. Its current schedule lists free traditional Irish music sessions at 21:00 from Wednesday through Sunday.
 
-From local experience, the atmosphere during these sessions is friendly rather than formal. You are likely to find both Irish customers and people from other countries, and the musicians often interact with the audience.
+At a traditional session in Dolan's, the atmosphere was friendly rather than formal, the audience included both Irish customers and visitors from other countries, and the musicians interacted with the room.
 
 The Locke is another easy option for a first visit to Limerick. It sits beside the river in the Medieval Quarter and combines outdoor seating with traditional Irish music and dancing. Its current programme advertises traditional music and dance seven nights a week.
 
@@ -209,27 +219,13 @@ Travellers who need mobile data may consider arranging an eSIM before departure 
 
 {{affiliate-link:airalo-ireland}}
 
-## Where to stay in Limerick without a car
-
-Location matters more than having access to parking.
-
-Look for accommodation in or immediately around the city centre, particularly near the River Shannon, O'Connell Street, the Medieval Quarter or the central station area.
-
-Clayton Hotel Limerick and Limerick Strand Hotel are examples of riverfront hotels in central locations, but there are also less expensive accommodation options.
-
-{{affiliate-link:limerick-strand-klook}}
-
-The important point is not the hotel brand. It is avoiding accommodation far outside the centre if you plan to depend on walking.
-
-A central hotel lets you explore during the day, return to your room and go back out for dinner or music without having to organise transport every time.
-
 ## Is Limerick safe to explore on foot?
 
 Central Limerick generally feels straightforward to explore on foot, including during the evening.
 
 As in any city, normal precautions still apply. Keep track of your belongings, pay attention to your surroundings late at night and use a taxi if you are returning somewhere farther from the centre after public transport has finished.
 
-There is little reason for a normal visitor to avoid walking around the main central tourist areas simply because they do not have a car.
+Visitors can comfortably walk around the main central tourist areas without having a car.
 
 ## A simple one-day Limerick itinerary without a car
 

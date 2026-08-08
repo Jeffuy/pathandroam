@@ -22,7 +22,6 @@ export default function MaraValePage() {
     ],
     about: [
       "Mara Vale is the editorial pen name used by Path & Roam for destination guides, itineraries and travel research.",
-      "The name does not imply personal travel, hotel stays, tours taken or firsthand testing unless that information is explicitly identified and genuinely available.",
     ],
     focus: [
       "Destination research",

@@ -18,8 +18,8 @@ export default function Hero() {
         <p className="eyebrow eyebrow--light">See more. Plan smarter.</p>
         <h1 id="hero-title">Travel further,<br />plan smarter.</h1>
         <p className="hero__intro">
-          Independent travel guides, practical itineraries and clear planning
-          advice for journeys that feel like your own.
+          Independent destination guides, practical itineraries and transport
+          advice for planning trips with or without a car.
         </p>
         <a className="text-link text-link--light" href="#destinations">
           Start exploring <span aria-hidden="true">→</span>

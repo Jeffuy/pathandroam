@@ -17,7 +17,7 @@ export default function Footer() {
         </nav>
       </div>
       <div className="site-footer__base page-width">
-        <p>Independent travel research and practical planning.</p>
+        <p>Destination guides, itineraries and transport advice.</p>
         <p>© {new Date().getFullYear()} Path &amp; Roam</p>
       </div>
     </footer>

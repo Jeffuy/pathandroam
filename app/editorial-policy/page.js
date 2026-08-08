@@ -15,39 +15,40 @@ export default function EditorialPolicyPage() {
       intro="The principles behind how Path & Roam prepares and maintains travel content."
     >
       <section>
-        <h2>Research and review</h2>
+        <h2>Research and current information</h2>
         <p>
-          Content is researched before publication and reviewed before it goes live.
-          Time-sensitive facts should rely on current, reliable sources whenever possible.
-        </p>
-      </section>
-      <section>
-        <h2>AI assistance</h2>
-        <p>
-          AI may assist with research, organization, drafting and illustrative imagery.
-          Editorial review remains part of the publication process. AI-generated imagery
-          is not presented as documentary evidence.
+          Guides are based on reliable sources, with official information preferred for
+          transport, opening times, prices and other details that can change. Important
+          facts are checked before publication.
         </p>
       </section>
       <section>
         <h2>Firsthand information</h2>
         <p>
-          Firsthand experience is identified only when it is genuinely available. We do
-          not imply personal visits, stays, tours or testing where none has been supplied.
+          Firsthand input is included only when it is genuinely available and clearly
+          relevant. We do not imply personal visits, stays, tours or testing where none
+          has been supplied.
+        </p>
+      </section>
+      <section>
+        <h2>Images</h2>
+        <p>
+          Documentary photographs are credited when their licences require it.
+          Illustrations are labelled and are not presented as photographs of named places.
         </p>
       </section>
       <section>
         <h2>Commercial independence</h2>
         <p>
           Affiliate relationships do not determine editorial conclusions. Commercial
-          links are disclosed and kept separate from the research behind recommendations.
+          links are disclosed, and recommendations must remain useful without a purchase.
         </p>
       </section>
       <section>
         <h2>Corrections and updates</h2>
         <p>
-          Readers may request corrections. Updated dates are changed only when a page has
-          received a meaningful editorial or factual update.
+          Readers may request corrections. An updated date reflects a meaningful factual
+          or editorial change rather than a cosmetic edit.
         </p>
       </section>
     </EditorialPage>

@@ -1,13 +1,13 @@
 export default function NewsletterPlaceholder() {
   return (
     <section className="newsletter page-width" id="newsletter" aria-labelledby="newsletter-title">
-      <p className="eyebrow">Notes for the road</p>
+      <p className="eyebrow">More travel planning</p>
       <div className="newsletter__layout">
         <div>
-          <h2 id="newsletter-title">A thoughtful trip starts here.</h2>
+          <h2 id="newsletter-title">Keep planning with Path &amp; Roam.</h2>
           <p>
-            Occasional planning notes, destination guides and practical ideas
-            from Path &amp; Roam.
+            Destination guides, walking itineraries and transport advice for
+            trips with or without a car.
           </p>
         </div>
       </div>

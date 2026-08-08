@@ -67,7 +67,7 @@ sources:
 
 Limerick is one of those cities where trying to see everything in one day can actually make the visit worse.
 
-The centre is compact, the River Shannon keeps appearing throughout the day, and several of the places most worth seeing are close enough that there is little reason to turn the visit into a race between attractions.
+The centre is compact, the River Shannon keeps appearing throughout the day, and several of the places most worth seeing are close enough to visit without racing between attractions.
 
 For a first visit, a good day is simple: start slowly, see one or two of the city's strongest historical sites, leave time to walk without a strict route, and finish somewhere that still feels distinctly Limerick after the museums close.
 
@@ -101,6 +101,14 @@ There is no need to follow every time in this guide to the minute. Think of the 
 
 The one fixed time worth remembering is St Mary's Cathedral: current visitor hours are Monday to Saturday from 11:00 to 16:00.
 
+## Staying overnight in Limerick?
+
+Staying centrally makes this itinerary easier because almost everything on the main route can be reached on foot.
+
+Limerick Strand Hotel is one central riverfront option.
+
+{{affiliate-link:limerick-strand-klook}}
+
 ## Saturday morning: start at the Milk Market
 
 ![The Milk Market in central Limerick](/images/limerick/milk-market.webp)
@@ -115,21 +123,21 @@ Allow roughly two hours if you also want breakfast, coffee or something to eat.
 
 On a summer Saturday, leaving the market around 10:00 gives you time for a short riverside walk, another coffee or a relaxed walk toward St Mary's Cathedral before its 11:00 visitor opening.
 
-The goal is not simply to walk around the stalls and leave. The market works well as the beginning of the day because you can eat, look around and spend some time among locals before moving into the historical part of the city.
+Take time to eat, browse and enjoy the market before moving into the historical part of the city.
 
-If it is Friday or Sunday, the market also operates, but with later and shorter published hours. I would not build the entire morning around it in the same way.
+The market also operates on Friday and Sunday, but with later and shorter published hours. On those days, keep the visit shorter rather than building the entire morning around it.
 
 ## If it is not Saturday: start beside the Shannon
 
 ![The River Shannon and Thomond Bridge in Limerick](/images/limerick/river-shannon.webp)
 
-On other days, I would begin with the River Shannon instead.
+On other days, begin beside the River Shannon instead.
 
 Do not worry about following a precise riverside route.
 
 Walk without much of a plan, stop when the view is interesting and watch the river for a while. There are often birds on or around the water, and the combination of bridges, old stone buildings and open space is a good introduction to the city.
 
-This is one of those occasions when deliberately not having a checklist makes the itinerary better.
+This part of the morning works best without a checklist.
 
 In summer, keep the riverside walk flexible and begin making your way toward St Mary's Cathedral in time for its 11:00 opening.
 
@@ -159,7 +167,7 @@ If Sunday is your only day in Limerick, do not treat that as a major problem. Sk
 
 Keep lunch central.
 
-There is little benefit in travelling across the city for a restaurant when the next major part of the itinerary is around King's Island and the Medieval Quarter.
+Keep lunch close to the route because the next major part of the itinerary is around King's Island and the Medieval Quarter.
 
 Allow around one hour.
 
@@ -179,7 +187,7 @@ Choose according to where you are when you become hungry rather than restructuri
 
 King John's Castle should be the main attraction of the afternoon.
 
-For this itinerary, I would allow approximately two and a half hours.
+Allow approximately two and a half hours for this itinerary.
 
 The castle itself officially recommends around 90 minutes, so you can move faster if you need to. But if you enjoy medieval history, exhibitions, reconstructed spaces and the views over the Shannon, two to two and a half hours is much more comfortable.
 
@@ -191,7 +199,7 @@ From April through September the castle currently stays open later, while winter
 
 Check the official opening time before your visit, especially if you are travelling in winter and plan to arrive later in the afternoon.
 
-For a one-day itinerary, I would rather spend more time here and remove another minor stop than rush through the castle.
+If time is tight, remove a minor stop rather than rush through the castle.
 
 ## After the castle: walk the Medieval Quarter
 
@@ -205,7 +213,7 @@ Allow around 45 minutes, but do not turn it into another rigid sightseeing exerc
 
 Walk, look at the buildings, stop for photographs and let the route connect naturally back toward the river.
 
-The point of this part of the day is the area itself rather than checking another attraction off a list.
+The streets and buildings are the attraction here, rather than another ticketed stop.
 
 ## Late afternoon: return to the Shannon
 
@@ -221,7 +229,7 @@ After spending much of the afternoon following exhibits and historical informati
 
 If you are doing the itinerary in winter and daylight is disappearing, shorten or skip this section.
 
-If you only have around six hours in Limerick, this is the first part I would remove.
+If you only have around six hours in Limerick, remove this part first.
 
 ## Evening option 1: JJ Bowles
 
@@ -245,8 +253,6 @@ That makes it particularly useful when your one day in Limerick falls between We
 
 The atmosphere is more active than simply finishing with a quiet drink, so choose according to the kind of evening you want.
 
-The image above is a generic editorial illustration of a traditional Irish music session, not a photograph of Dolan's or any other named venue.
-
 If you want a later and livelier night after that, central Limerick has late bars and dancing options. Check current opening hours and events on the day rather than building the daytime itinerary around nightlife.
 
 ## What if it rains?
@@ -261,9 +267,17 @@ If conditions become genuinely unpleasant, reduce the riverside walks first.
 
 Crescent Shopping Centre is an optional indoor fallback if you want to spend a few hours somewhere fully covered, but it is outside the central walking itinerary and is not an easy walk from the historical centre.
 
-Use bus or taxi rather than pretending it belongs naturally to this route.
+Use a bus or taxi because it does not fit naturally into this walking route.
 
 It should be considered a weather backup, not one of Limerick's essential sightseeing stops.
+
+## Staying connected
+
+If you need mobile data while travelling in Ireland, an eSIM can be useful provided your phone supports eSIM technology.
+
+Check device compatibility before purchasing.
+
+{{affiliate-link:airalo-ireland}}
 
 ## Optional good-weather alternative: UL Beach
 
@@ -277,7 +291,7 @@ However, it is outside the core walking itinerary.
 
 Take a bus or taxi from central Limerick rather than trying to force it into a route that is supposed to be comfortably walkable.
 
-For a first visit with only one day, I would still prioritise the central itinerary unless the weather is particularly good and the riverside is what interests you most.
+For a first visit with only one day, prioritise the central itinerary unless the weather is particularly good and the riverside is what interests you most.
 
 ## What if you only have six hours?
 
@@ -300,22 +314,6 @@ A compressed version would be:
 - short Medieval Quarter walk
 
 That still gives you the parts of Limerick that matter most without spending the entire visit looking at the clock.
-
-## Where to stay if you are doing this itinerary
-
-If you are staying overnight, a central hotel makes this itinerary much easier because almost everything in the main route can then be reached on foot.
-
-Limerick Strand Hotel is one central riverfront option.
-
-{{affiliate-link:limerick-strand-klook}}
-
-## Staying connected
-
-If you need mobile data while travelling in Ireland, an eSIM can be useful provided your phone supports eSIM technology.
-
-Check device compatibility before purchasing.
-
-{{affiliate-link:airalo-ireland}}
 
 ## Is one day enough for Limerick?
 

@@ -92,15 +92,19 @@ Check the current Route 343 timetable and TFI Live after landing.
 
 For the journey into central Limerick, it is sensible to allow roughly an hour rather than building a tight onward connection around a perfect timetable.
 
+## Want a door-to-door option instead?
+
+If you are carrying a lot of luggage or need to reach your accommodation quickly, compare private transfer availability below.
+
+{{affiliate-widget:shannon-airport-to-limerick-kiwitaxi}}
+
 ## Where do you catch the 343 at Shannon Airport?
 
-One of the best things about this route is that finding it does not require a complicated airport transfer.
+Finding the bus does not require a complicated airport transfer.
 
 After leaving the arrivals area, head outside the terminal and follow the bus and coach signs.
 
-Based on firsthand local input, the stop is immediately outside the terminal and was very clearly marked.
-
-The Route 343 number and Limerick destination were also easy to identify.
+On a nighttime trip from Shannon Airport, the stop immediately outside the terminal was clearly marked. The Route 343 number and Limerick destination were also easy to identify.
 
 That matters after a flight. You should not need to navigate to another terminal, take an airport shuttle or walk to a distant transport interchange before beginning the journey to Limerick.
 
@@ -108,7 +112,7 @@ That matters after a flight. You should not need to navigate to another terminal
 
 For the normal Route 343 journey, arriving and paying for the trip can be simple.
 
-On the firsthand journey, the traveller arrived at the stop, boarded the bus without a reservation and paid the driver in cash.
+On that trip, boarding required no reservation and the fare was paid in cash to the driver.
 
 There was no complicated ticket collection process.
 
@@ -124,7 +128,7 @@ Do not assume that tapping a normal bank card on the driver's machine works in t
 
 The bus is a realistic airport option even if you have a suitcase.
 
-The vehicle used on the firsthand trip had dedicated luggage space, so the traveller did not need to keep a large bag at the seat.
+The bus on that trip had dedicated luggage space, so a large bag did not need to stay at the seat.
 
 That makes the bus practical for a normal airport arrival.
 
@@ -132,17 +136,15 @@ Vehicle layouts can vary, however, so travellers with several large suitcases, m
 
 The practical dividing line is simple: normal luggage does not automatically justify paying for a private car. A large amount of luggage might.
 
-The image above is a generic editorial illustration and does not depict Route 343 or Shannon Airport.
-
 ## What is it like inside the bus?
 
 The exact vehicle can change, so avoid assuming every Route 343 bus has identical equipment.
 
-On the bus used for the firsthand trip, there were screens showing the upcoming stops and estimated times.
+The bus on that trip had screens showing upcoming stops and estimated times.
 
 The passenger information appeared in both English and Irish.
 
-There were also USB charging ports on the vehicle used for the firsthand journey.
+It also had USB charging ports.
 
 Wi-Fi availability can vary, so do not rely on it. The charging ports were useful for keeping a phone available for Google Maps and live transport information.
 
@@ -154,7 +156,7 @@ The Route 343 serves Limerick before reaching or terminating around the city's m
 
 If your accommodation is in central Limerick, an earlier city stop may be more convenient.
 
-On the firsthand trip, Google Maps was used to follow the journey and choose the central stop.
+Google Maps helped with following the journey and choosing a central stop.
 
 The bus's onboard passenger information also made the progression of stops easy to follow.
 
@@ -170,11 +172,9 @@ If your hotel or accommodation is closer to the city centre, however, there is n
 
 ## A useful detail about getting off the bus
 
-There is no reason to panic and stand beside the door long before your stop.
+Press the stop button before your stop. On this trip, passengers remained seated until the bus stopped and had enough time to get off comfortably.
 
-On the firsthand journey, the traveller pressed the stop button while still seated and waited until the bus had actually stopped before getting up.
-
-On this journey, the driver allowed passengers time to get off before continuing. Signal your stop in good time and wait until the bus has stopped before standing if it is safe to do so.
+Signal in good time and wait until the bus has stopped before standing if it is safe to do so.
 
 ## Is the 343 practical if you arrive at night?
 
@@ -182,17 +182,13 @@ Yes, and this is one of the route's biggest advantages.
 
 Route 343 operates through the night, although frequency is lower than during the busiest daytime periods.
 
-The firsthand arrival took place at night.
-
-The bus stop outside Shannon Airport felt safe, comfortable and straightforward to use. The wait happened to be short and the bus itself was almost empty.
-
-Those last two details were specific to that journey and should not be expected every night.
+On that nighttime trip, the bus stop outside Shannon Airport felt safe and straightforward to use. The wait was short and the bus was almost empty, although waiting time and occupancy will vary.
 
 The more important point is that a late arrival does not automatically force you into paying for a taxi.
 
 Check TFI Live after landing, confirm the next departure and decide from there.
 
-For someone staying centrally in Limerick, arriving by bus and then walking to accommodation can also be practical. That is what happened on the firsthand journey.
+For someone staying centrally in Limerick, arriving by bus and then walking to accommodation can also be practical. The final destination on this trip was close enough to reach on foot.
 
 ## How reliable is the Shannon Airport to Limerick bus?
 
@@ -206,7 +202,7 @@ This matters most if you are working with a strict connection.
 
 After landing, check the current departure rather than relying only on a screenshot of a timetable saved days earlier.
 
-If the next bus is operating normally and you are not in a hurry, there is little reason to overcomplicate the journey.
+If the next bus is operating normally and you are not in a hurry, take it without overcomplicating the journey.
 
 ## Taxi from Shannon Airport to Limerick
 
@@ -222,13 +218,11 @@ It is particularly useful if:
 - your accommodation is outside the central area
 - several people are sharing the fare
 
-Taxi fares in Ireland are regulated by the National Transport Authority and calculated using the taximeter.
-
-The final price depends on the journey, traffic, time of travel and applicable extras.
+Taxi fares in Ireland are regulated by the National Transport Authority and calculated using the taximeter. There is no single guaranteed taxi price from Shannon Airport to Limerick. The final metered fare depends on traffic, time, destination and applicable extras.
 
 Pre-booking can also add an official booking fee.
 
-There is no single guaranteed taxi price from Shannon Airport to Limerick. Use the current TFI Taxi Fare Estimator for an approximate cost.
+Use the current TFI Taxi Fare Estimator for an approximate cost.
 
 ## Private transfer from Shannon Airport to Limerick
 
@@ -240,13 +234,9 @@ You are paying for a journey that is arranged in advance and takes you directly 
 
 That can make sense after a long flight, with substantial luggage, for a group, or when reaching the destination quickly matters more than saving money.
 
-For a normal solo traveller with one suitcase going to central Limerick, I would still start by checking the 343.
+For a solo traveller with one suitcase going to central Limerick, Route 343 remains the first option to check.
 
-If convenience is more important, compare private transfer availability below.
-
-{{affiliate-widget:shannon-airport-to-limerick-kiwitaxi}}
-
-The illustration above is generic and does not depict Kiwitaxi, Shannon Airport or a specific transfer company.
+If convenience is more important, use the private transfer comparison earlier in this guide.
 
 ## Bus, taxi or transfer: which should you choose?
 
@@ -256,7 +246,7 @@ Choose a taxi if you need to leave the airport quickly, have a lot of luggage or
 
 Choose a private transfer if you prefer having the journey arranged before arrival and are willing to pay more for that convenience.
 
-For most normal airport arrivals, the bus is not merely the cheapest compromise. It is a genuinely practical way to reach Limerick.
+For a typical airport arrival, the bus is not merely the cheapest compromise. It is a useful way to reach Limerick.
 
 The fact that it operates through the night makes that recommendation stronger.
 
@@ -290,11 +280,11 @@ Do not depend on this without checking current Bus Éireann payment information.
 
 ### Do I need to reserve Route 343 before landing?
 
-For a normal journey, you can board and pay for the service without building the trip around a reserved seat. On the firsthand journey, the traveller simply arrived, boarded and paid cash.
+For a normal journey, you can board and pay for the service without building the trip around a reserved seat. On the nighttime trip described here, boarding required no reservation and the fare was paid in cash.
 
 ### Is there room for luggage on the bus?
 
-The vehicle used on the firsthand journey had dedicated luggage space. Vehicle layout can vary, so passengers with unusually large amounts of luggage should check current accessibility or luggage information if it matters to the trip.
+The bus on that trip had dedicated luggage space. Vehicle layout can vary, so passengers with unusually large amounts of luggage should check current accessibility or luggage information if it matters to the trip.
 
 ### Where should I get off in Limerick?
 
@@ -302,7 +292,7 @@ It depends on where you are staying. A central stop may be more convenient than 
 
 ### Is the bus safe for a nighttime arrival?
 
-During the firsthand nighttime journey, the airport stop and bus felt safe and comfortable. That is an individual experience, not a guarantee of conditions at every time. Route 343's 24-hour operation nevertheless makes it a practical option for late arrivals.
+On the nighttime trip described here, the airport stop and bus felt safe and comfortable. Conditions can vary, but Route 343's 24-hour operation makes it a useful option for late arrivals.
 
 ### Is taxi better than the bus?
 
