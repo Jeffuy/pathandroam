@@ -22,6 +22,7 @@ affiliateKeys: []
 relatedSlugs:
   - ireland
   - planning-template
+  - limerick-without-a-car
 sources: []
 ---
 

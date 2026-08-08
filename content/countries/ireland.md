@@ -21,6 +21,7 @@ affiliateDisclosure: false
 affiliateKeys: []
 relatedSlugs:
   - limerick
+  - limerick-without-a-car
 sources: []
 ---
 

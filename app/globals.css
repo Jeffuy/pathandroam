@@ -995,6 +995,30 @@ summary {
   font-style: italic;
 }
 
+.markdown-content__segment > :first-child {
+  margin-top: 0;
+}
+
+.markdown-content__segment > * + * {
+  margin-top: 1.3rem;
+}
+
+.article-inline-image {
+  position: relative;
+  margin: clamp(2.5rem, 6vw, 4rem) 0;
+}
+
+.article-inline-image__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--cream);
+}
+
+.article-inline-image__media img {
+  object-fit: cover;
+}
+
 .content-copy .markdown-content {
   color: var(--muted);
   font-family: var(--serif);

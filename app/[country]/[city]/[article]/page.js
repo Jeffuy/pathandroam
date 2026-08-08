@@ -73,7 +73,10 @@ export default async function ArticlePage({ params }) {
     monetizationSlots: [],
     practicalInfo: [
       { label: "Publication status", value: entry.draft ? "Draft and noindex" : "Published" },
-      { label: "Fact checking", value: "Required before publication" },
+      {
+        label: "Fact checking",
+        value: entry.draft ? "Required before publication" : "Reviewed before publication",
+      },
       { label: "Affiliate links", value: entry.affiliateKeys.length ? "Configured" : "Disabled" },
     ],
     sources: entry.sources,
