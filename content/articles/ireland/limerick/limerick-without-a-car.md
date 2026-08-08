@@ -27,15 +27,25 @@ relatedSlugs:
   - limerick
 sources:
   - label: "King John's Castle official visitor information"
+    url: https://kingjohnscastle.ie/visitor-information/
   - label: "King John's Castle tickets"
+    url: https://kingjohnscastle.ie/tickets/
   - label: NTA / Bus Éireann Route 343 information
+    url: https://www.transportforireland.ie/news/nta-and-bus-eireann-announce-significantly-enhanced-routes-on-limerick-shannon-ennis-corridor/
   - label: Transport for Ireland payment / fares information
+    url: https://www.transportforireland.ie/support/bus-eireann-conditions-of-carriage/
   - label: Milk Market Limerick official information
+    url: https://www.milkmarketlimerick.ie/
   - label: Limerick.ie walking routes information
+    url: https://www.limerick.ie/discover/eat-see-do/sports-recreation/activities/walking
   - label: Limerick.ie University of Limerick / riverside information
+    url: https://www.limerick.ie/discover/explore/recommended-trips/enjoy-river-shannon-limerick/walking-and-running-routes-along
   - label: "Dolan's traditional music page"
+    url: https://www.dolans.ie/pub-limerick
   - label: The Locke official information page
+    url: https://lockebar.com/about.html
   - label: Limerick.ie JJ Bowles page
+    url: https://www.limerick.ie/discover/eat-see-do/dining-nightlife/pubs/jj-bowles
 ---
 
 Limerick is one of the easier Irish cities to visit without renting a car.
