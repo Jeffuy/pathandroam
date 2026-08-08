@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 import { siteConfig } from "../lib/site-config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -8,6 +9,16 @@ import {
   organizationStructuredData,
   websiteStructuredData,
 } from "../lib/structured-data.js";
+
+const travelpayoutsDriveScript = `
+  (function () {
+      var script = document.createElement("script");
+      script.async = 1;
+      script.setAttribute("data-cmp-ab","2");
+      script.src = 'https://emrld.ltd/NTU5ODY5.js?t=559869';
+      document.head.appendChild(script);
+  })();
+`;
 
 export const metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -37,6 +48,18 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Script
+          id="travelpayouts-drive"
+          strategy="afterInteractive"
+          nowprocket=""
+          data-noptimize="1"
+          data-cfasync="false"
+          data-wpfc-render="false"
+          seraph-accel-crit="1"
+          data-no-defer="1"
+          data-cmp-ab="2"
+          dangerouslySetInnerHTML={{ __html: travelpayoutsDriveScript }}
+        />
       </body>
     </html>
   );
