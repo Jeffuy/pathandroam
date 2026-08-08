@@ -74,7 +74,7 @@ For most travellers, the choices are straightforward.
 | Taxi | Travellers in a hurry or carrying a lot of luggage | Direct door-to-door journey | Considerably more expensive than the bus |
 | Private transfer | Travellers who want a pre-arranged pickup | Convenience and a planned door-to-door service | Usually the most expensive option |
 
-For a normal arrival with manageable luggage and accommodation in or near central Limerick, Route 343 is the option I would consider first from an editorial point of view.
+For most travellers staying in or near central Limerick, Route 343 is the best option to check first.
 
 ## Bus 343 is the best option for most travellers
 
@@ -108,7 +108,7 @@ That matters after a flight. You should not need to navigate to another terminal
 
 For the normal Route 343 journey, arriving and paying for the trip can be simple.
 
-On the firsthand journey used for this guide, the traveller arrived at the stop, boarded the bus without a reservation and paid the driver in cash.
+On the firsthand journey, the traveller arrived at the stop, boarded the bus without a reservation and paid the driver in cash.
 
 There was no complicated ticket collection process.
 
@@ -142,11 +142,9 @@ On the bus used for the firsthand trip, there were screens showing the upcoming 
 
 The passenger information appeared in both English and Irish.
 
-There were also USB ports for charging a phone.
+There were also USB charging ports on the vehicle used for the firsthand journey.
 
-That is particularly useful after a flight because keeping a phone charged matters if you are using Google Maps, booking accommodation transport or following your route through Limerick.
-
-The traveller does not remember whether Wi-Fi was available, so this guide does not assume that it is.
+Wi-Fi availability can vary, so do not rely on it. The charging ports were useful for keeping a phone available for Google Maps and live transport information.
 
 ## How do you know where to get off?
 
@@ -176,11 +174,7 @@ There is no reason to panic and stand beside the door long before your stop.
 
 On the firsthand journey, the traveller pressed the stop button while still seated and waited until the bus had actually stopped before getting up.
 
-The driver gave passengers time to get off before continuing.
-
-Treat that as an observation from this particular journey rather than a formal operating guarantee.
-
-The useful lesson is simply to watch the onboard information or Google Maps, signal for the stop in good time and avoid trying to balance beside the exit unnecessarily while the bus is moving.
+On this journey, the driver allowed passengers time to get off before continuing. Signal your stop in good time and wait until the bus has stopped before standing if it is safe to do so.
 
 ## Is the 343 practical if you arrive at night?
 
@@ -188,7 +182,7 @@ Yes, and this is one of the route's biggest advantages.
 
 Route 343 operates through the night, although frequency is lower than during the busiest daytime periods.
 
-The firsthand arrival used for this guide took place at night.
+The firsthand arrival took place at night.
 
 The bus stop outside Shannon Airport felt safe, comfortable and straightforward to use. The wait happened to be short and the bus itself was almost empty.
 
@@ -198,7 +192,7 @@ The more important point is that a late arrival does not automatically force you
 
 Check TFI Live after landing, confirm the next departure and decide from there.
 
-For someone staying centrally in Limerick, arriving by bus and then walking to accommodation can also be practical. That is what happened on the firsthand journey used for this guide.
+For someone staying centrally in Limerick, arriving by bus and then walking to accommodation can also be practical. That is what happened on the firsthand journey.
 
 ## How reliable is the Shannon Airport to Limerick bus?
 
@@ -234,9 +228,7 @@ The final price depends on the journey, traffic, time of travel and applicable e
 
 Pre-booking can also add an official booking fee.
 
-For that reason, this article should not pretend that there is one guaranteed Shannon Airport to Limerick taxi price.
-
-Use the current TFI Taxi Fare Estimator when you want an approximate figure.
+There is no single guaranteed taxi price from Shannon Airport to Limerick. Use the current TFI Taxi Fare Estimator for an approximate cost.
 
 ## Private transfer from Shannon Airport to Limerick
 
@@ -298,7 +290,7 @@ Do not depend on this without checking current Bus Éireann payment information.
 
 ### Do I need to reserve Route 343 before landing?
 
-For a normal journey, you can board and pay for the service without building the trip around a reserved seat. The firsthand traveller used for this guide simply arrived, boarded and paid cash.
+For a normal journey, you can board and pay for the service without building the trip around a reserved seat. On the firsthand journey, the traveller simply arrived, boarded and paid cash.
 
 ### Is there room for luggage on the bus?
 
@@ -310,7 +302,7 @@ It depends on where you are staying. A central stop may be more convenient than 
 
 ### Is the bus safe for a nighttime arrival?
 
-The nighttime airport stop and bus felt safe and comfortable during the firsthand journey used for this guide. That is an individual experience, not a guarantee of conditions at every time. Route 343's 24-hour operation nevertheless makes it a practical option for late arrivals.
+During the firsthand nighttime journey, the airport stop and bus felt safe and comfortable. That is an individual experience, not a guarantee of conditions at every time. Route 343's 24-hour operation nevertheless makes it a practical option for late arrivals.
 
 ### Is taxi better than the bus?
 
