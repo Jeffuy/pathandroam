@@ -28,6 +28,7 @@ relatedSlugs:
   - ireland
   - limerick-without-a-car
   - one-day-itinerary
+  - shannon-airport-to-limerick
 sources:
   - label: Limerick.ie official walking and tourism information
     url: https://www.limerick.ie/discover/eat-see-do/sports-recreation/activities/walking
@@ -93,7 +94,7 @@ Central Limerick is very walkable. For most visitors, walking is the simplest wa
 
 Buses are more useful for places farther from the centre, including the University of Limerick and Castletroy. Colbert Station is centrally located and brings the main bus and rail services together in one practical arrival point.
 
-Shannon Airport is connected to Limerick by public transport. Route 343 links the airport with the city and Colbert Station. Check current departures before travel rather than relying on an older timetable.
+Shannon Airport is connected to Limerick by public transport. Route 343 links the airport with the city and Colbert Station. For step-by-step bus, taxi and transfer planning, see our [Shannon Airport to Limerick guide](/ireland/limerick/shannon-airport-to-limerick/).
 
 Some local services become limited later in the evening. A taxi is often the simplest option after late music or dinner when a useful bus is no longer running. More detail is available in the [complete guide to visiting Limerick without a car](/ireland/limerick/limerick-without-a-car/).
 
@@ -123,7 +124,7 @@ These trips require different levels of planning. Some have direct or organised 
 
 ## Limerick travel guides
 
-Use [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/) for airport transport, walking and local buses. For a chronological sightseeing route through the centre, follow [One Day in Limerick: The Perfect Walking Itinerary](/ireland/limerick/one-day-itinerary/).
+Use [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/) for walking, local buses and broad car-free planning. For a chronological sightseeing route through the centre, follow [One Day in Limerick: The Perfect Walking Itinerary](/ireland/limerick/one-day-itinerary/). For a focused comparison of the airport bus, taxi and private transfer, read [Shannon Airport to Limerick: Bus, Taxi and Transfer Options](/ireland/limerick/shannon-airport-to-limerick/).
 
 ## Frequently asked questions
 

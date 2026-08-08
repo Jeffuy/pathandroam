@@ -60,6 +60,36 @@ const editorialImages = {
     illustrative: true,
     label: "Illustrative traditional Irish music session",
   },
+  "/images/limerick/shannon-airport-to-limerick/shannon-airport.webp": {
+    alt: "Exterior of Shannon Airport in County Clare, Ireland",
+    credit: {
+      author: "瑞丽江的河水",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Shannon_Airport_2020-07-12_01.jpg",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/limerick/shannon-airport-to-limerick/limerick-colbert-station.webp": {
+    alt: "Limerick Colbert Station in Limerick, Ireland",
+    credit: {
+      author: "Sharon Hahn Darlin",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Limerick_Colbert_Train_Station.jpg",
+      license: "CC BY 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by/2.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/limerick/shannon-airport-to-limerick/airport-bus-luggage-illustration.webp": {
+    alt: "Generic editorial illustration of airport bus travel with luggage",
+    illustrative: true,
+    label: "Illustrative airport bus travel with luggage",
+  },
+  "/images/limerick/shannon-airport-to-limerick/private-transfer-luggage-illustration.webp": {
+    alt: "Generic editorial illustration of a private airport transfer with luggage",
+    illustrative: true,
+    label: "Illustrative private airport transfer with luggage",
+  },
 };
 
 export function getEditorialImage(src) {

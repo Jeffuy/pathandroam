@@ -45,6 +45,7 @@ relatedSlugs:
   - ireland
   - limerick
   - one-day-itinerary
+  - shannon-airport-to-limerick
 sources:
   - label: "King John's Castle official visitor information"
     url: https://kingjohnscastle.ie/visitor-information/
@@ -91,6 +92,8 @@ For destinations outside the centre, including the University of Limerick and Pl
 ## Getting from Shannon Airport to Limerick without a car
 
 Shannon Airport is the main airport for Limerick and reaching the city without a rental car is straightforward.
+
+For detailed stop, ticket, luggage and nighttime-arrival advice, see our [Shannon Airport to Limerick guide](/ireland/limerick/shannon-airport-to-limerick/).
 
 Bus Éireann Route 343 connects Shannon Airport with Limerick and Colbert Station. The service operates 24 hours a day, seven days a week, with buses running as frequently as every 20 minutes during weekday peak periods and every 30 minutes at many other times. Overnight services continue at a lower frequency.
 
