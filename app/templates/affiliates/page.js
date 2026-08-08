@@ -7,8 +7,6 @@ import HotelCTA from "../../../components/affiliate/HotelCTA";
 import InsuranceCTA from "../../../components/affiliate/InsuranceCTA";
 import TourCard from "../../../components/affiliate/TourCard";
 
-export const metadata = { title: "Disabled Affiliate Examples" };
-
 const examples = [
   ["AffiliateButton", <AffiliateButton affiliateKey="viator" key="button" />],
   ["AffiliateCard", <AffiliateCard affiliateKey="getyourguide" key="card" />],

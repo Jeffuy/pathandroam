@@ -22,15 +22,8 @@ export default function ContactPage() {
             <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
           </p>
         ) : (
-          <p>Contact email will be published here once it has been configured.</p>
+          <p>Email contact is not currently available.</p>
         )}
-      </section>
-      <section>
-        <h2>Contact form</h2>
-        <p>
-          There is no contact form or backend form service at this stage. Please do not
-          send sensitive personal information.
-        </p>
       </section>
     </EditorialPage>
   );

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Breadcrumbs from "../Breadcrumbs";
 import RelatedArticles from "../RelatedArticles";
 
-export default function AuthorPageLayout({ author, preview = false }) {
+export default function AuthorPageLayout({ author }) {
   const relatedArticles = author.relatedArticles || [];
 
   return (
@@ -11,12 +11,9 @@ export default function AuthorPageLayout({ author, preview = false }) {
       <header className="author-template__header">
         <span className="author-template__monogram" aria-hidden="true">{author.initials}</span>
         <div>
-          <p className="eyebrow">
-            {preview ? "Author page - Draft preview" : "Editorial identity"}
-          </p>
+          <p className="eyebrow">Editorial identity</p>
           <h1>{author.name}</h1>
           <p className="author-template__role">{author.role}</p>
-          {preview ? <span className="draft-pill">Draft - Noindex</span> : null}
         </div>
       </header>
       <div className="author-template__body">

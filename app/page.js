@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ArticleCard from "../components/ArticleCard";
 import CompactArticleCard from "../components/CompactArticleCard";
 import DestinationCard from "../components/DestinationCard";
@@ -22,7 +23,7 @@ const destinationImages = [
 ];
 
 const destinations = [
-  { name: "Ireland", image: destinationImages[0], active: true, href: "#guides" },
+  { name: "Ireland", image: destinationImages[0], active: true, href: "/ireland/" },
   { name: "Italy", image: destinationImages[1] },
   { name: "Portugal", image: destinationImages[1] },
   { name: "Scotland", image: destinationImages[0] },
@@ -52,18 +53,21 @@ const inspiration = [
 const latest = [
   {
     label: "Ireland",
-    title: "A calm framework for an Ireland itinerary",
-    description: "A research-led planning guide is being prepared.",
+    title: "Ireland Travel Guide",
+    description: "Practical city guides, transport advice and clear itineraries.",
+    href: "/ireland/",
   },
   {
-    label: "Trip planning",
-    title: "How to choose what belongs in a trip",
-    description: "An editorial note on priorities, pacing and possibility.",
+    label: "Limerick",
+    title: "Limerick Travel Guide",
+    description: "Plan the city, transport, attractions and day trips.",
+    href: "/ireland/limerick/",
   },
   {
     label: "Car-free travel",
-    title: "Planning a journey around the connections",
-    description: "A practical approach to building a route without a car.",
+    title: "Limerick Without a Car: Complete Visitor Guide",
+    description: "Walking, buses, airport connections and a practical city itinerary.",
+    href: "/ireland/limerick/limerick-without-a-car/",
   },
 ];
 
@@ -79,8 +83,8 @@ export default function Home() {
             <h2 id="destinations-title">Featured destinations</h2>
           </div>
           <p>
-            Start with a place, then make the journey yours. Ireland is our
-            first destination; more are on the way.
+            Start with a place, then make the journey yours. Explore practical
+            guidance for Ireland.
           </p>
         </div>
         <div className="destination-grid">
@@ -122,12 +126,13 @@ export default function Home() {
         </div>
         <FeaturedArticleCard
           article={{
-            label: "Starting with Ireland",
-            title: "Ireland, one thoughtful trip at a time",
+            label: "Limerick",
+            title: "Limerick Without a Car: Complete Visitor Guide",
             description:
-              "Research-led destination notes, itinerary frameworks and planning tools are taking shape.",
-            image: "/images/destinations/ireland-coast-placeholder.webp",
-            imageAlt: "Illustrative green landscape on Ireland's Atlantic coast",
+              "Plan a car-free visit with practical guidance for walking, local buses and Shannon Airport connections.",
+            image: "/images/articles/limerick-without-a-car/hero.webp",
+            imageAlt: "Illustrative riverside city scene with historic stone buildings and a pedestrian walkway",
+            href: "/ireland/limerick/limerick-without-a-car/",
           }}
         />
       </section>
@@ -149,7 +154,9 @@ export default function Home() {
             Clear guidance for connecting places by train, bus, ferry and foot—without
             treating the route as time lost between stops.
           </p>
-          <span className="draft-note">Practical guides in development</span>
+          <Link className="text-link" href="/ireland/limerick/limerick-without-a-car/">
+            Read the Limerick guide <span aria-hidden="true">&rarr;</span>
+          </Link>
         </div>
       </section>
 
@@ -187,7 +194,7 @@ export default function Home() {
       <section className="section page-width" aria-labelledby="latest-title">
         <div className="section-heading section-heading--single">
           <div>
-            <p className="eyebrow">On the desk</p>
+            <p className="eyebrow">Recently published</p>
             <h2 id="latest-title">Latest guides</h2>
           </div>
         </div>

@@ -6,13 +6,9 @@ export default function NewsletterPlaceholder() {
         <div>
           <h2 id="newsletter-title">A thoughtful trip starts here.</h2>
           <p>
-            Occasional planning notes, new destinations and practical ideas.
-            The Path &amp; Roam newsletter is coming soon.
+            Occasional planning notes, destination guides and practical ideas
+            from Path &amp; Roam.
           </p>
-        </div>
-        <div className="newsletter__placeholder" aria-label="Newsletter signup coming soon">
-          <span>Email newsletter</span>
-          <strong>Coming soon</strong>
         </div>
       </div>
     </section>

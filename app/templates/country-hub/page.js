@@ -11,8 +11,6 @@ const country = {
   relatedArticles: relatedTemplatePreviews.slice(1),
 };
 
-export const metadata = { title: "Country Hub Template" };
-
 export default function CountryHubPreviewPage() {
   return (
     <CountryHubLayout country={country}>

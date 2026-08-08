@@ -19,10 +19,10 @@ export default function ArticleLayout({ article, children }) {
       <article>
         <header className="article-header page-width">
           <Breadcrumbs items={article.breadcrumbs} />
-          <p className="eyebrow">{article.category} · {article.destination}{article.draft ? " · Draft preview" : ""}</p>
+          <p className="eyebrow">{article.category} · {article.destination}</p>
           <h1>{article.title}</h1>
           <p className="article-header__subtitle">{article.subtitle}</p>
-          <AuthorInline author={article.author} publishedAt={article.publishedAt} updatedAt={article.updatedAt} draft={article.draft} />
+          <AuthorInline author={article.author} publishedAt={article.publishedAt} updatedAt={article.updatedAt} />
         </header>
 
         <div className="article-hero page-width">
@@ -62,16 +62,16 @@ export default function ArticleLayout({ article, children }) {
             )}
             {article.monetizationSlots?.map((slot) => (
               <aside className="monetization-slot" key={slot.title}>
-                <p className="story-label">Contextual recommendation slot</p>
                 <h2>{slot.title}</h2>
                 <p>{slot.description}</p>
-                <span>Disabled in template preview</span>
               </aside>
             ))}
-            <PracticalInfoBlock
-              items={article.practicalInfo}
-              titleId="practical-information-title"
-            />
+            {article.practicalInfo?.length > 0 && (
+              <PracticalInfoBlock
+                items={article.practicalInfo}
+                titleId="practical-information-title"
+              />
+            )}
             <SourcesList sources={article.sources} />
           </div>
         </div>

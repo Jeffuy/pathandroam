@@ -4,7 +4,7 @@ import { createPageMetadata } from "../../lib/seo.js";
 
 export const metadata = createPageMetadata({
   title: "Terms of Use",
-  description: "Starter terms of use for Path & Roam.",
+  description: "Terms of use for Path & Roam.",
   pathname: "/terms",
   noindex: true,
 });
@@ -14,13 +14,7 @@ export default function TermsPage() {
     <EditorialPage
       eyebrow="Legal"
       title="Terms of use"
-      intro="These starter terms outline the intended use of Path & Roam."
-      notice={
-        <>
-          <strong>Owner/legal review required:</strong> confirm ownership, permitted use,
-          liability language, governing law, dispute terms and effective date before launch.
-        </>
-      }
+      intro="These terms outline the intended use of Path & Roam."
     >
       <section>
         <h2>Editorial information</h2>
@@ -41,15 +35,13 @@ export default function TermsPage() {
         <h2>Use of content</h2>
         <p>
           Site text, design and original materials may not be republished or commercially
-          reused without permission, except where applicable law allows it. Final ownership
-          and licensing language requires review.
+          reused without permission, except where applicable law allows it.
         </p>
       </section>
       <section>
         <h2>Changes</h2>
         <p>
-          These terms may be updated when the site or applicable requirements change. An
-          effective date and contact route must be added after owner/legal review.
+          These terms may be updated when the site or applicable requirements change.
         </p>
       </section>
     </EditorialPage>

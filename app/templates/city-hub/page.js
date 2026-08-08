@@ -16,8 +16,6 @@ const city = {
   relatedArticles: [relatedTemplatePreviews[0], relatedTemplatePreviews[2]],
 };
 
-export const metadata = { title: "City Hub Template" };
-
 export default function CityHubPreviewPage() {
   return (
     <CityHubLayout city={city}>

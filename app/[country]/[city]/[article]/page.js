@@ -21,7 +21,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { country, city, article } = await params;
-  return getContentMetadata(await getArticle(country, city, article));
+  const entry = await getArticle(country, city, article);
+  return entry && !entry.draft ? getContentMetadata(entry) : {};
 }
 
 function formatDate(value) {
@@ -40,7 +41,7 @@ function formatDate(value) {
 export default async function ArticlePage({ params }) {
   const { country, city, article } = await params;
   const entry = await getArticle(country, city, article);
-  if (!entry) notFound();
+  if (!entry || entry.draft) notFound();
 
   const author = getAuthor(entry.author);
   if (!author) notFound();
@@ -53,7 +54,6 @@ export default async function ArticlePage({ params }) {
     author,
     publishedAt: formatDate(entry.publishedAt),
     updatedAt: entry.updatedAt !== entry.publishedAt ? formatDate(entry.updatedAt) : null,
-    draft: entry.draft,
     heroImage: entry.heroImage,
     heroAlt: entry.heroAlt,
     breadcrumbs: [
@@ -64,21 +64,10 @@ export default async function ArticlePage({ params }) {
     ],
     affiliateDisclosure: entry.affiliateDisclosure,
     affiliateKeys: entry.affiliateKeys,
-    practicalSummary: [
-      { label: "Status", value: entry.draft ? "Draft" : "Published" },
-      { label: "Region", value: entry.region || "Not specified" },
-      { label: "Indexing", value: entry.noindex ? "Noindex" : "Indexable" },
-    ],
+    practicalSummary: null,
     tableOfContents: entry.tableOfContents,
     monetizationSlots: [],
-    practicalInfo: [
-      { label: "Publication status", value: entry.draft ? "Draft and noindex" : "Published" },
-      {
-        label: "Fact checking",
-        value: entry.draft ? "Required before publication" : "Reviewed before publication",
-      },
-      { label: "Affiliate links", value: entry.affiliateKeys.length ? "Configured" : "Disabled" },
-    ],
+    practicalInfo: [],
     sources: entry.sources,
     relatedArticles: related.map((item) => ({
       label: item.contentType === "country" ? "Country guide" : item.contentType === "city" ? "City guide" : "Article",

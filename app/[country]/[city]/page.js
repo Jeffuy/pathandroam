@@ -32,17 +32,13 @@ export default async function CityPage({ params }) {
     introduction: entry.description,
     heroImage: entry.heroImage,
     heroAlt: entry.heroAlt,
-    draft: entry.draft,
-    noindex: entry.noindex,
     breadcrumbs: [
       { label: "Home", href: "/" },
       { label: entry.country, href: `/${country}` },
       { label: entry.city },
     ],
     practicalInfo: [
-      { label: "Content status", value: entry.draft ? "Draft" : "Published" },
       { label: "Region", value: entry.region || "Not specified" },
-      { label: "Indexing", value: entry.noindex ? "Noindex" : "Indexable" },
     ],
     relatedArticles: related.map((item) => ({
       label: item.contentType === "country" ? "Country guide" : "Article",

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FeaturedArticleCard({ article }) {
   return (
@@ -16,7 +17,11 @@ export default function FeaturedArticleCard({ article }) {
         <p className="story-label">{article.label}</p>
         <h3>{article.title}</h3>
         <p>{article.description}</p>
-        <span className="draft-note">Guide in development</span>
+        {article.href && (
+          <Link className="text-link" href={article.href}>
+            Read guide <span aria-hidden="true">&rarr;</span>
+          </Link>
+        )}
       </div>
     </article>
   );

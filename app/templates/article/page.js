@@ -40,8 +40,6 @@ const article = {
   relatedArticles: relatedTemplatePreviews.slice(0, 2),
 };
 
-export const metadata = { title: "Article Template" };
-
 export default function ArticleTemplatePreviewPage() {
   return (
     <ArticleLayout article={article}>

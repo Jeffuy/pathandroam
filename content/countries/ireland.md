@@ -1,7 +1,7 @@
 ---
-title: Ireland Travel Guide — Draft
+title: Ireland Travel Guide
 slug: ireland
-description: Draft country hub used to verify the Path & Roam repository content system.
+description: Plan a trip to Ireland with practical city guides, transport advice and clear itineraries.
 country: Ireland
 city:
 region: Europe
@@ -13,7 +13,7 @@ publishedAt: 2026-08-07
 updatedAt: 2026-08-07
 author: mara-vale
 heroImage: /images/destinations/ireland-coast-placeholder.webp
-heroAlt: Illustrative green coastal landscape used for the Ireland draft hub
+heroAlt: Illustrative green coastal landscape with a winding road
 featured: true
 draft: true
 noindex: true
@@ -25,10 +25,10 @@ relatedSlugs:
 sources: []
 ---
 
-## How this hub will work
+## Ireland travel guides
 
-This draft page verifies the structure for a country introduction, planning context and links to future city and article content. It does not contain publishable travel advice.
+Start with the [Limerick Travel Guide](/ireland/limerick/) for practical city planning, transport information and links to published Limerick articles.
 
-## Editorial status
+## Travel without a car
 
-Destination research, transport details and practical recommendations will be added only after verification.
+Read [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/) for walking, bus and airport planning.

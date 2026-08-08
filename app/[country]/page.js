@@ -31,8 +31,6 @@ export default async function CountryPage({ params }) {
     introduction: entry.description,
     heroImage: entry.heroImage,
     heroAlt: entry.heroAlt,
-    draft: entry.draft,
-    noindex: entry.noindex,
     breadcrumbs: [{ label: "Home", href: "/" }, { label: entry.country }],
     relatedArticles: related.map((item) => ({
       label: item.contentType === "city" ? "City guide" : "Article",
@@ -50,7 +48,7 @@ export default async function CountryPage({ params }) {
         ])}
       />
       <CountryHubLayout country={country}>
-        <section className="template-copy content-copy" aria-label={`${entry.country} draft content`}>
+        <section className="template-copy content-copy" aria-label={`${entry.country} guide content`}>
           <MarkdownContent html={entry.html} />
         </section>
       </CountryHubLayout>

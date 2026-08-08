@@ -15,7 +15,7 @@ export default function RelatedArticles({ articles }) {
             <span>{String(index + 1).padStart(2, "0")}</span>
             <p>{article.label}</p>
             <h3>{article.title}</h3>
-            {article.href && <Link href={article.href}>View template <span aria-hidden="true">→</span></Link>}
+            {article.href && <Link href={article.href}>Read guide <span aria-hidden="true">→</span></Link>}
           </article>
         ))}
       </div>

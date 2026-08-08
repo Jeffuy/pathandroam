@@ -1,6 +1,6 @@
+import { notFound } from "next/navigation";
+
 export const metadata = {
-  title: "Template Preview",
-  description: "Draft layout preview for Path & Roam.",
   robots: {
     index: false,
     follow: false,
@@ -9,5 +9,6 @@ export const metadata = {
 };
 
 export default function TemplatesLayout({ children }) {
+  if (process.env.NODE_ENV !== "development") notFound();
   return children;
 }

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CompactArticleCard({ article, number }) {
   return (
     <article className="compact-article">
@@ -6,10 +8,11 @@ export default function CompactArticleCard({ article, number }) {
       </span>
       <div>
         <p className="story-label">{article.label}</p>
-        <h3>{article.title}</h3>
+        <h3>
+          {article.href ? <Link href={article.href}>{article.title}</Link> : article.title}
+        </h3>
         <p>{article.description}</p>
       </div>
-      <span className="draft-note">In development</span>
     </article>
   );
 }

@@ -3,7 +3,7 @@ import { createPageMetadata } from "../../lib/seo.js";
 
 export const metadata = createPageMetadata({
   title: "Privacy Policy",
-  description: "Starter privacy information for Path & Roam.",
+  description: "Privacy information for Path & Roam.",
   pathname: "/privacy",
   noindex: true,
 });
@@ -13,13 +13,7 @@ export default function PrivacyPage() {
     <EditorialPage
       eyebrow="Legal"
       title="Privacy policy"
-      intro="This starter notice describes the main ways information may be handled on Path & Roam."
-      notice={
-        <>
-          <strong>Owner/legal review required:</strong> confirm the data inventory,
-          service providers, user rights, jurisdiction and effective date before launch.
-        </>
-      }
+      intro="This notice describes the main ways information may be handled on Path & Roam."
     >
       <section>
         <h2>Information you provide</h2>
@@ -33,15 +27,14 @@ export default function PrivacyPage() {
         <h2>Technical information</h2>
         <p>
           Hosting, analytics or affiliate technology may process standard technical data,
-          such as device, browser, referral and interaction information. The final policy
-          must identify the services actually in use.
+          such as device, browser, referral and interaction information.
         </p>
       </section>
       <section>
         <h2>Your choices</h2>
         <p>
-          Available privacy rights and request procedures depend on applicable law. These
-          details, retention periods and a privacy contact must be added after review.
+          Available privacy rights and request procedures depend on applicable law and
+          the visitor&apos;s location.
         </p>
       </section>
     </EditorialPage>

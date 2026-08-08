@@ -16,7 +16,7 @@ publishedAt: 2026-08-08
 updatedAt: 2026-08-08
 author: mara-vale
 heroImage: /images/articles/limerick-without-a-car/hero.webp
-heroAlt: Limerick city and the River Shannon viewed from the historic centre
+heroAlt: Illustrative riverside city scene with historic stone buildings and a pedestrian walkway
 featured: true
 draft: false
 noindex: false
@@ -88,8 +88,6 @@ It also makes more sense than repeatedly waiting for buses when several attracti
 
 A useful first walk is along the River Shannon and through the Medieval Quarter. The river is not simply a boundary around the city. It is one of the defining parts of Limerick and gives you some of the best views of its historic buildings.
 
-![Riverside promenade along the River Shannon in central Limerick](/images/articles/limerick-without-a-car/shannon-river.webp)
-
 There are several official walking routes around the city, including riverside trails and the Three Bridges area.
 
 Wear comfortable shoes and keep one thing in mind: the weather can change quickly.
@@ -99,8 +97,6 @@ A morning that looks dry does not guarantee a dry afternoon. Check the forecast 
 ## King John's Castle is the main historical stop
 
 If you only pay for one historical attraction in Limerick, King John’s Castle is the strongest candidate.
-
-![Exterior view of King John's Castle beside the River Shannon in Limerick](/images/articles/limerick-without-a-car/king-johns-castle.webp)
 
 The castle stands on King’s Island beside the Shannon and covers more than 800 years of local history. The visitor experience combines the surviving castle with exhibitions, multimedia displays, reconstructed spaces and views across Limerick.
 
@@ -130,8 +126,6 @@ If your trip includes a Saturday, visiting the Milk Market in the morning before
 
 Limerick is worth experiencing after the museums and attractions close.
 
-![Traditional live music session inside a pub in Limerick](/images/articles/limerick-without-a-car/traditional-pub.webp)
-
 Dolan’s is particularly good for travellers interested in traditional Irish music rather than simply looking for somewhere to drink.
 
 It is a traditional pub and live music venue on Dock Road. Its current schedule lists free traditional Irish music sessions at 21:00 from Wednesday through Sunday.
@@ -151,8 +145,6 @@ For a quieter side of Limerick, head toward the University of Limerick.
 The university is around 4 km outside the city centre and occupies a large parkland campus beside the River Shannon.
 
 The riverside area commonly called UL Beach is also referred to as Plassey Beach. It is less a conventional tourist attraction and more a place to escape the movement of the centre, sit beside the river and enjoy the surrounding landscape.
-
-![Plassey Beach and riverside scenery near the University of Limerick](/images/articles/limerick-without-a-car/plassey-beach.webp)
 
 On a good-weather day, it can be one of the more relaxing places to spend part of a morning.
 
