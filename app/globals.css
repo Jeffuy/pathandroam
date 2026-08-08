@@ -336,6 +336,22 @@ summary {
   text-transform: uppercase;
 }
 
+.image-credit {
+  max-width: calc(100% - 1.3rem);
+  padding: 0.25rem 0.4rem;
+  background: rgba(18, 28, 23, 0.7);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.35;
+  text-transform: none;
+}
+
+.image-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .section {
   padding-block: clamp(4.5rem, 9vw, 8rem);
 }

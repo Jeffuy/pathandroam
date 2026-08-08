@@ -16,8 +16,9 @@ secondaryKeywords:
 publishedAt: 2026-08-08
 updatedAt: 2026-08-08
 author: mara-vale
-heroImage: /images/articles/limerick-without-a-car/hero.webp
-heroAlt: Illustrative riverside city scene with historic stone buildings and a pedestrian walkway
+heroImage: /images/limerick/river-shannon.webp
+heroAlt: River Shannon in Limerick, Ireland
+heroIllustrative: false
 featured: true
 draft: false
 noindex: false
@@ -57,13 +58,19 @@ That guide explains how to travel from Shannon Airport, when local buses are use
 
 King John's Castle is the main historical attraction in the city. The castle stands beside the River Shannon on King's Island, with exhibitions, reconstructed spaces and views across central Limerick. It is a natural anchor for a first visit to the Medieval Quarter.
 
+![King John's Castle beside the River Shannon in Limerick](/images/limerick/king-johns-castle.webp)
+
 ### River Shannon and riverside walks
 
 The Shannon shapes the centre of Limerick and provides several useful walking routes. A riverside walk can connect the historic quarter, city bridges and central streets while giving a clear sense of the city's layout. The Three Bridges area is one of the established options.
 
+![The River Shannon and Thomond Bridge in Limerick](/images/limerick/river-shannon.webp)
+
 ### The Milk Market
 
 The Milk Market is a central stop for local produce, prepared food and independent stalls. Weekend timing matters, particularly if the market is a priority, so check current opening information before arranging the rest of the day.
+
+![The Milk Market in central Limerick](/images/limerick/milk-market.webp)
 
 ### The Medieval Quarter
 
@@ -76,6 +83,8 @@ Limerick has several established pubs with traditional music. Dolan's, The Locke
 ### University of Limerick and the Plassey riverside
 
 The University of Limerick and the riverside around Plassey provide a quieter alternative to the historic centre. This area is optional on a short visit, but it can suit travellers who want parkland, a longer river walk or a slower morning outside the main sightseeing area.
+
+![The Living Bridge over the River Shannon at the University of Limerick](/images/limerick/university-of-limerick.webp)
 
 ## Getting around Limerick
 

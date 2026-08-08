@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { getEditorialImage } from "../data/editorial-images";
+import ImageCaption from "./ImageCaption";
 
 const localImagePattern = /<p><img src="(\/images\/[^"]+)" alt="([^"]*)"><\/p>\n?/g;
 
@@ -43,19 +45,23 @@ export default function MarkdownContent({ html, className = "" }) {
   return (
     <div className={`markdown-content ${className}`.trim()}>
       {blocks.map((block, index) =>
-        block.type === "image" ? (
-          <figure className="article-inline-image" key={`${block.src}-${index}`}>
-            <div className="article-inline-image__media">
-              <Image
-                src={block.src}
-                alt={block.alt}
-                fill
-                sizes="(min-width: 64rem) 42rem, (min-width: 40rem) calc(100vw - 8rem), calc(100vw - 2rem)"
-              />
-            </div>
-            <figcaption className="image-note">Illustrative image</figcaption>
-          </figure>
-        ) : (
+        block.type === "image" ? (() => {
+          const details = getEditorialImage(block.src);
+
+          return (
+            <figure className="article-inline-image" key={`${block.src}-${index}`}>
+              <div className="article-inline-image__media">
+                <Image
+                  src={block.src}
+                  alt={details?.alt || block.alt}
+                  fill
+                  sizes="(min-width: 64rem) 42rem, (min-width: 40rem) calc(100vw - 8rem), calc(100vw - 2rem)"
+                />
+              </div>
+              <ImageCaption as="figcaption" details={details} />
+            </figure>
+          );
+        })() : (
           <div
             className="markdown-content__segment"
             dangerouslySetInnerHTML={{ __html: block.value }}

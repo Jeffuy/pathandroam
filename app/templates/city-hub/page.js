@@ -7,6 +7,7 @@ const city = {
   introduction: "A draft city hub preview for testing hierarchy, imagery and practical planning modules before real editorial content is added.",
   heroImage: "/images/articles/coastal-town-placeholder.webp",
   heroAlt: "Illustrative stone street used as a city hub template placeholder",
+  heroIllustrative: true,
   breadcrumbs: [{ label: "Home", href: "/" }, { label: "Ireland", href: "/templates/country-hub" }, { label: "Limerick" }],
   practicalInfo: [
     { label: "Content status", value: "Draft template only" },

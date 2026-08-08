@@ -1,17 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getEditorialImage } from "../data/editorial-images";
+import ImageCaption from "./ImageCaption";
 
 export default function FeaturedArticleCard({ article }) {
+  const imageDetails = getEditorialImage(article.image);
+
   return (
     <article className="featured-article">
       <div className="featured-article__image">
         <Image
           src={article.image}
-          alt={article.imageAlt}
+          alt={imageDetails?.alt || article.imageAlt}
           fill
           sizes="(min-width: 900px) 56vw, 100vw"
         />
-        <span className="image-note">Illustrative image</span>
+        <ImageCaption details={imageDetails} illustrative={article.imageIllustrative} />
       </div>
       <div className="featured-article__body">
         <p className="story-label">{article.label}</p>

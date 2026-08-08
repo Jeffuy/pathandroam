@@ -130,8 +130,8 @@ export default function Home() {
             title: "Limerick Without a Car: Complete Visitor Guide",
             description:
               "Plan a car-free visit with practical guidance for walking, local buses and Shannon Airport connections.",
-            image: "/images/articles/limerick-without-a-car/hero.webp",
-            imageAlt: "Illustrative riverside city scene with historic stone buildings and a pedestrian walkway",
+            image: "/images/limerick/river-shannon.webp",
+            imageAlt: "The River Shannon and Thomond Bridge in Limerick",
             href: "/ireland/limerick/limerick-without-a-car/",
           }}
         />

@@ -32,6 +32,7 @@ export default async function CityPage({ params }) {
     introduction: entry.description,
     heroImage: entry.heroImage,
     heroAlt: entry.heroAlt,
+    heroIllustrative: entry.heroIllustrative,
     breadcrumbs: [
       { label: "Home", href: "/" },
       { label: entry.country, href: `/${country}` },

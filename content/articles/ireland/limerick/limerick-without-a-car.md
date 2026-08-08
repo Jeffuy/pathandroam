@@ -15,8 +15,9 @@ secondaryKeywords:
 publishedAt: 2026-08-08
 updatedAt: 2026-08-08
 author: mara-vale
-heroImage: /images/articles/limerick-without-a-car/hero.webp
-heroAlt: Illustrative riverside city scene with historic stone buildings and a pedestrian walkway
+heroImage: /images/limerick/river-shannon.webp
+heroAlt: River Shannon in Limerick, Ireland
+heroIllustrative: false
 featured: true
 draft: false
 noindex: false
@@ -82,6 +83,8 @@ A taxi or pre-booked transfer is more convenient if you have a lot of luggage, a
 
 ## Getting around Limerick on foot
 
+![The River Shannon and Thomond Bridge in Limerick](/images/limerick/river-shannon.webp)
+
 Walking is the easiest way to explore central Limerick.
 
 It also makes more sense than repeatedly waiting for buses when several attractions are relatively close to each other.
@@ -95,6 +98,8 @@ Wear comfortable shoes and keep one thing in mind: the weather can change quickl
 A morning that looks dry does not guarantee a dry afternoon. Check the forecast before leaving, but plan on the possibility that conditions will change while you are outside.
 
 ## King John's Castle is the main historical stop
+
+![King John's Castle beside the River Shannon in Limerick](/images/limerick/king-johns-castle.webp)
 
 If you only pay for one historical attraction in Limerick, King John’s Castle is the strongest candidate.
 
@@ -111,6 +116,8 @@ As of August 2026, an adult ticket is listed at €16.50. Student, senior, child
 The castle is especially worthwhile if medieval history interests you. Even visitors whose interest comes more from medieval fantasy, castles or series such as Game of Thrones may find the reconstructed spaces more engaging than a conventional museum.
 
 ## Visit the Milk Market at the right time
+
+![The Milk Market in central Limerick](/images/limerick/milk-market.webp)
 
 The Milk Market has operated in Limerick since 1852 and remains one of the city’s best-known places for local food and produce.
 
@@ -139,6 +146,8 @@ JJ Bowles offers a somewhat different experience. It is widely regarded as Limer
 If you want only one pub, choose according to what interests you most: Dolan’s for the music session, The Locke for a lively riverside evening with music and dancing, or JJ Bowles for an older traditional pub atmosphere.
 
 ## Plassey Beach and the UL riverside
+
+![The Living Bridge over the River Shannon at the University of Limerick](/images/limerick/university-of-limerick.webp)
 
 For a quieter side of Limerick, head toward the University of Limerick.
 

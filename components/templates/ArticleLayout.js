@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { getEditorialImage } from "../../data/editorial-images";
 import AuthorBox from "../AuthorBox";
 import AuthorInline from "../AuthorInline";
 import Breadcrumbs from "../Breadcrumbs";
+import ImageCaption from "../ImageCaption";
 import NewsletterPlaceholder from "../NewsletterPlaceholder";
 import PracticalInfoBlock from "../PracticalInfoBlock";
 import RelatedArticles from "../RelatedArticles";
@@ -13,6 +15,7 @@ import { getEnabledAffiliates } from "../../data/affiliates";
 
 export default function ArticleLayout({ article, children }) {
   const activeAffiliates = getEnabledAffiliates(article.affiliateKeys);
+  const heroDetails = getEditorialImage(article.heroImage);
 
   return (
     <main id="main-content" className="article-template" tabIndex={-1}>
@@ -32,7 +35,7 @@ export default function ArticleLayout({ article, children }) {
             fill
             sizes="(min-width: 1320px) 1280px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)"
           />
-          <span className="image-note">Illustrative image</span>
+          <ImageCaption details={heroDetails} illustrative={article.heroIllustrative} />
         </div>
 
         <div className="article-shell page-width">

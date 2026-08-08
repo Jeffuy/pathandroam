@@ -56,6 +56,7 @@ export default async function ArticlePage({ params }) {
     updatedAt: entry.updatedAt !== entry.publishedAt ? formatDate(entry.updatedAt) : null,
     heroImage: entry.heroImage,
     heroAlt: entry.heroAlt,
+    heroIllustrative: entry.heroIllustrative,
     breadcrumbs: [
       { label: "Home", href: "/" },
       { label: entry.country, href: `/${country}` },

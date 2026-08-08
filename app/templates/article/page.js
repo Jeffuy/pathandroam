@@ -12,6 +12,7 @@ const article = {
   updatedAt: null,
   heroImage: "/images/articles/rail-journey-placeholder.webp",
   heroAlt: "Illustrative train window scene used for an article layout preview",
+  heroIllustrative: true,
   breadcrumbs: [{ label: "Home", href: "/" }, { label: "Ireland", href: "/templates/country-hub" }, { label: "Article template" }],
   affiliateDisclosure: "Future affiliate recommendations will be clearly disclosed and will only render when a verified, enabled entry exists.",
   practicalSummary: [
