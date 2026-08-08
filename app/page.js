@@ -5,6 +5,15 @@ import DestinationCard from "../components/DestinationCard";
 import FeaturedArticleCard from "../components/FeaturedArticleCard";
 import Hero from "../components/Hero";
 import NewsletterPlaceholder from "../components/NewsletterPlaceholder";
+import { createPageMetadata } from "../lib/seo.js";
+
+export const metadata = createPageMetadata({
+  title: "Independent Travel Guides & Trip Planning",
+  description: "Independent travel guides, practical itineraries and clear planning advice for thoughtful journeys.",
+  pathname: "/",
+  image: "/images/destinations/ireland-coast-placeholder.png",
+  imageAlt: "Illustrative green coastal landscape with a winding road",
+});
 
 const destinationImages = [
   "/images/destinations/ireland-coast-placeholder.png",

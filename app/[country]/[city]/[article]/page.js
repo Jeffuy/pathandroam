@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import MarkdownContent from "../../../../components/MarkdownContent";
 import ArticleLayout from "../../../../components/templates/ArticleLayout";
+import StructuredData from "../../../../components/StructuredData";
 import { getAuthor } from "../../../../data/authors";
 import {
   getArticle,
@@ -9,6 +10,10 @@ import {
   getContentRoute,
   getRelatedContent,
 } from "../../../../lib/content";
+import {
+  articleStructuredData,
+  breadcrumbStructuredData,
+} from "../../../../lib/structured-data.js";
 
 export async function generateStaticParams() {
   return getArticleParams();
@@ -80,5 +85,22 @@ export default async function ArticlePage({ params }) {
     html: <MarkdownContent html={entry.html} />,
   };
 
-  return <ArticleLayout article={articleContent} />;
+  const pathname = getContentRoute(entry);
+
+  return (
+    <>
+      <StructuredData
+        data={[
+          articleStructuredData({ article: entry, author, pathname }),
+          breadcrumbStructuredData([
+            { name: "Home", pathname: "/" },
+            { name: entry.country, pathname: `/${country}` },
+            { name: entry.city, pathname: `/${country}/${city}` },
+            { name: entry.title, pathname },
+          ]),
+        ]}
+      />
+      <ArticleLayout article={articleContent} />
+    </>
+  );
 }

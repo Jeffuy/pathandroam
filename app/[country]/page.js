@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import MarkdownContent from "../../components/MarkdownContent";
 import CountryHubLayout from "../../components/templates/CountryHubLayout";
+import StructuredData from "../../components/StructuredData";
+import { breadcrumbStructuredData } from "../../lib/structured-data.js";
 import {
   getContentMetadata,
   getContentRoute,
@@ -40,10 +42,18 @@ export default async function CountryPage({ params }) {
   };
 
   return (
-    <CountryHubLayout country={country}>
-      <section className="template-copy content-copy" aria-label={`${entry.country} draft content`}>
-        <MarkdownContent html={entry.html} />
-      </section>
-    </CountryHubLayout>
+    <>
+      <StructuredData
+        data={breadcrumbStructuredData([
+          { name: "Home", pathname: "/" },
+          { name: entry.country, pathname: getContentRoute(entry) },
+        ])}
+      />
+      <CountryHubLayout country={country}>
+        <section className="template-copy content-copy" aria-label={`${entry.country} draft content`}>
+          <MarkdownContent html={entry.html} />
+        </section>
+      </CountryHubLayout>
+    </>
   );
 }

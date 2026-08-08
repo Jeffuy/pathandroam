@@ -1,9 +1,11 @@
 import AffiliateDisclosure from "../../components/affiliate/AffiliateDisclosure";
+import { createPageMetadata } from "../../lib/seo.js";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Affiliate Disclosure",
   description: "How affiliate relationships work at Path & Roam.",
-};
+  pathname: "/affiliate-disclosure",
+});
 
 export default function AffiliateDisclosurePage() {
   return (

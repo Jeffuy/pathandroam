@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import MarkdownContent from "../../../components/MarkdownContent";
 import CityHubLayout from "../../../components/templates/CityHubLayout";
+import StructuredData from "../../../components/StructuredData";
+import { breadcrumbStructuredData } from "../../../lib/structured-data.js";
 import {
   getCity,
   getCityParams,
@@ -49,10 +51,19 @@ export default async function CityPage({ params }) {
   };
 
   return (
-    <CityHubLayout city={cityContent}>
-      <section className="template-copy content-copy" aria-label={`${entry.city} draft content`}>
-        <MarkdownContent html={entry.html} />
-      </section>
-    </CityHubLayout>
+    <>
+      <StructuredData
+        data={breadcrumbStructuredData([
+          { name: "Home", pathname: "/" },
+          { name: entry.country, pathname: `/${country}` },
+          { name: entry.city, pathname: getContentRoute(entry) },
+        ])}
+      />
+      <CityHubLayout city={cityContent}>
+        <section className="template-copy content-copy" aria-label={`${entry.city} draft content`}>
+          <MarkdownContent html={entry.html} />
+        </section>
+      </CityHubLayout>
+    </>
   );
 }
