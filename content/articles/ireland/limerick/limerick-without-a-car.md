@@ -44,6 +44,7 @@ affiliateWidgets:
 relatedSlugs:
   - ireland
   - limerick
+  - one-day-itinerary
 sources:
   - label: "King John's Castle official visitor information"
     url: https://kingjohnscastle.ie/visitor-information/

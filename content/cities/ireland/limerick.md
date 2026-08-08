@@ -27,6 +27,7 @@ affiliateKeys: []
 relatedSlugs:
   - ireland
   - limerick-without-a-car
+  - one-day-itinerary
 sources:
   - label: Limerick.ie official walking and tourism information
     url: https://www.limerick.ie/discover/eat-see-do/sports-recreation/activities/walking

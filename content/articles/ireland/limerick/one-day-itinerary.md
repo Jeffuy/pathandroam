@@ -113,6 +113,8 @@ Arriving at around 8:00 in summer or 9:00 in winter gives you time to browse wit
 
 Allow roughly two hours if you also want breakfast, coffee or something to eat.
 
+On a summer Saturday, leaving the market around 10:00 gives you time for a short riverside walk, another coffee or a relaxed walk toward St Mary's Cathedral before its 11:00 visitor opening.
+
 The goal is not simply to walk around the stalls and leave. The market works well as the beginning of the day because you can eat, look around and spend some time among locals before moving into the historical part of the city.
 
 If it is Friday or Sunday, the market also operates, but with later and shorter published hours. I would not build the entire morning around it in the same way.
@@ -129,7 +131,7 @@ Walk without much of a plan, stop when the view is interesting and watch the riv
 
 This is one of those occasions when deliberately not having a checklist makes the itinerary better.
 
-In summer, you can easily spend close to two hours doing this before heading toward St Mary's Cathedral.
+In summer, keep the riverside walk flexible and begin making your way toward St Mary's Cathedral in time for its 11:00 opening.
 
 In winter, shorten the walk if necessary and aim to reach the cathedral for its 11:00 opening.
 
