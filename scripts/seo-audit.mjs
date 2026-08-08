@@ -9,11 +9,13 @@ const [
   { affiliateRegistry, isValidAffiliateUrl },
   { getContentRoute },
   { default: createSitemap },
+  { isValidAffiliateWidgetUrl },
 ] =
   await Promise.all([
     import("../data/affiliates.js"),
     import("../lib/content.js"),
     import("../app/sitemap.js"),
+    import("../lib/affiliate-widget.js"),
   ]);
 
 const contentRoot = path.join(process.cwd(), "content");
@@ -206,6 +208,50 @@ for (const entry of entries) {
     if (!affiliateRegistry[affiliateKey]) {
       addError(entry.sourcePath, `unknown affiliate key "${affiliateKey}"`);
     }
+  }
+
+  const articleAffiliateKeys = new Set();
+  const affiliateLinks = toArray(entry.affiliateLinks);
+  const affiliateWidgets = toArray(entry.affiliateWidgets);
+
+  for (const link of affiliateLinks) {
+    const key = String(link?.key || "");
+    const provider = String(link?.provider || "").toLowerCase();
+    if (!key || articleAffiliateKeys.has(key)) {
+      addError(entry.sourcePath, `missing or duplicate article affiliate key "${key}"`);
+    }
+    articleAffiliateKeys.add(key);
+    if (!affiliateRegistry[provider]) {
+      addError(entry.sourcePath, `unknown article affiliate provider "${provider}"`);
+    }
+    if (!isValidAffiliateUrl(link?.url)) {
+      addError(entry.sourcePath, `article affiliate "${key}" requires a valid HTTPS URL`);
+    }
+    if (!String(link?.label || "").trim()) {
+      addError(entry.sourcePath, `article affiliate "${key}" is missing a label`);
+    }
+  }
+
+  for (const widget of affiliateWidgets) {
+    const key = String(widget?.key || "");
+    const provider = String(widget?.provider || "").toLowerCase();
+    if (!key || articleAffiliateKeys.has(key)) {
+      addError(entry.sourcePath, `missing or duplicate article affiliate key "${key}"`);
+    }
+    articleAffiliateKeys.add(key);
+    if (!affiliateRegistry[provider]) {
+      addError(entry.sourcePath, `unknown article affiliate provider "${provider}"`);
+    }
+    if (!isValidAffiliateWidgetUrl(widget?.scriptSrc)) {
+      addError(entry.sourcePath, `affiliate widget "${key}" requires an approved HTTPS script URL`);
+    }
+    if (!String(widget?.label || "").trim()) {
+      addError(entry.sourcePath, `affiliate widget "${key}" is missing a label`);
+    }
+  }
+
+  if ((affiliateLinks.length || affiliateWidgets.length) && entry.affiliateDisclosure !== true) {
+    addError(entry.sourcePath, "article affiliate configuration requires disclosure");
   }
 }
 

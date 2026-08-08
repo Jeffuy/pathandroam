@@ -1,7 +1,9 @@
-import { getEnabledAffiliate } from "../../data/affiliates";
+import { getArticleAffiliateLink, getEnabledAffiliate } from "../../data/affiliates";
 
-export default function AffiliateLink({ affiliateKey, children, className, ariaLabel }) {
-  const entry = getEnabledAffiliate(affiliateKey);
+export default function AffiliateLink({ affiliateKey, articleAffiliate, children, className, ariaLabel }) {
+  const entry = articleAffiliate
+    ? getArticleAffiliateLink([articleAffiliate], articleAffiliate.key)
+    : getEnabledAffiliate(affiliateKey);
   if (!entry) return null;
 
   return (

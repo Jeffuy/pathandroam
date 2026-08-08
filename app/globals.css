@@ -1110,6 +1110,34 @@ summary {
   gap: 1.25rem;
 }
 
+.markdown-content > .affiliate-disclosure {
+  margin: 2rem 0 1.25rem;
+}
+
+.article-affiliate-cta {
+  margin: 1.25rem 0 2.5rem;
+}
+
+.article-affiliate-widget {
+  width: 100%;
+  min-height: 18rem;
+  margin: 1.25rem 0 2.75rem;
+  overflow: hidden;
+  border-top: 2px solid var(--rust);
+  background: var(--cream);
+}
+
+.article-affiliate-widget > *,
+.article-affiliate-widget iframe {
+  max-width: 100% !important;
+}
+
+.article-affiliate-widget iframe {
+  display: block;
+  width: 100% !important;
+  border: 0;
+}
+
 .legal-page {
   max-width: 62rem;
   padding-block: clamp(4rem, 10vw, 8rem);

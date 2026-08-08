@@ -75,7 +75,14 @@ export default async function ArticlePage({ params }) {
       title: item.title,
       href: getContentRoute(item),
     })),
-    html: <MarkdownContent html={entry.html} />,
+    html: (
+      <MarkdownContent
+        affiliateLinks={entry.affiliateLinks}
+        affiliateWidgets={entry.affiliateWidgets}
+        html={entry.html}
+        showAffiliateDisclosure={entry.affiliateDisclosure}
+      />
+    ),
   };
 
   const pathname = getContentRoute(entry);

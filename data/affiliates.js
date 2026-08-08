@@ -1,3 +1,5 @@
+import { isValidAffiliateWidgetUrl } from "../lib/affiliate-widget.js";
+
 export const affiliateRegistry = Object.freeze({
   viator: Object.freeze({
     key: "viator",
@@ -174,4 +176,20 @@ export function getEnabledAffiliate(key) {
 
 export function getEnabledAffiliates(keys = []) {
   return keys.map(getEnabledAffiliate).filter(Boolean);
+}
+
+export function getArticleAffiliateLink(entries = [], key) {
+  const entry = entries.find((candidate) => candidate.key === key);
+  if (!entry || !affiliateRegistry[entry.provider] || !isValidAffiliateUrl(entry.url)) {
+    return null;
+  }
+  return String(entry.label || "").trim() ? entry : null;
+}
+
+export function getArticleAffiliateWidget(entries = [], key) {
+  const entry = entries.find((candidate) => candidate.key === key);
+  if (!entry || !affiliateRegistry[entry.provider] || !isValidAffiliateWidgetUrl(entry.scriptSrc)) {
+    return null;
+  }
+  return String(entry.label || "").trim() ? entry : null;
 }

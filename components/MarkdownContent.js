@@ -1,8 +1,16 @@
+import { Fragment } from "react";
 import Image from "next/image";
+import {
+  getArticleAffiliateLink,
+  getArticleAffiliateWidget,
+} from "../data/affiliates";
 import { getEditorialImage } from "../data/editorial-images";
+import AffiliateDisclosure from "./affiliate/AffiliateDisclosure";
+import AffiliateLink from "./affiliate/AffiliateLink";
+import AffiliateWidget from "./affiliate/AffiliateWidget";
 import ImageCaption from "./ImageCaption";
 
-const localImagePattern = /<p><img src="(\/images\/[^"]+)" alt="([^"]*)"><\/p>\n?/g;
+const embeddedBlockPattern = /<p><img src="(\/images\/[^"]+)" alt="([^"]*)"><\/p>\n?|<p>\{\{affiliate-(link|widget):([a-z0-9]+(?:-[a-z0-9]+)*)\}\}<\/p>\n?/g;
 
 function decodeAttribute(value) {
   return value
@@ -13,19 +21,32 @@ function decodeAttribute(value) {
     .replaceAll("&amp;", "&");
 }
 
-export default function MarkdownContent({ html, className = "" }) {
+export default function MarkdownContent({
+  html,
+  className = "",
+  affiliateLinks = [],
+  affiliateWidgets = [],
+  showAffiliateDisclosure = false,
+}) {
   const blocks = [];
   let cursor = 0;
 
-  for (const match of html.matchAll(localImagePattern)) {
+  for (const match of html.matchAll(embeddedBlockPattern)) {
     if (match.index > cursor) {
       blocks.push({ type: "html", value: html.slice(cursor, match.index) });
     }
-    blocks.push({
-      type: "image",
-      src: decodeAttribute(match[1]),
-      alt: decodeAttribute(match[2]),
-    });
+    if (match[1]) {
+      blocks.push({
+        type: "image",
+        src: decodeAttribute(match[1]),
+        alt: decodeAttribute(match[2]),
+      });
+    } else {
+      blocks.push({
+        type: "affiliate-" + match[3],
+        affiliateKey: match[4],
+      });
+    }
     cursor = match.index + match[0].length;
   }
 
@@ -42,14 +63,35 @@ export default function MarkdownContent({ html, className = "" }) {
     blocks.push({ type: "html", value: html.slice(cursor) });
   }
 
+  const resolvedBlocks = blocks.map((block) => {
+    if (block.type === "affiliate-link") {
+      return {
+        ...block,
+        entry: getArticleAffiliateLink(affiliateLinks, block.affiliateKey),
+      };
+    }
+    if (block.type === "affiliate-widget") {
+      return {
+        ...block,
+        entry: getArticleAffiliateWidget(affiliateWidgets, block.affiliateKey),
+      };
+    }
+    return block;
+  });
+  const firstAffiliateIndex = showAffiliateDisclosure
+    ? resolvedBlocks.findIndex((block) => block.entry)
+    : -1;
+
   return (
     <div className={`markdown-content ${className}`.trim()}>
-      {blocks.map((block, index) =>
-        block.type === "image" ? (() => {
+      {resolvedBlocks.map((block, index) => {
+        let content = null;
+
+        if (block.type === "image") {
           const details = getEditorialImage(block.src);
 
-          return (
-            <figure className="article-inline-image" key={`${block.src}-${index}`}>
+          content = (
+            <figure className="article-inline-image">
               <div className="article-inline-image__media">
                 <Image
                   src={block.src}
@@ -61,14 +103,39 @@ export default function MarkdownContent({ html, className = "" }) {
               <ImageCaption as="figcaption" details={details} />
             </figure>
           );
-        })() : (
-          <div
-            className="markdown-content__segment"
-            dangerouslySetInnerHTML={{ __html: block.value }}
-            key={`content-${index}`}
-          />
-        ),
-      )}
+        } else if (block.type === "affiliate-link" && block.entry) {
+          content = (
+            <div className="article-affiliate-cta">
+              <AffiliateLink articleAffiliate={block.entry} className="text-link">
+                {block.entry.label} <span aria-hidden="true">↗</span>
+              </AffiliateLink>
+            </div>
+          );
+        } else if (block.type === "affiliate-widget" && block.entry) {
+          content = (
+            <AffiliateWidget
+              label={block.entry.label}
+              scriptSrc={block.entry.scriptSrc}
+            />
+          );
+        } else if (block.type === "html") {
+          content = (
+            <div
+              className="markdown-content__segment"
+              dangerouslySetInnerHTML={{ __html: block.value }}
+            />
+          );
+        }
+
+        if (!content) return null;
+
+        return (
+          <Fragment key={`${block.type}-${block.affiliateKey || index}`}>
+            {index === firstAffiliateIndex && <AffiliateDisclosure compact />}
+            {content}
+          </Fragment>
+        );
+      })}
     </div>
   );
 }

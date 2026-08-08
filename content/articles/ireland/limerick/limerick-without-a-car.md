@@ -21,8 +21,25 @@ heroIllustrative: false
 featured: true
 draft: false
 noindex: false
-affiliateDisclosure: false
+affiliateDisclosure: true
 affiliateKeys: []
+affiliateLinks:
+  - key: airalo-ireland
+    provider: airalo
+    url: https://airalo.tpx.lv/d9NfE5dA
+    label: Check Ireland eSIM options
+    context: connectivity
+  - key: limerick-strand-klook
+    provider: klook
+    url: https://klook.tpx.lv/OWdF6pUT
+    label: Check availability at Limerick Strand Hotel
+    context: accommodation
+affiliateWidgets:
+  - key: shannon-limerick-kiwitaxi
+    provider: kiwitaxi
+    context: airport-transfer
+    label: Private transfer options from Shannon Airport to Limerick
+    scriptSrc: "https://tpemd.com/content?currency=EUR&trs=559869&shmarker=761778.limerick_without_car_kiwitaxi&language=en&from=Shannon%20Airport&to=Limerick&theme=1&powered_by=true&campaign_id=1&promo_id=1486"
 relatedSlugs:
   - ireland
   - limerick
@@ -80,6 +97,10 @@ Based on local experience, the journey typically feels straightforward and there
 For most independent travellers, the 343 makes renting a car at Shannon Airport unnecessary if Limerick is the first destination.
 
 A taxi or pre-booked transfer is more convenient if you have a lot of luggage, are travelling as a group or simply want door-to-door transport. Private transfers between Shannon Airport and Limerick are also commercially available.
+
+Prefer a door-to-door transfer? You can check private transfer options from Shannon Airport to Limerick below.
+
+{{affiliate-widget:shannon-limerick-kiwitaxi}}
 
 ## Getting around Limerick on foot
 
@@ -179,6 +200,12 @@ The major exception for visitors is Route 343 to Shannon Airport, which runs aro
 
 If you stay in a pub after local buses have finished, a regular taxi is the simplest alternative.
 
+## Staying connected in Ireland
+
+Travellers who need mobile data may consider arranging an eSIM before departure or during the trip, provided their device supports eSIMs.
+
+{{affiliate-link:airalo-ireland}}
+
 ## Where to stay in Limerick without a car
 
 Location matters more than having access to parking.
@@ -186,6 +213,8 @@ Location matters more than having access to parking.
 Look for accommodation in or immediately around the city centre, particularly near the River Shannon, O'Connell Street, the Medieval Quarter or the central station area.
 
 Clayton Hotel Limerick and Limerick Strand Hotel are examples of riverfront hotels in central locations, but there are also less expensive accommodation options.
+
+{{affiliate-link:limerick-strand-klook}}
 
 The important point is not the hotel brand. It is avoiding accommodation far outside the centre if you plan to depend on walking.
 

@@ -5,8 +5,8 @@ export default function AffiliateDisclosure({ compact = false }) {
     <aside className={`affiliate-disclosure${compact ? " affiliate-disclosure--compact" : ""}`}>
       <strong>Affiliate disclosure</strong>
       <p>
-        Path &amp; Roam may earn a commission from qualifying bookings made through
-        affiliate links, at no extra cost to you. Editorial conclusions remain independent. {" "}
+        Path &amp; Roam may earn a commission if you purchase or book through some
+        links, at no extra cost to you. Editorial conclusions remain independent. {" "}
         <Link href="/affiliate-disclosure">Learn more</Link>.
       </p>
     </aside>
