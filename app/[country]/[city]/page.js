@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import MarkdownContent from "../../../components/MarkdownContent";
+import SourcesList from "../../../components/SourcesList";
 import CityHubLayout from "../../../components/templates/CityHubLayout";
 import StructuredData from "../../../components/StructuredData";
 import { breadcrumbStructuredData } from "../../../lib/structured-data.js";
@@ -60,9 +61,10 @@ export default async function CityPage({ params }) {
         ])}
       />
       <CityHubLayout city={cityContent}>
-        <section className="template-copy content-copy" aria-label={`${entry.city} draft content`}>
+        <div className="template-copy content-copy">
           <MarkdownContent html={entry.html} />
-        </section>
+          <SourcesList sources={entry.sources} />
+        </div>
       </CityHubLayout>
     </>
   );
