@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import { footerNavigation } from "../data/navigation";
 
 export default function Footer() {
   return (
@@ -10,16 +11,9 @@ export default function Footer() {
           <p>See more. Plan smarter.</p>
         </div>
         <nav aria-label="Footer navigation">
-          <Link href="/#destinations">Destinations</Link>
-          <Link href="/#guides">Travel Guides</Link>
-          <Link href="/#planning">Trip Planning</Link>
-          <Link href="/about">About</Link>
-          <Link href="/editorial-policy">Editorial Policy</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/cookies">Cookies</Link>
-          <Link href="/terms">Terms</Link>
+          {footerNavigation.map((item) => (
+            <Link href={item.href} key={item.label}>{item.label}</Link>
+          ))}
         </nav>
       </div>
       <div className="site-footer__base page-width">

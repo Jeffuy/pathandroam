@@ -1,11 +1,5 @@
 import Link from "next/link";
-
-const links = [
-  ["Destinations", "/#destinations"],
-  ["Travel Guides", "/#guides"],
-  ["Trip Planning", "/#planning"],
-  ["About", "/about"],
-];
+import { primaryNavigation } from "../data/navigation";
 
 export default function MobileNav() {
   return (
@@ -15,9 +9,9 @@ export default function MobileNav() {
         <span className="mobile-nav__icon" aria-hidden="true" />
       </summary>
       <nav id="mobile-navigation" aria-label="Mobile navigation">
-        {links.map(([label, href]) => (
-          <Link href={href} key={label}>
-            {label}
+        {primaryNavigation.map((item) => (
+          <Link href={item.href} key={item.label}>
+            {item.label}
           </Link>
         ))}
       </nav>

@@ -2,11 +2,14 @@
   "name": "path-and-roam",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "seo": "node scripts/seo-audit.mjs",
+    "check": "npm run lint && npm run seo"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

@@ -1,13 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
-
-const links = [
-  ["Destinations", "/#destinations"],
-  ["Travel Guides", "/#guides"],
-  ["Trip Planning", "/#planning"],
-  ["About", "/about"],
-];
+import { primaryNavigation } from "../data/navigation";
 
 export default function Header() {
   return (
@@ -15,9 +9,9 @@ export default function Header() {
       <div className="site-header__inner">
         <Logo />
         <nav className="desktop-nav" aria-label="Primary navigation">
-          {links.map(([label, href]) => (
-            <Link href={href} key={label}>
-              {label}
+          {primaryNavigation.map((item) => (
+            <Link href={item.href} key={item.label}>
+              {item.label}
             </Link>
           ))}
         </nav>
