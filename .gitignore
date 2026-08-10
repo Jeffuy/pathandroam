@@ -5,5 +5,6 @@ out/
 .env*
 !.env.example
 npm-debug.log*
+.tmp-*
 *.pem
 .DS_Store

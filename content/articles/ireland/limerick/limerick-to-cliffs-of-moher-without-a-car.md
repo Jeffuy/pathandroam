@@ -126,7 +126,7 @@ This is one worked example from a spring Wednesday, not a timetable for every da
 | Arrive in Ennis | Around 16:30 |
 | Return to Limerick Colbert | Around 17:45 |
 
-This combination provided about three hours at the Cliffs. That was enough for the main visitor area without rushing, but it did not allow an open-ended afternoon.
+This example left roughly four and a half hours between arrival and the return bus. Around three hours was enough to cover the main viewpoints, visitor centre, O'Brien's Tower area, a short permitted walk and a quick café and shop stop without rushing. The time available depends on the current timetable.
 
 Arrive at the return stop 10 to 15 minutes early. The outbound connection is important, but the last useful Route 350 back to Ennis is the part of the day that deserves the closest attention.
 
@@ -166,7 +166,7 @@ Do not plan this day trip around completing the full coastal walk to Doolin or H
 
 The official 2026 closure information says the southern coastal route between Liscannor or Hags Head and the Cliffs of Moher Experience is fully closed. On the northern side, walkers starting in Doolin must turn back at Surfers Path and cannot continue through to the Cliffs of Moher Experience.
 
-Within the official visitor area, designated walkways and viewing platforms remain available. The current notice also identifies a short open section north of O'Brien's Tower.
+Within the Cliffs of Moher Experience area, visitors can follow roughly 3.5 km or 2.17 miles of safe designated walking. The route goes north past O'Brien's Tower before returning the same way, then south to the Southern Viewing Platform. This does not reopen the through-routes to Doolin or Hags Head.
 
 Follow onsite signs, barriers and staff guidance. Conditions and closures can change, so check the official coastal walk page shortly before travelling.
 
