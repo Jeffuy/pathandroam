@@ -60,7 +60,7 @@ Booking a tour from Limerick removes the transport planning, but not every itine
 
 For most travellers, the practical choice is between a join-in group tour, private transport with terms agreed in advance, or the much cheaper public bus. This comparison focuses on the current organised option sold through Klook and private rides quoted through GetTransfer. If you are still planning your base, start with the [Limerick travel guide](/ireland/limerick/).
 
-## Best Cliffs of Moher tours from Limerick at a glance
+## Cliffs of Moher tour options from Limerick at a glance
 
 | Option | Best for | Main strength | Main weakness |
 | --- | --- | --- | --- |
@@ -131,7 +131,7 @@ Compare the full return quote, not an attractive one-way figure. Then divide the
 
 **Large coach:** Usually the lower-cost organised format and the simplest for travellers who want logistics handled. Coaches can carry roughly 40 to 50 people, so boarding, bathroom stops and waiting for a late passenger can consume useful time. Several coaches may also reach the Cliffs during the same busy period.
 
-**Small-group minivan:** Look for an actual published limit, ideally in the range of 8 to 16 passengers, rather than relying on the words "small group" alone. A genuine smaller group can board faster, move more easily and allow more interaction with a driver-guide. No specific small-group Limerick product is recommended here because a suitable current affiliate-bookable option has not been confirmed.
+**Small-group minivan:** Look for an actual published limit, ideally around 8 to 16 passengers, rather than relying on the words "small group" alone. A genuine smaller group can board faster, move more easily and allow more interaction with a driver-guide.
 
 **Private transport:** Offers privacy and the greatest potential control, but costs more and is not automatically guided. Pickup, waiting, return travel and any additional stops must be agreed in advance.
 
