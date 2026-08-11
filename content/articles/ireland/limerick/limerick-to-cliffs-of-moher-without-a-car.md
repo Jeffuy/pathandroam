@@ -39,6 +39,7 @@ relatedSlugs:
   - limerick-without-a-car
   - one-day-itinerary
   - shannon-airport-to-limerick
+  - cliffs-of-moher-tours-from-limerick
 sources:
   - label: Bus Éireann Route 51 current route page
     url: https://www.buseireann.ie/routes-and-timetables/51
@@ -190,7 +191,7 @@ Mobile data is useful for checking live departures, following the connection in 
 
 Choose the public bus if you are staying in Limerick, want to keep costs down and are comfortable managing one connection in each direction.
 
-An organised tour may suit travellers with very limited time, families with small children, older travellers, or anyone who wants a simpler all-in-one day. A tour can also make more sense if you want to combine the Cliffs with other stops without coordinating several public services.
+An organised tour may suit travellers with very limited time, families with small children, older travellers, or anyone who wants a simpler all-in-one day. Our [Cliffs of Moher tour comparison](/ireland/limerick/cliffs-of-moher-tours-from-limerick/) explains the trade-offs between the current join-in tour and booking private transport.
 
 The bus gives you control while you are onsite, but only within the limits of the return timetable. A tour gives up some independence in exchange for simpler transport.
 

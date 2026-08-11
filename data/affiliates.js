@@ -37,6 +37,15 @@ export const affiliateRegistry = Object.freeze({
     destination: null,
     enabled: false,
   }),
+  gettransfer: Object.freeze({
+    key: "gettransfer",
+    provider: "GetTransfer",
+    url: "",
+    label: "Review private transfer options",
+    description: "A private transport option for routes where timing and door-to-door travel matter.",
+    destination: null,
+    enabled: false,
+  }),
   tiqets: Object.freeze({
     key: "tiqets",
     provider: "Tiqets",

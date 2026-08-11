@@ -110,6 +110,51 @@ const editorialImages = {
     illustrative: true,
     label: "Illustrative clifftop walk",
   },
+  "/images/articles/best-cliffs-of-moher-tours-from-limerick/large-coach-tour-illustration.webp": {
+    alt: "Illustrative coach travelling through the Irish countryside",
+    illustrative: true,
+    label: "Illustrative organised coach tour",
+  },
+  "/images/articles/best-cliffs-of-moher-tours-from-limerick/small-group-minivan-illustration.webp": {
+    alt: "Illustrative minivan travelling through the Irish countryside",
+    illustrative: true,
+    label: "Illustrative small-group tour vehicle",
+  },
+  "/images/articles/best-cliffs-of-moher-tours-from-limerick/private-transfer-illustration.webp": {
+    alt: "Illustrative private transfer vehicle on an Irish coastal road",
+    illustrative: true,
+    label: "Illustrative private transfer",
+  },
+  "/images/articles/best-cliffs-of-moher-tours-from-limerick/arthurs-quay.webp": {
+    alt: "Arthur's Quay sign beside the River Shannon in Limerick",
+    credit: {
+      author: "William Murphy",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Limerick_-_Arthur%27s_Quay_(5771772320).jpg",
+      license: "CC BY-SA 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/best-cliffs-of-moher-tours-from-limerick/the-burren.webp": {
+    alt: "Limestone landscape in the Burren beside the Atlantic Ocean",
+    credit: {
+      author: "Notsmallworld",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Burren,_Co.Clare,_Ireland.jpg",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/best-cliffs-of-moher-tours-from-limerick/doolin.webp": {
+    alt: "Road and colourful buildings in Doolin, County Clare",
+    credit: {
+      author: "Thorsten Pohl",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:DoolinIreland.jpg",
+      license: "Public domain",
+      licenseUrl: "https://commons.wikimedia.org/wiki/Template:PD-self",
+      modification: "Resized and converted to WebP",
+    },
+  },
 };
 
 export function getEditorialImage(src) {
