@@ -79,8 +79,6 @@ A car becomes more useful if you want to explore County Limerick or rural destin
 
 For a car-free day trip beyond the city, [Bunratty Castle is a straightforward direct bus journey](/ireland/limerick/limerick-to-bunratty-castle-without-a-car/), while our [Limerick to the Cliffs of Moher bus guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) covers the longer connection through Ennis and the return-timing trade-off.
 
-This guide combines local experience in Limerick with current information from official transport, tourism and attraction sources.
-
 ## Do you need a car in Limerick?
 
 For a normal city break, no.

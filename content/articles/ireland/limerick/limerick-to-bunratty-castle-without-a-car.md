@@ -53,6 +53,8 @@ sources:
     url: https://www.discoverireland.ie/clare/bunratty-castle-folk-park
   - label: Visit Clare Bunratty Castle and Folk Park
     url: https://visitclare.ie/attractions/bunratty-castle-and-folk-park/
+  - label: Bunratty Castle and Folk Park official visitor information
+    url: https://www.bunrattycastle.ie/plan-your-visit/
   - label: Klook Bunratty Castle and Folk Park ticket
     url: https://www.klook.com/activity/141209-bunratty-castle-and-folk-park-ticket/
   - label: Visit Clare Durty Nelly's Bar and Restaurant
@@ -108,9 +110,9 @@ Check the current Bus Éireann timetable or TFI Live before leaving. Look at the
 
 ## How much does the bus cost?
 
-Fares depend on ticket type and eligibility. Bus Éireann's online Fare Finder does not provide a simple static fare that is safe to repeat here, so check the Fare Finder or TFI Go for your travel date rather than relying on an old price.
+Fares vary by ticket type and eligibility. Check the current fare in Bus Éireann's Fare Finder or TFI Go before travelling.
 
-A TFI Leap Card can be used for the journey, and TFI Go lets passengers buy supported bus tickets on a phone. Check the current ticket choices and conditions before travelling, particularly if you qualify for a young adult, student or other reduced fare. Do not assume a remembered discounted fare represents the standard adult price.
+A TFI Leap Card can be used on the route, and reduced fares may apply to eligible young adult, student or other concession passengers. Check the current eligibility rules and fare shown for your journey before travelling.
 
 ## How much time do you need at Bunratty Castle & Folk Park?
 
@@ -128,7 +130,7 @@ The current Klook general admission ticket includes both Bunratty Castle and the
 
 Klook currently lists the ticket as non-cancellable, with no refunds or changes, so choose the date carefully. The listing also provides child, student, senior and family ticket categories. Check the current eligibility rules, bring student identification if using a student ticket, and confirm the price shown for your date.
 
-Advance booking can remove one decision on the morning of the trip, but it does not replace checking opening times. At the time of review, the Klook listing showed daily opening from 09:30 to 17:30 with last admission at 16:00. Hours can change, so verify them for the day you intend to visit.
+Advance booking can remove one decision on the morning of the trip, but it does not replace checking opening times. Hours can vary by season and for special programmes, so check the official Bunratty Castle & Folk Park website for your date.
 
 {{affiliate-link:bunratty-castle-folk-park-ticket-klook}}
 
@@ -182,7 +184,7 @@ You can also bring a picnic and use the covered or outdoor seating, subject to t
 
 ![Durty Nelly's beside Bunratty Castle](/images/articles/limerick-to-bunratty-castle-without-a-car/durty-nellys-bunratty-castle.webp)
 
-Durty Nelly's is an easy post-visit stop because it sits beside the castle and works well for lunch, a drink or a break before the return bus. Its current website describes it as a pub and restaurant established in 1620, with food and live music.
+Durty Nelly's is an easy post-visit stop because it sits beside the castle and works well for lunch, a drink or a break before the return bus. Current visitor information lists it as a pub and restaurant established in 1620, with food and live music.
 
 Opening and music times can change. Check the current schedule if a meal or session is important, and leave enough time to walk back to the bus stop without rushing.
 
