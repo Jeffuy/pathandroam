@@ -35,6 +35,7 @@ relatedSlugs:
   - limerick
   - limerick-without-a-car
   - one-day-itinerary
+  - limerick-to-bunratty-castle-without-a-car
 sources:
   - label: Bus Éireann Route 343 current route page
     url: https://www.buseireann.ie/routes-and-timetables/343
@@ -257,6 +258,8 @@ If you get off in central Limerick and your accommodation is nearby, walking may
 For visitors planning to explore the city without renting a vehicle, our [Limerick Without a Car guide](/ireland/limerick/limerick-without-a-car/) covers walking, local buses and the main areas visitors are likely to use.
 
 If you only have a short stay, our [One Day in Limerick itinerary](/ireland/limerick/one-day-itinerary/) gives you a chronological walking route through the city.
+
+Route 343 also serves Bunratty. If you are planning a separate day out from the city, see our [Limerick to Bunratty Castle bus and ticket guide](/ireland/limerick/limerick-to-bunratty-castle-without-a-car/).
 
 You can also return to the [Limerick Travel Guide](/ireland/limerick/) for the wider destination overview.
 

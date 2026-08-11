@@ -155,6 +155,61 @@ const editorialImages = {
       modification: "Resized and converted to WebP",
     },
   },
+  "/images/articles/limerick-to-bunratty-castle-without-a-car/bunratty-castle.webp": {
+    alt: "Bunratty Castle in County Clare, Ireland",
+    credit: {
+      author: "John Menard",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Bunratty_Castle,_Ireland.jpg",
+      license: "CC BY-SA 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/limerick-to-bunratty-castle-without-a-car/bunratty-folk-park-village-street.webp": {
+    alt: "Village Street inside Bunratty Folk Park",
+    credit: {
+      author: "Ian Capper",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Village_Street,_Bunratty_Folk_Park_-_geograph.org.uk_-_4299598.jpg",
+      license: "CC BY-SA 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/limerick-to-bunratty-castle-without-a-car/durty-nellys-bunratty-castle.webp": {
+    alt: "Durty Nelly's beside Bunratty Castle",
+    credit: {
+      author: "Joseph Mischyshyn",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Bunratty_-_15th_Century_Bunratty_Castle_%5E_Durty_Nelly%27s_Pub_-_geograph.org.uk_-_3779675.jpg",
+      license: "CC BY-SA 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/limerick-to-bunratty-castle-without-a-car/bunratty-village-n18.webp": {
+    alt: "Bunratty village near the N18 in County Clare",
+    credit: {
+      author: "Suzanne Mischyshyn",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:County_Clare_-_N18_-_Bunratty_Village_-_Bunratty_Castle_Hotel_-_geograph.org.uk_-_4012648.jpg",
+      license: "CC BY-SA 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/limerick-to-bunratty-castle-without-a-car/public-bus-to-bunratty-illustration.webp": {
+    alt: "Illustrative intercity bus travelling through the Irish countryside",
+    illustrative: true,
+    label: "Illustrative public bus journey",
+  },
+  "/images/articles/limerick-to-bunratty-castle-without-a-car/rainy-folk-park-illustration.webp": {
+    alt: "Illustrative visitor walking through a living-history park in light rain",
+    illustrative: true,
+    label: "Illustrative wet-weather visit",
+  },
+  "/images/articles/limerick-to-bunratty-castle-without-a-car/bunratty-day-trip-planning-illustration.webp": {
+    alt: "Illustrative map, ticket and clock for planning a Bunratty day trip",
+    illustrative: true,
+    label: "Illustrative day-trip planning",
+  },
 };
 
 export function getEditorialImage(src) {

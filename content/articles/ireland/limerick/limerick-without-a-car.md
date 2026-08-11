@@ -47,6 +47,7 @@ relatedSlugs:
   - one-day-itinerary
   - shannon-airport-to-limerick
   - limerick-to-cliffs-of-moher-without-a-car
+  - limerick-to-bunratty-castle-without-a-car
 sources:
   - label: "King John's Castle official visitor information"
     url: https://kingjohnscastle.ie/visitor-information/
@@ -76,7 +77,7 @@ Most of the places a first-time visitor is likely to see in the city centre are 
 
 A car becomes more useful if you want to explore County Limerick or rural destinations farther away. For Limerick city itself, however, it is usually unnecessary.
 
-For a car-free day trip beyond the city, our [Limerick to the Cliffs of Moher bus guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) covers the connection through Ennis and the return-timing trade-off.
+For a car-free day trip beyond the city, [Bunratty Castle is a straightforward direct bus journey](/ireland/limerick/limerick-to-bunratty-castle-without-a-car/), while our [Limerick to the Cliffs of Moher bus guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) covers the longer connection through Ennis and the return-timing trade-off.
 
 This guide combines local experience in Limerick with current information from official transport, tourism and attraction sources.
 

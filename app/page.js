@@ -25,6 +25,12 @@ const destinations = [
 
 const latest = [
   {
+    label: "Day trip",
+    title: "Limerick to Bunratty Castle Without a Car",
+    description: "Take direct Route 343 to Bunratty Castle and Folk Park, with practical ticket and visit planning.",
+    href: "/ireland/limerick/limerick-to-bunratty-castle-without-a-car/",
+  },
+  {
     label: "Tours",
     title: "Best Cliffs of Moher Tours from Limerick",
     description: "Compare the current join-in tour with private transport and the public bus alternative.",
