@@ -37,6 +37,15 @@ export const affiliateRegistry = Object.freeze({
     destination: null,
     enabled: false,
   }),
+  kkday: Object.freeze({
+    key: "kkday",
+    provider: "KKday",
+    url: "",
+    label: "Browse relevant private trips",
+    description: "A contextual private itinerary option for the destination being discussed.",
+    destination: null,
+    enabled: false,
+  }),
   gettransfer: Object.freeze({
     key: "gettransfer",
     provider: "GetTransfer",

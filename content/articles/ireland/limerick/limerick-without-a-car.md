@@ -14,7 +14,7 @@ secondaryKeywords:
   - limerick walking guide
   - shannon airport to limerick
 publishedAt: 2026-08-08
-updatedAt: 2026-08-08
+updatedAt: 2026-08-12
 author: mara-vale
 heroImage: /images/limerick/river-shannon.webp
 heroAlt: River Shannon in Limerick, Ireland
@@ -48,6 +48,7 @@ relatedSlugs:
   - shannon-airport-to-limerick
   - limerick-to-cliffs-of-moher-without-a-car
   - limerick-to-bunratty-castle-without-a-car
+  - limerick-to-adare-without-a-car
 sources:
   - label: "King John's Castle official visitor information"
     url: https://kingjohnscastle.ie/visitor-information/
@@ -77,7 +78,7 @@ Most of the places a first-time visitor is likely to see in the city centre are 
 
 A car becomes more useful if you want to explore County Limerick or rural destinations farther away. For Limerick city itself, however, it is usually unnecessary.
 
-For a car-free day trip beyond the city, [Bunratty Castle is a straightforward direct bus journey](/ireland/limerick/limerick-to-bunratty-castle-without-a-car/), while our [Limerick to the Cliffs of Moher bus guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) covers the longer connection through Ennis and the return-timing trade-off.
+For a car-free day trip beyond the city, [Adare works as an easy half-day bus trip](/ireland/limerick/limerick-to-adare-without-a-car/) and [Bunratty Castle is a straightforward direct bus journey](/ireland/limerick/limerick-to-bunratty-castle-without-a-car/). Our [Limerick to the Cliffs of Moher bus guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) covers the longer connection through Ennis and the return-timing trade-off.
 
 ## Do you need a car in Limerick?
 

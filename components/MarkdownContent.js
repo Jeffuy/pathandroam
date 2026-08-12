@@ -104,9 +104,14 @@ export default function MarkdownContent({
             </figure>
           );
         } else if (block.type === "affiliate-link" && block.entry) {
+          const isCompact = block.entry.context === "accommodation";
+
           content = (
-            <div className="article-affiliate-cta">
-              <AffiliateLink articleAffiliate={block.entry} className="text-link">
+            <div className={`article-affiliate-cta${isCompact ? " article-affiliate-cta--compact" : ""}`}>
+              <p className="article-affiliate-cta__eyebrow">
+                {isCompact ? "Stay option" : "Booking option"}
+              </p>
+              <AffiliateLink articleAffiliate={block.entry} className="article-affiliate-cta__button">
                 {block.entry.label} <span aria-hidden="true">↗</span>
               </AffiliateLink>
             </div>

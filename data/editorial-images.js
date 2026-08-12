@@ -210,6 +210,61 @@ const editorialImages = {
     illustrative: true,
     label: "Illustrative day-trip planning",
   },
+  "/images/articles/limerick-to-adare-without-a-car/adare-thatched-cottage.webp": {
+    alt: "Traditional thatched cottage in Adare, County Limerick",
+    credit: {
+      author: "Einaz80",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cottage_in_Adare.jpg",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/limerick-to-adare-without-a-car/holy-trinity-abbey-adare.webp": {
+    alt: "Holy Trinity Abbey Church on Main Street in Adare",
+    credit: {
+      author: "Joseph Mischyshyn",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Adare_-_Main_Street_-_Trinitarian_Priory_(1230)_-_Holy_Trinity_Abbey_Church_-_geograph.org.uk_-_3065620.jpg",
+      license: "CC BY-SA 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/limerick-to-adare-without-a-car/desmond-castle-adare.webp": {
+    alt: "Desmond Castle beside the River Maigue in Adare",
+    credit: {
+      author: "Stephen O'Dowd",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Desmond_Castle_Adare_photo_one.JPG",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/limerick-to-adare-without-a-car/adare-town-park.webp": {
+    alt: "Adare Town Park on Main Street",
+    credit: {
+      author: "Ian S",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Adare_Town_Park_on_Main_Street,_Adare_-_geograph.org.uk_-_4143892.jpg",
+      license: "CC BY-SA 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/limerick-to-adare-without-a-car/adare-public-transport-illustration.webp": {
+    alt: "Illustrative coach journey toward an Irish village",
+    illustrative: true,
+    label: "Illustrative public transport journey",
+  },
+  "/images/articles/limerick-to-adare-without-a-car/adare-half-day-planning-illustration.webp": {
+    alt: "Illustrative map and travel items for planning an Adare half-day trip",
+    illustrative: true,
+    label: "Illustrative half-day planning",
+  },
+  "/images/articles/limerick-to-adare-without-a-car/adare-rainy-village-illustration.webp": {
+    alt: "Illustrative traveller walking through an Irish village in the rain",
+    illustrative: true,
+    label: "Illustrative wet-weather village walk",
+  },
 };
 
 export function getEditorialImage(src) {

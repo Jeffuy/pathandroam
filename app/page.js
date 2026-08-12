@@ -25,6 +25,12 @@ const destinations = [
 
 const latest = [
   {
+    label: "Half-day trip",
+    title: "Limerick to Adare Without a Car",
+    description: "Take a direct bus to Adare for a realistic half-day village visit, with stops, sights and return planning.",
+    href: "/ireland/limerick/limerick-to-adare-without-a-car/",
+  },
+  {
     label: "Day trip",
     title: "Limerick to Bunratty Castle Without a Car",
     description: "Take direct Route 343 to Bunratty Castle and Folk Park, with practical ticket and visit planning.",
@@ -41,12 +47,6 @@ const latest = [
     title: "Limerick to the Cliffs of Moher Without a Car: Bus Guide",
     description: "Use Route 51 and Route 350 for a public transport day trip through Ennis.",
     href: "/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/",
-  },
-  {
-    label: "Airport transport",
-    title: "Shannon Airport to Limerick: Bus, Taxi and Transfer Options",
-    description: "Compare Route 343, taxis and private transfers for the journey into Limerick.",
-    href: "/ireland/limerick/shannon-airport-to-limerick/",
   },
 ];
 
