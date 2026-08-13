@@ -33,6 +33,7 @@ relatedSlugs:
   - cliffs-of-moher-tours-from-limerick
   - limerick-to-bunratty-castle-without-a-car
   - limerick-to-adare-without-a-car
+  - ring-of-kerry-tour-from-limerick
 sources:
   - label: Limerick.ie official walking and tourism information
     url: https://www.limerick.ie/discover/eat-see-do/sports-recreation/activities/walking
@@ -122,13 +123,13 @@ Clayton Hotel Limerick and Limerick Strand Hotel are examples of riverfront loca
 
 ## Day trips from Limerick
 
-Limerick can be a base for visiting places elsewhere in western Ireland. Common possibilities include the Cliffs of Moher, Bunratty, Adare, Galway and destinations around Dingle or the west coast. [Adare is a compact half-day option by direct bus](/ireland/limerick/limerick-to-adare-without-a-car/), while [Bunratty Castle is one of the simplest larger trips by public bus](/ireland/limerick/limerick-to-bunratty-castle-without-a-car/). Our [Limerick to the Cliffs of Moher bus guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) explains the longer public transport connection through Ennis, while the [Cliffs of Moher tour comparison](/ireland/limerick/cliffs-of-moher-tours-from-limerick/) covers an organised group trip and private transport.
+Limerick can be a base for visiting places elsewhere in western Ireland. Common possibilities include the Cliffs of Moher, Bunratty, Adare, Galway and destinations around Dingle or the west coast. [Adare is a compact half-day option by direct bus](/ireland/limerick/limerick-to-adare-without-a-car/), while [Bunratty Castle is one of the simplest larger trips by public bus](/ireland/limerick/limerick-to-bunratty-castle-without-a-car/). Our [Limerick to the Cliffs of Moher bus guide](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) explains the longer public transport connection through Ennis, while the [Cliffs of Moher tour comparison](/ireland/limerick/cliffs-of-moher-tours-from-limerick/) covers an organised group trip and private transport. For a much longer organised day, the [Ring of Kerry tour review](/ireland/limerick/ring-of-kerry-tour-from-limerick/) covers its route, price and realistic coach pace.
 
 These trips require different levels of planning. Some have direct or organised transport options, while rural routes may be inconvenient without a car. Check current connections before choosing Limerick as a base, especially when trying to combine several places in one day.
 
 ## Limerick travel guides
 
-Use [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/) for walking, local buses and broad car-free planning. For a chronological sightseeing route through the centre, follow [One Day in Limerick: The Perfect Walking Itinerary](/ireland/limerick/one-day-itinerary/). The [Adare half-day guide](/ireland/limerick/limerick-to-adare-without-a-car/) covers direct buses, village stops and return planning, while the [Bunratty Castle bus and ticket guide](/ireland/limerick/limerick-to-bunratty-castle-without-a-car/) covers a larger direct day trip. For the Cliffs of Moher, compare the [public bus route](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) with the [organised tour and private transport options](/ireland/limerick/cliffs-of-moher-tours-from-limerick/). For airport transport, use [Shannon Airport to Limerick: Bus, Taxi and Transfer Options](/ireland/limerick/shannon-airport-to-limerick/).
+Use [Limerick Without a Car: Complete Visitor Guide](/ireland/limerick/limerick-without-a-car/) for walking, local buses and broad car-free planning. For a chronological sightseeing route through the centre, follow [One Day in Limerick: The Perfect Walking Itinerary](/ireland/limerick/one-day-itinerary/). The [Adare half-day guide](/ireland/limerick/limerick-to-adare-without-a-car/) covers direct buses, village stops and return planning, while the [Bunratty Castle bus and ticket guide](/ireland/limerick/limerick-to-bunratty-castle-without-a-car/) covers a larger direct day trip. For the Cliffs of Moher, compare the [public bus route](/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/) with the [organised tour and private transport options](/ireland/limerick/cliffs-of-moher-tours-from-limerick/). The [Ring of Kerry tour from Limerick guide](/ireland/limerick/ring-of-kerry-tour-from-limerick/) explains the longer coach itinerary. For airport transport, use [Shannon Airport to Limerick: Bus, Taxi and Transfer Options](/ireland/limerick/shannon-airport-to-limerick/).
 
 ## Frequently asked questions
 

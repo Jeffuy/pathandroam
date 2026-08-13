@@ -135,6 +135,61 @@ const editorialImages = {
       modification: "Resized and converted to WebP",
     },
   },
+  "/images/articles/ring-of-kerry-tour-from-limerick/ladies-view.webp": {
+    alt: "Ladies View over the lakes and mountains of Killarney National Park",
+    credit: {
+      author: "Einaz80",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Ladies_View_(Killarney_National_Park).jpg",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/ring-of-kerry-tour-from-limerick/waterville.webp": {
+    alt: "Waterville in County Kerry on the Ring of Kerry",
+    credit: {
+      author: "Z thomas",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Waterville_County_Kerry_2023-05-30_3.jpg",
+      license: "CC BY 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/ring-of-kerry-tour-from-limerick/sneem.webp": {
+    alt: "Sneem village in County Kerry",
+    credit: {
+      author: "David Jones",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sneem.jpg",
+      license: "CC BY 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by/2.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/ring-of-kerry-tour-from-limerick/torc-waterfall.webp": {
+    alt: "Torc Waterfall in Killarney National Park",
+    credit: {
+      author: "Netzach",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Torc_Waterfall.jpg",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      modification: "Resized and converted to WebP",
+    },
+  },
+  "/images/articles/ring-of-kerry-tour-from-limerick/long-coach-day-illustration.webp": {
+    alt: "Illustrative full-day coach journey through the Irish countryside",
+    illustrative: true,
+    label: "Illustrative full-day coach journey",
+  },
+  "/images/articles/ring-of-kerry-tour-from-limerick/what-to-bring-illustration.webp": {
+    alt: "Illustrative packing essentials for a long Irish coach tour",
+    illustrative: true,
+    label: "Illustrative tour packing",
+  },
+  "/images/articles/ring-of-kerry-tour-from-limerick/short-stop-group-pace-illustration.webp": {
+    alt: "Illustrative large-group scenic stop with limited time",
+    illustrative: true,
+    label: "Illustrative group tour stop",
+  },
   "/images/articles/best-cliffs-of-moher-tours-from-limerick/the-burren.webp": {
     alt: "Limestone landscape in the Burren beside the Atlantic Ocean",
     credit: {

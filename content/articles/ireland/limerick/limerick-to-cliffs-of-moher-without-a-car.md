@@ -13,7 +13,7 @@ secondaryKeywords:
   - cliffs of moher from limerick by public transport
   - how to get to cliffs of moher from limerick
 publishedAt: 2026-08-08
-updatedAt: 2026-08-08
+updatedAt: 2026-08-12
 author: mara-vale
 heroImage: /images/articles/limerick-to-cliffs-of-moher-without-a-car/cliffs-of-moher.webp
 heroAlt: The Cliffs of Moher on Ireland's Atlantic coast
@@ -40,6 +40,7 @@ relatedSlugs:
   - one-day-itinerary
   - shannon-airport-to-limerick
   - cliffs-of-moher-tours-from-limerick
+  - ring-of-kerry-tour-from-limerick
 sources:
   - label: Bus Éireann Route 51 current route page
     url: https://www.buseireann.ie/routes-and-timetables/51

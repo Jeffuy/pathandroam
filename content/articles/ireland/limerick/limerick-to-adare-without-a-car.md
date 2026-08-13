@@ -34,8 +34,8 @@ affiliateLinks:
   - key: ring-of-kerry-from-limerick-klook
     provider: klook
     url: https://klook.tpx.lv/6Dn9B7yO
-    label: See the Ring of Kerry tour from Limerick
-    context: tour
+    label: Check Ring of Kerry tour prices and availability on Klook
+    context: day-tour
   - key: adare-gettransfer-private
     provider: gettransfer
     url: https://gettransfer.tpx.lv/eiXDp7uX
@@ -73,6 +73,7 @@ relatedSlugs:
   - limerick-to-bunratty-castle-without-a-car
   - limerick-to-cliffs-of-moher-without-a-car
   - cliffs-of-moher-tours-from-limerick
+  - ring-of-kerry-tour-from-limerick
 sources:
   - label: Bus Éireann Route 13
     url: https://www.buseireann.ie/routes-and-timetables/13
@@ -323,7 +324,7 @@ Bunratty offers a larger paid attraction and can occupy most of a day. Adare is 
 
 If three or four hours in a village sounds too light, choose a genuinely larger day rather than stretching Adare artificially.
 
-A Ring of Kerry excursion from Limerick is a completely different commitment, but it makes more sense for someone who wants a long organised sightseeing day.
+A [Ring of Kerry excursion from Limerick](/ireland/limerick/ring-of-kerry-tour-from-limerick/) is a completely different commitment, but it makes more sense for someone who wants a long organised sightseeing day.
 
 {{affiliate-link:ring-of-kerry-from-limerick-klook}}
 

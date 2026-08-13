@@ -25,6 +25,12 @@ const destinations = [
 
 const latest = [
   {
+    label: "Tour review",
+    title: "Ring of Kerry Tour from Limerick",
+    description: "See the route, current direct price, stop timings and honest trade-offs of this long coach day.",
+    href: "/ireland/limerick/ring-of-kerry-tour-from-limerick/",
+  },
+  {
     label: "Half-day trip",
     title: "Limerick to Adare Without a Car",
     description: "Take a direct bus to Adare for a realistic half-day village visit, with stops, sights and return planning.",
@@ -41,12 +47,6 @@ const latest = [
     title: "Best Cliffs of Moher Tours from Limerick",
     description: "Compare the current join-in tour with private transport and the public bus alternative.",
     href: "/ireland/limerick/cliffs-of-moher-tours-from-limerick/",
-  },
-  {
-    label: "Day trip",
-    title: "Limerick to the Cliffs of Moher Without a Car: Bus Guide",
-    description: "Use Route 51 and Route 350 for a public transport day trip through Ennis.",
-    href: "/ireland/limerick/limerick-to-cliffs-of-moher-without-a-car/",
   },
 ];
 

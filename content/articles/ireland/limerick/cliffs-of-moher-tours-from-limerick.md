@@ -16,7 +16,7 @@ secondaryKeywords:
   - cliffs of moher excursion from limerick
   - day tours from limerick to cliffs of moher
 publishedAt: 2026-08-10
-updatedAt: 2026-08-10
+updatedAt: 2026-08-12
 author: mara-vale
 heroImage: /images/articles/limerick-to-cliffs-of-moher-without-a-car/cliffs-of-moher.webp
 heroAlt: The Cliffs of Moher on Ireland's Atlantic coast
@@ -43,6 +43,7 @@ relatedSlugs:
   - limerick-to-cliffs-of-moher-without-a-car
   - one-day-itinerary
   - shannon-airport-to-limerick
+  - ring-of-kerry-tour-from-limerick
 sources:
   - label: Klook Cliffs of Moher tour from Limerick
     url: https://www.klook.com/en-GB/activity/123191-cliffs-of-moher-tour-from-limerick/
