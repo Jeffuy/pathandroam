@@ -212,7 +212,7 @@ You do not need an hour unless you are particularly interested in church archite
 
 Adare Heritage Centre sits on Main Street and is useful even if you do not want a formal attraction experience.
 
-The centre provides visitor information, free maps, shops, food and a historical exhibition. The exhibition is currently free and open year-round. The centre opens seven days a week, but check the official site for the current closing time because its pages are not fully consistent.
+The centre provides visitor information, free maps, shops, food and a historical exhibition. The exhibition is currently free and open year-round. The Heritage Centre is open seven days a week. Check the official website for current opening hours before visiting.
 
 This is also the place to ask about access to Desmond Castle.
 

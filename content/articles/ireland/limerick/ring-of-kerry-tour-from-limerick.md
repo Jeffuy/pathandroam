@@ -301,7 +301,7 @@ Check the live Klook package details for your date because third-party booking p
 
 The review pattern is more useful than the average score alone.
 
-Klook currently shows five visible reviews for this listing, with an overall 4.8 out of 5. The small sample is strongly positive about the scenery, planning and guides, but it is too limited to settle every question about day-to-day operations.
+Klook currently displays a 4.8 out of 5 score and five visible comments for this listing. The platform also notes that this is a newer activity and may use the provider's average rating from other activities as additional context, so the small review sample for this exact tour should be treated cautiously.
 
 The larger body of recent reviews for the same Limerick Ring of Kerry route is more mixed.
 
