@@ -239,11 +239,19 @@ export function selectArticleAffiliates(entries = [], limit = 2) {
     .map(({ entry }) => entry);
 }
 
+export function getPrimaryArticleAffiliates(entries = [], keys = [], limit = 2) {
+  return keys
+    .map((key) => getArticleAffiliateLink(entries, key))
+    .filter(Boolean)
+    .slice(0, limit);
+}
+
 export function affiliateContextLabel(context) {
   const labels = {
     tour: "Tour booking option",
     "day-tour": "Tour booking option",
     ticket: "Ticket option",
+    "attraction-ticket": "Attraction ticket",
     "private-day-trip": "Private day-trip option",
     "private-transfer": "Private transfer option",
     transfer: "Transfer option",

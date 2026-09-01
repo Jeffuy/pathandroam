@@ -11,6 +11,7 @@ export default function AffiliateCard({
   showDisclosure = true,
   placement = "unknown",
   compact = false,
+  position,
 }) {
   const entry = articleAffiliate
     ? getArticleAffiliateLink([articleAffiliate], articleAffiliate.key)
@@ -23,7 +24,7 @@ export default function AffiliateCard({
       <p className="story-label">{eyebrow}</p>
       <h2>{title || entry.label}</h2>
       <p>{description || entry.description || affiliateProviderName(entry)}</p>
-      <AffiliateLink affiliateKey={affiliateKey} articleAffiliate={articleAffiliate} className="text-link" placement={placement}>
+      <AffiliateLink affiliateKey={affiliateKey} articleAffiliate={articleAffiliate} className="text-link" placement={placement} position={position}>
         {entry.label} <span aria-hidden="true">↗</span>
       </AffiliateLink>
     </aside>

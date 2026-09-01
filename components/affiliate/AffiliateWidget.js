@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { isValidAffiliateWidgetUrl } from "../../lib/affiliate-widget.js";
 
-export default function AffiliateWidget({ scriptSrc, label }) {
+export default function AffiliateWidget({ affiliateKey, context, scriptSrc, label, placement, position, provider }) {
   const containerRef = useRef(null);
   const isValid = isValidAffiliateWidgetUrl(scriptSrc);
 
@@ -25,6 +25,12 @@ export default function AffiliateWidget({ scriptSrc, label }) {
     <section
       aria-label={label}
       className="article-affiliate-widget"
+      data-affiliate-widget="true"
+      data-affiliate-widget-key={affiliateKey}
+      data-affiliate-provider={provider}
+      data-affiliate-context={context || "general"}
+      data-affiliate-placement={placement || "article_inline"}
+      data-affiliate-position={position}
       ref={containerRef}
     />
   );

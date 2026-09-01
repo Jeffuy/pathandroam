@@ -2132,32 +2132,51 @@ summary {
   display: flex;
   min-width: 0;
   flex-direction: column;
-  padding: 1.25rem;
   border: 1px solid var(--line);
   border-top: 2px solid var(--rust);
   background: var(--white);
 }
 
-.commercial-guides__grid h3 {
-  margin: 0;
+.commercial-guides__card-link {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  padding: 1.25rem;
+  text-decoration: none;
+}
+
+.commercial-guides__card-link > .story-label {
+  display: block;
+}
+
+.commercial-guides__grid article:hover,
+.commercial-guides__grid article:focus-within {
+  border-color: var(--rust);
+  box-shadow: 0 0.8rem 2rem rgba(29, 40, 34, 0.09);
+}
+
+.commercial-guides__card-link:focus-visible {
+  outline-offset: -4px;
+}
+
+.commercial-guides__title {
   font-family: var(--serif);
   font-size: 1.45rem;
   font-weight: 500;
   line-height: 1.12;
-}
-
-.commercial-guides__grid h3 a {
+  text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2rem;
 }
 
-.commercial-guides__grid article > p:not(.story-label) {
+.commercial-guides__description {
   margin: 0.8rem 0 1rem;
   color: var(--muted);
   font-size: 0.9rem;
 }
 
-.commercial-guides__link {
+.commercial-guides__action {
   margin-top: auto;
   color: var(--rust);
   font-size: 0.78rem;
@@ -2191,6 +2210,7 @@ summary {
 }
 
 .mobile-affiliate-bar {
+  display: none;
   position: fixed;
   z-index: 12;
   right: 0;
@@ -2199,6 +2219,15 @@ summary {
   padding: 0.55rem 1rem calc(0.55rem + env(safe-area-inset-bottom));
   border-top: 1px solid var(--line);
   background: rgba(255, 253, 248, 0.97);
+}
+
+.mobile-affiliate-bar.is-visible {
+  display: block;
+}
+
+.mobile-affiliate-end-sentinel {
+  width: 100%;
+  height: 1px;
 }
 
 .mobile-affiliate-bar a {
@@ -2239,18 +2268,30 @@ summary {
   }
 }
 
+@media (min-width: 48rem) {
+  .article-hero {
+    aspect-ratio: 2 / 1;
+  }
+}
+
 @media (min-width: 64rem) {
   .commercial-guides__grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .mobile-affiliate-bar {
+  .mobile-affiliate-bar,
+  .mobile-affiliate-bar.is-visible {
     display: none;
   }
 
   .article-template:has(.mobile-affiliate-bar) article {
     padding-bottom: 0;
   }
+}
+
+.mobile-nav__featured {
+  color: var(--rust);
+  font-weight: 700;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(siteConfig.gaId)}`} strategy="afterInteractive" />
             <Script id="google-analytics" strategy="afterInteractive">
-              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('js',new Date());gtag('config',${JSON.stringify(siteConfig.gaId)});`}
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('js',new Date());gtag('config',${JSON.stringify(siteConfig.gaId)});window.dispatchEvent(new Event('ga-ready'));`}
             </Script>
           </>
         )}

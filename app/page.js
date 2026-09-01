@@ -6,7 +6,7 @@ import DestinationCard from "../components/DestinationCard";
 import FeaturedArticleCard from "../components/FeaturedArticleCard";
 import Hero from "../components/Hero";
 import { createPageMetadata } from "../lib/seo.js";
-import { getAllContent, getContentRoute, isPublishedMonetizedContent } from "../lib/content.js";
+import { getAllContent, getContentRoute, isPublishedMonetizedContent, sortCommercialContent } from "../lib/content.js";
 
 export const metadata = createPageMetadata({
   title: "Independent Travel Guides & Trip Planning",
@@ -29,9 +29,8 @@ function opportunityLabel(entry) {
 
 export default async function Home() {
   const allContent = await getAllContent();
-  const monetizedGuides = allContent
-    .filter((entry) => entry.contentType === "article" && isPublishedMonetizedContent(entry))
-    .sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt)) || a.title.localeCompare(b.title))
+  const monetizedGuides = sortCommercialContent(allContent
+    .filter((entry) => entry.contentType === "article" && entry.citySlug === "limerick" && isPublishedMonetizedContent(entry)))
     .slice(0, 4)
     .map((entry) => ({ label: opportunityLabel(entry), title: entry.title, description: entry.description, href: getContentRoute(entry) }));
   const latest = allContent
@@ -44,7 +43,7 @@ export default async function Home() {
     <main id="main-content" tabIndex={-1}>
       <Hero />
       <div className="section page-width home-bookable-guides">
-        <CommercialGuideLinks articles={monetizedGuides} eyebrow="Plan & book" title="Popular trips from Limerick" id="bookable-guides" />
+        <CommercialGuideLinks articles={monetizedGuides} eyebrow="Plan & book" title="Trips you can plan from Limerick" id="bookable-guides" placement="home_bookable_guides" />
       </div>
       <section className="section page-width" id="destinations" aria-labelledby="destinations-title">
         <div className="section-heading"><div><p className="eyebrow">Where to go</p><h2 id="destinations-title">Featured destinations</h2></div><p>Start with a place, then use practical guidance to shape the trip.</p></div>

@@ -28,6 +28,9 @@ draft: false
 noindex: false
 affiliateDisclosure: true
 affiliateKeys: []
+primaryAffiliateKeys:
+  - ring-of-kerry-from-limerick-klook
+commercialPriority: 2
 affiliateLinks:
   - key: ring-of-kerry-from-limerick-klook
     provider: klook

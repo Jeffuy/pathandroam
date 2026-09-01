@@ -31,7 +31,7 @@ export default function CityHubLayout({ city, children }) {
         </div>
       </header>
       <div className="page-width hub-commercial-guides">
-        <CommercialGuideLinks articles={city.commercialArticles} eyebrow="Plan & book" title="Popular trips & booking guides" id="city-booking-guides" />
+        <CommercialGuideLinks articles={city.commercialArticles} eyebrow="Plan & book" title="Trips & booking guides" id="city-booking-guides" placement="city_hub_bookable_guides" />
       </div>
       <div className="city-template__content page-width">
         <div className="hub-template__body">{children}</div>

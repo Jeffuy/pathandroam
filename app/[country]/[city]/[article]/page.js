@@ -3,6 +3,7 @@ import MarkdownContent from "../../../../components/MarkdownContent";
 import ArticleLayout from "../../../../components/templates/ArticleLayout";
 import StructuredData from "../../../../components/StructuredData";
 import { getAuthor } from "../../../../data/authors";
+import { affiliateContextLabel } from "../../../../data/affiliates";
 import {
   getArticle,
   getArticleParams,
@@ -10,6 +11,7 @@ import {
   getContentRoute,
   getRelatedContent,
   isPublishedMonetizedContent,
+  sortCommercialContent,
 } from "../../../../lib/content";
 import {
   articleStructuredData,
@@ -47,7 +49,7 @@ export default async function ArticlePage({ params }) {
   const author = getAuthor(entry.author);
   if (!author) notFound();
   const related = await getRelatedContent(entry.relatedSlugs, entry.slug);
-  const commercialRelated = related.filter(isPublishedMonetizedContent).slice(0, 3);
+  const commercialRelated = sortCommercialContent(related.filter(isPublishedMonetizedContent)).slice(0, 3);
   const articleContent = {
     category: entry.contentType === "article" ? "Travel guide" : entry.contentType,
     destination: entry.city,
@@ -67,6 +69,7 @@ export default async function ArticlePage({ params }) {
     ],
     affiliateDisclosure: entry.affiliateDisclosure,
     affiliateKeys: entry.affiliateKeys,
+    primaryAffiliateKeys: entry.primaryAffiliateKeys,
     affiliateLinks: entry.affiliateLinks,
     affiliateWidgets: entry.affiliateWidgets,
     practicalSummary: null,
@@ -75,7 +78,7 @@ export default async function ArticlePage({ params }) {
     practicalInfo: [],
     sources: entry.sources,
     commercialRelatedArticles: commercialRelated.map((item) => ({
-      label: item.affiliateLinks?.[0]?.context || item.affiliateWidgets?.[0]?.context || "Booking guide",
+      label: affiliateContextLabel(item.affiliateLinks?.[0]?.context || item.affiliateWidgets?.[0]?.context),
       title: item.title,
       description: item.description,
       href: getContentRoute(item),
@@ -90,7 +93,7 @@ export default async function ArticlePage({ params }) {
         affiliateLinks={entry.affiliateLinks}
         affiliateWidgets={entry.affiliateWidgets}
         html={entry.html}
-        showAffiliateDisclosure={entry.affiliateDisclosure && !entry.affiliateLinks.length}
+        showAffiliateDisclosure={entry.affiliateDisclosure && !entry.primaryAffiliateKeys.length}
       />
     ),
   };

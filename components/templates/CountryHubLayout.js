@@ -26,7 +26,7 @@ export default function CountryHubLayout({ country, children }) {
         </div>
       </header>
       <div className="page-width hub-commercial-guides">
-        <CommercialGuideLinks articles={country.commercialArticles} eyebrow="Plan & book" title="Popular trips & booking guides" id="country-booking-guides" />
+        <CommercialGuideLinks articles={country.commercialArticles} eyebrow="Plan & book" title="Trips & booking guides" id="country-booking-guides" placement="country_hub_bookable_guides" />
       </div>
       <div className="hub-template__body page-width">{children}</div>
       <div className="page-width"><RelatedArticles articles={country.relatedArticles} /></div>

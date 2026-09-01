@@ -30,6 +30,10 @@ draft: false
 noindex: false
 affiliateDisclosure: true
 affiliateKeys: []
+primaryAffiliateKeys:
+  - adare-kkday-private-day-trip
+  - adare-gettransfer-private
+commercialPriority: 4
 affiliateLinks:
   - key: ring-of-kerry-from-limerick-klook
     provider: klook

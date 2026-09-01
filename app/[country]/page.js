@@ -3,6 +3,7 @@ import MarkdownContent from "../../components/MarkdownContent";
 import CountryHubLayout from "../../components/templates/CountryHubLayout";
 import StructuredData from "../../components/StructuredData";
 import { breadcrumbStructuredData } from "../../lib/structured-data.js";
+import { affiliateContextLabel } from "../../data/affiliates.js";
 import {
   getContentMetadata,
   getAllContent,
@@ -11,6 +12,7 @@ import {
   getCountryParams,
   getRelatedContent,
   isPublishedMonetizedContent,
+  sortCommercialContent,
 } from "../../lib/content";
 
 export async function generateStaticParams() {
@@ -28,8 +30,8 @@ export default async function CountryPage({ params }) {
   if (!entry) notFound();
 
   const related = await getRelatedContent(entry.relatedSlugs);
-  const commercialEntries = (await getAllContent())
-    .filter((item) => item.contentType === "article" && item.countrySlug === countrySlug && isPublishedMonetizedContent(item))
+  const commercialEntries = sortCommercialContent((await getAllContent())
+    .filter((item) => item.contentType === "article" && item.countrySlug === countrySlug && isPublishedMonetizedContent(item)))
     .slice(0, 4);
   const country = {
     name: entry.country,
@@ -43,7 +45,7 @@ export default async function CountryPage({ params }) {
       href: getContentRoute(item),
     })),
     commercialArticles: commercialEntries.map((item) => ({
-      label: item.affiliateLinks?.[0]?.context || item.affiliateWidgets?.[0]?.context || "Booking guide",
+      label: affiliateContextLabel(item.affiliateLinks?.[0]?.context || item.affiliateWidgets?.[0]?.context),
       title: item.title,
       description: item.description,
       href: getContentRoute(item),

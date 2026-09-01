@@ -1,10 +1,9 @@
 import AffiliateDisclosure from "./AffiliateDisclosure";
 import AffiliateLink from "./AffiliateLink";
-import { affiliateContextLabel, affiliateProviderName, selectArticleAffiliates } from "../../data/affiliates";
+import { affiliateContextLabel, affiliateProviderName } from "../../data/affiliates";
 
-export default function ArticleBookingSummary({ affiliateLinks }) {
-  const options = selectArticleAffiliates(affiliateLinks, 2);
-  if (!options.length) return null;
+export default function ArticleBookingSummary({ affiliates }) {
+  if (!affiliates?.length) return null;
 
   return (
     <aside className="article-booking-summary" aria-labelledby="booking-summary-title">
@@ -14,13 +13,14 @@ export default function ArticleBookingSummary({ affiliateLinks }) {
         <AffiliateDisclosure compact />
       </div>
       <div className="article-booking-summary__actions">
-        {options.map((entry, index) => (
+        {affiliates.map((entry, index) => (
           <div key={entry.key}>
             <p>{affiliateContextLabel(entry.context)} · {affiliateProviderName(entry)}</p>
             <AffiliateLink
               articleAffiliate={entry}
               className={`commercial-button${index ? " commercial-button--secondary" : ""}`}
               placement="article_top"
+              position={index + 1}
             >
               {entry.label} <span aria-hidden="true">↗</span>
             </AffiliateLink>

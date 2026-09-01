@@ -29,6 +29,9 @@ draft: false
 noindex: false
 affiliateDisclosure: true
 affiliateKeys: []
+primaryAffiliateKeys:
+  - bunratty-castle-folk-park-ticket-klook
+commercialPriority: 3
 affiliateLinks:
   - key: bunratty-castle-folk-park-ticket-klook
     provider: klook

@@ -1,6 +1,6 @@
 import { getArticleAffiliateLink, getEnabledAffiliate } from "../../data/affiliates";
 
-export default function AffiliateLink({ affiliateKey, articleAffiliate, children, className, ariaLabel, placement = "unknown" }) {
+export default function AffiliateLink({ affiliateKey, articleAffiliate, children, className, ariaLabel, placement = "unknown", position }) {
   const entry = articleAffiliate
     ? getArticleAffiliateLink([articleAffiliate], articleAffiliate.key)
     : getEnabledAffiliate(affiliateKey);
@@ -17,6 +17,7 @@ export default function AffiliateLink({ affiliateKey, articleAffiliate, children
       data-affiliate-provider={entry.provider}
       data-affiliate-context={entry.context || entry.destination || "general"}
       data-affiliate-placement={placement}
+      data-affiliate-position={position}
     >
       {children || entry.label}
     </a>

@@ -10,7 +10,7 @@ export default function MobileNav() {
       </summary>
       <nav id="mobile-navigation" aria-label="Mobile navigation">
         {primaryNavigation.map((item) => (
-          <Link href={item.href} key={item.label}>
+          <Link className={item.emphasis ? "mobile-nav__featured" : undefined} href={item.href} key={item.label}>
             {item.label}
           </Link>
         ))}

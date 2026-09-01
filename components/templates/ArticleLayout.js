@@ -12,10 +12,14 @@ import TableOfContents from "../TableOfContents";
 import AffiliateCard from "../affiliate/AffiliateCard";
 import ArticleBookingSummary from "../affiliate/ArticleBookingSummary";
 import MobileAffiliateBar from "../affiliate/MobileAffiliateBar";
-import { selectArticleAffiliates } from "../../data/affiliates";
+import { affiliateContextLabel, affiliateProviderName, getPrimaryArticleAffiliates } from "../../data/affiliates";
 
 export default function ArticleLayout({ article, children }) {
-  const selectedAffiliates = selectArticleAffiliates(article.affiliateLinks, 2);
+  const selectedAffiliates = getPrimaryArticleAffiliates(
+    article.affiliateLinks,
+    article.primaryAffiliateKeys,
+    2,
+  );
   const primaryAffiliate = selectedAffiliates[0];
   const heroDetails = getEditorialImage(article.heroImage);
 
@@ -32,7 +36,7 @@ export default function ArticleLayout({ article, children }) {
 
         {selectedAffiliates.length > 0 && (
           <div className="page-width article-booking-summary-wrap">
-            <ArticleBookingSummary affiliateLinks={article.affiliateLinks} />
+            <ArticleBookingSummary affiliates={selectedAffiliates} />
           </div>
         )}
 
@@ -53,8 +57,9 @@ export default function ArticleLayout({ article, children }) {
               <AffiliateCard
                 articleAffiliate={primaryAffiliate}
                 eyebrow="Booking option"
-                description={`${primaryAffiliate.provider} · ${primaryAffiliate.context || "travel planning"}`}
+                description={`${affiliateProviderName(primaryAffiliate)} · ${affiliateContextLabel(primaryAffiliate.context)}`}
                 placement="article_rail"
+                position={1}
                 showDisclosure={false}
                 compact
               />
@@ -81,10 +86,12 @@ export default function ArticleLayout({ article, children }) {
                 titleId="practical-information-title"
               />
             )}
+            <div className="mobile-affiliate-end-sentinel" aria-hidden="true" />
             <CommercialGuideLinks
               articles={article.commercialRelatedArticles}
               title={`More trips you can book from ${article.destination}`}
               id="bookable-next-steps"
+              placement="article_commercial_related"
             />
             <SourcesList sources={article.sources} />
           </div>

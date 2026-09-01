@@ -175,6 +175,9 @@ for (const entry of entries) {
     addError(source, "updatedAt is earlier than publishedAt");
   }
   if (draft && !noindex) addError(source, "draft content is indexable");
+  if (entry.commercialPriority !== undefined && !Number.isInteger(entry.commercialPriority)) {
+    addError(source, "commercialPriority must be an integer");
+  }
 
   if (slug) {
     const previousSource = slugSources.get(slug);
@@ -254,6 +257,23 @@ for (const entry of entries) {
     }
     if (!String(widget?.label || "").trim()) {
       addError(entry.sourcePath, `affiliate widget "${key}" is missing a label`);
+    }
+  }
+
+  const primaryAffiliateKeySet = new Set();
+  for (const primaryKeyValue of toArray(entry.primaryAffiliateKeys)) {
+    const primaryKey = String(primaryKeyValue || "");
+    if (!slugPattern.test(primaryKey)) {
+      addError(entry.sourcePath, `invalid primary affiliate key "${primaryKey}"`);
+    }
+    if (primaryAffiliateKeySet.has(primaryKey)) {
+      addError(entry.sourcePath, `duplicate primary affiliate key "${primaryKey}"`);
+    }
+    primaryAffiliateKeySet.add(primaryKey);
+    if (articleWidgetKeys.has(primaryKey)) {
+      addError(entry.sourcePath, `primary affiliate key "${primaryKey}" references a widget`);
+    } else if (!articleLinkKeys.has(primaryKey)) {
+      addError(entry.sourcePath, `primary affiliate key "${primaryKey}" is not defined in affiliateLinks`);
     }
   }
 

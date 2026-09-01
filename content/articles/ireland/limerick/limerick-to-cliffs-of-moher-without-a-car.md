@@ -23,6 +23,9 @@ draft: false
 noindex: false
 affiliateDisclosure: true
 affiliateKeys: []
+primaryAffiliateKeys:
+  - cliffs-of-moher-tour-from-limerick-klook
+commercialPriority: 5
 affiliateLinks:
   - key: cliffs-of-moher-tour-from-limerick-klook
     provider: klook

@@ -65,16 +65,20 @@ export default function MarkdownContent({
     blocks.push({ type: "html", value: html.slice(cursor) });
   }
 
+  let affiliateLinkPosition = 0;
+  let affiliateWidgetPosition = 0;
   const resolvedBlocks = blocks.map((block) => {
     if (block.type === "affiliate-link") {
       return {
         ...block,
+        position: ++affiliateLinkPosition,
         entry: getArticleAffiliateLink(affiliateLinks, block.affiliateKey),
       };
     }
     if (block.type === "affiliate-widget") {
       return {
         ...block,
+        position: ++affiliateWidgetPosition,
         entry: getArticleAffiliateWidget(affiliateWidgets, block.affiliateKey),
       };
     }
@@ -111,7 +115,7 @@ export default function MarkdownContent({
           content = (
             <div className={`article-affiliate-cta${isCompact ? " article-affiliate-cta--compact" : ""}`}>
               <p className="article-affiliate-cta__eyebrow">{affiliateContextLabel(block.entry.context)} · {affiliateProviderName(block.entry)}</p>
-              <AffiliateLink articleAffiliate={block.entry} className="article-affiliate-cta__button" placement="article_inline">
+              <AffiliateLink articleAffiliate={block.entry} className="article-affiliate-cta__button" placement="article_inline" position={block.position}>
                 {block.entry.label} <span aria-hidden="true">↗</span>
               </AffiliateLink>
             </div>
@@ -119,7 +123,12 @@ export default function MarkdownContent({
         } else if (block.type === "affiliate-widget" && block.entry) {
           content = (
             <AffiliateWidget
+              affiliateKey={block.entry.key}
+              context={block.entry.context}
               label={block.entry.label}
+              placement="article_inline"
+              position={block.position}
+              provider={block.entry.provider}
               scriptSrc={block.entry.scriptSrc}
             />
           );
