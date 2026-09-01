@@ -1,7 +1,7 @@
 export const primaryNavigation = [
-  { label: "Destinations", href: "/#destinations" },
-  { label: "Travel Guides", href: "/#guides" },
-  { label: "Trip Planning", href: "/#planning" },
+  { label: "Ireland", href: "/ireland/" },
+  { label: "Limerick", href: "/ireland/limerick/" },
+  { label: "Plan & book", href: "/#bookable-guides", emphasis: true },
   { label: "About", href: "/about" },
 ];
 

@@ -5,10 +5,12 @@ import StructuredData from "../../components/StructuredData";
 import { breadcrumbStructuredData } from "../../lib/structured-data.js";
 import {
   getContentMetadata,
+  getAllContent,
   getContentRoute,
   getCountry,
   getCountryParams,
   getRelatedContent,
+  isPublishedMonetizedContent,
 } from "../../lib/content";
 
 export async function generateStaticParams() {
@@ -26,6 +28,9 @@ export default async function CountryPage({ params }) {
   if (!entry) notFound();
 
   const related = await getRelatedContent(entry.relatedSlugs);
+  const commercialEntries = (await getAllContent())
+    .filter((item) => item.contentType === "article" && item.countrySlug === countrySlug && isPublishedMonetizedContent(item))
+    .slice(0, 4);
   const country = {
     name: entry.country,
     introduction: entry.description,
@@ -35,6 +40,12 @@ export default async function CountryPage({ params }) {
     relatedArticles: related.map((item) => ({
       label: item.contentType === "city" ? "City guide" : "Article",
       title: item.title,
+      href: getContentRoute(item),
+    })),
+    commercialArticles: commercialEntries.map((item) => ({
+      label: item.affiliateLinks?.[0]?.context || item.affiliateWidgets?.[0]?.context || "Booking guide",
+      title: item.title,
+      description: item.description,
       href: getContentRoute(item),
     })),
   };
@@ -49,7 +60,7 @@ export default async function CountryPage({ params }) {
       />
       <CountryHubLayout country={country}>
         <section className="template-copy content-copy" aria-label={`${entry.country} guide content`}>
-          <MarkdownContent html={entry.html} />
+          <MarkdownContent affiliateLinks={entry.affiliateLinks} affiliateWidgets={entry.affiliateWidgets} html={entry.html} showAffiliateDisclosure={entry.affiliateDisclosure} />
         </section>
       </CountryHubLayout>
     </>

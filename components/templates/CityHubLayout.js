@@ -4,6 +4,7 @@ import Breadcrumbs from "../Breadcrumbs";
 import ImageCaption from "../ImageCaption";
 import PracticalInfoBlock from "../PracticalInfoBlock";
 import RelatedArticles from "../RelatedArticles";
+import CommercialGuideLinks from "../CommercialGuideLinks";
 
 export default function CityHubLayout({ city, children }) {
   const heroDetails = getEditorialImage(city.heroImage);
@@ -29,9 +30,12 @@ export default function CityHubLayout({ city, children }) {
           <p>{city.introduction}</p>
         </div>
       </header>
+      <div className="page-width hub-commercial-guides">
+        <CommercialGuideLinks articles={city.commercialArticles} eyebrow="Plan & book" title="Popular trips & booking guides" id="city-booking-guides" />
+      </div>
       <div className="city-template__content page-width">
         <div className="hub-template__body">{children}</div>
-        <PracticalInfoBlock title="Planning snapshot" items={city.practicalInfo} />
+        {city.practicalInfo?.length > 1 && <PracticalInfoBlock title="Planning snapshot" items={city.practicalInfo} />}
       </div>
       <div className="page-width"><RelatedArticles articles={city.relatedArticles} /></div>
     </main>

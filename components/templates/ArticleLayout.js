@@ -4,17 +4,19 @@ import AuthorBox from "../AuthorBox";
 import AuthorInline from "../AuthorInline";
 import Breadcrumbs from "../Breadcrumbs";
 import ImageCaption from "../ImageCaption";
-import NewsletterPlaceholder from "../NewsletterPlaceholder";
+import CommercialGuideLinks from "../CommercialGuideLinks";
 import PracticalInfoBlock from "../PracticalInfoBlock";
 import RelatedArticles from "../RelatedArticles";
 import SourcesList from "../SourcesList";
 import TableOfContents from "../TableOfContents";
 import AffiliateCard from "../affiliate/AffiliateCard";
-import AffiliateDisclosure from "../affiliate/AffiliateDisclosure";
-import { getEnabledAffiliates } from "../../data/affiliates";
+import ArticleBookingSummary from "../affiliate/ArticleBookingSummary";
+import MobileAffiliateBar from "../affiliate/MobileAffiliateBar";
+import { selectArticleAffiliates } from "../../data/affiliates";
 
 export default function ArticleLayout({ article, children }) {
-  const activeAffiliates = getEnabledAffiliates(article.affiliateKeys);
+  const selectedAffiliates = selectArticleAffiliates(article.affiliateLinks, 2);
+  const primaryAffiliate = selectedAffiliates[0];
   const heroDetails = getEditorialImage(article.heroImage);
 
   return (
@@ -27,6 +29,12 @@ export default function ArticleLayout({ article, children }) {
           <p className="article-header__subtitle">{article.subtitle}</p>
           <AuthorInline author={article.author} publishedAt={article.publishedAt} updatedAt={article.updatedAt} />
         </header>
+
+        {selectedAffiliates.length > 0 && (
+          <div className="page-width article-booking-summary-wrap">
+            <ArticleBookingSummary affiliateLinks={article.affiliateLinks} />
+          </div>
+        )}
 
         <div className="article-hero page-width">
           <Image
@@ -41,6 +49,16 @@ export default function ArticleLayout({ article, children }) {
         <div className="article-shell page-width">
           <aside className="article-rail">
             <TableOfContents items={article.tableOfContents} />
+            {primaryAffiliate && (
+              <AffiliateCard
+                articleAffiliate={primaryAffiliate}
+                eyebrow="Booking option"
+                description={`${primaryAffiliate.provider} · ${primaryAffiliate.context || "travel planning"}`}
+                placement="article_rail"
+                showDisclosure={false}
+                compact
+              />
+            )}
           </aside>
           <div className="article-main">
             {article.practicalSummary && (
@@ -51,18 +69,6 @@ export default function ArticleLayout({ article, children }) {
               />
             )}
             <div className="article-body">{article.html || children}</div>
-            {activeAffiliates.length > 0 && (
-              <div className="affiliate-recommendations">
-                {article.affiliateDisclosure !== false && <AffiliateDisclosure compact />}
-                {activeAffiliates.map((entry) => (
-                  <AffiliateCard
-                    affiliateKey={entry.key}
-                    key={entry.key}
-                    showDisclosure={false}
-                  />
-                ))}
-              </div>
-            )}
             {article.monetizationSlots?.map((slot) => (
               <aside className="monetization-slot" key={slot.title}>
                 <h2>{slot.title}</h2>
@@ -75,6 +81,11 @@ export default function ArticleLayout({ article, children }) {
                 titleId="practical-information-title"
               />
             )}
+            <CommercialGuideLinks
+              articles={article.commercialRelatedArticles}
+              title={`More trips you can book from ${article.destination}`}
+              id="bookable-next-steps"
+            />
             <SourcesList sources={article.sources} />
           </div>
         </div>
@@ -83,7 +94,7 @@ export default function ArticleLayout({ article, children }) {
           <AuthorBox author={article.author} />
         </div>
       </article>
-      <NewsletterPlaceholder />
+      <MobileAffiliateBar affiliate={primaryAffiliate} />
     </main>
   );
 }

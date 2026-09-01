@@ -6,10 +6,12 @@ import StructuredData from "../../../components/StructuredData";
 import { breadcrumbStructuredData } from "../../../lib/structured-data.js";
 import {
   getCity,
+  getAllContent,
   getCityParams,
   getContentMetadata,
   getContentRoute,
   getRelatedContent,
+  isPublishedMonetizedContent,
 } from "../../../lib/content";
 
 export async function generateStaticParams() {
@@ -27,6 +29,9 @@ export default async function CityPage({ params }) {
   if (!entry) notFound();
 
   const related = await getRelatedContent(entry.relatedSlugs);
+  const commercialEntries = (await getAllContent())
+    .filter((item) => item.contentType === "article" && item.countrySlug === country && item.citySlug === city && isPublishedMonetizedContent(item))
+    .slice(0, 4);
   const cityContent = {
     name: entry.city,
     introduction: entry.description,
@@ -38,9 +43,13 @@ export default async function CityPage({ params }) {
       { label: entry.country, href: `/${country}` },
       { label: entry.city },
     ],
-    practicalInfo: [
-      { label: "Region", value: entry.region || "Not specified" },
-    ],
+    practicalInfo: [],
+    commercialArticles: commercialEntries.map((item) => ({
+      label: item.affiliateLinks?.[0]?.context || item.affiliateWidgets?.[0]?.context || "Booking guide",
+      title: item.title,
+      description: item.description,
+      href: getContentRoute(item),
+    })),
     relatedArticles: related.map((item) => ({
       label: item.contentType === "country" ? "Country guide" : "Article",
       title: item.title,
@@ -59,7 +68,7 @@ export default async function CityPage({ params }) {
       />
       <CityHubLayout city={cityContent}>
         <div className="template-copy content-copy">
-          <MarkdownContent html={entry.html} />
+          <MarkdownContent affiliateLinks={entry.affiliateLinks} affiliateWidgets={entry.affiliateWidgets} html={entry.html} showAffiliateDisclosure={entry.affiliateDisclosure} />
           <SourcesList sources={entry.sources} />
         </div>
       </CityHubLayout>

@@ -1,25 +1,30 @@
-import { getEnabledAffiliate } from "../../data/affiliates";
+import { affiliateProviderName, getArticleAffiliateLink, getEnabledAffiliate } from "../../data/affiliates";
 import AffiliateDisclosure from "./AffiliateDisclosure";
 import AffiliateLink from "./AffiliateLink";
 
 export default function AffiliateCard({
   affiliateKey,
+  articleAffiliate,
   title,
   description,
   eyebrow = "Planning option",
   showDisclosure = true,
+  placement = "unknown",
+  compact = false,
 }) {
-  const entry = getEnabledAffiliate(affiliateKey);
+  const entry = articleAffiliate
+    ? getArticleAffiliateLink([articleAffiliate], articleAffiliate.key)
+    : getEnabledAffiliate(affiliateKey);
   if (!entry) return null;
 
   return (
-    <aside className="affiliate-card">
+    <aside className={`affiliate-card${compact ? " affiliate-card--compact" : ""}`}>
       {showDisclosure && <AffiliateDisclosure compact />}
       <p className="story-label">{eyebrow}</p>
       <h2>{title || entry.label}</h2>
-      <p>{description || entry.description}</p>
-      <AffiliateLink affiliateKey={affiliateKey} className="text-link">
-        View with {entry.provider} <span aria-hidden="true">↗</span>
+      <p>{description || entry.description || affiliateProviderName(entry)}</p>
+      <AffiliateLink affiliateKey={affiliateKey} articleAffiliate={articleAffiliate} className="text-link" placement={placement}>
+        {entry.label} <span aria-hidden="true">↗</span>
       </AffiliateLink>
     </aside>
   );

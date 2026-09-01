@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Breadcrumbs from "../Breadcrumbs";
 import RelatedArticles from "../RelatedArticles";
+import CommercialGuideLinks from "../CommercialGuideLinks";
 
 export default function CountryHubLayout({ country, children }) {
   return (
@@ -24,6 +25,9 @@ export default function CountryHubLayout({ country, children }) {
           <span className="image-note">Illustrative image</span>
         </div>
       </header>
+      <div className="page-width hub-commercial-guides">
+        <CommercialGuideLinks articles={country.commercialArticles} eyebrow="Plan & book" title="Popular trips & booking guides" id="country-booking-guides" />
+      </div>
       <div className="hub-template__body page-width">{children}</div>
       <div className="page-width"><RelatedArticles articles={country.relatedArticles} /></div>
     </main>

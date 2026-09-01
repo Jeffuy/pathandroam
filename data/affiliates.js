@@ -211,3 +211,51 @@ export function getArticleAffiliateWidget(entries = [], key) {
   }
   return String(entry.label || "").trim() ? entry : null;
 }
+
+const bookingContextPriority = Object.freeze({
+  tour: 0,
+  "day-tour": 0,
+  ticket: 1,
+  "private-day-trip": 2,
+  "private-transfer": 3,
+  transfer: 4,
+  "airport-transfer": 4,
+  transport: 5,
+});
+
+export function getValidArticleAffiliateLinks(entries = []) {
+  return entries.filter((entry) => getArticleAffiliateLink(entries, entry.key));
+}
+
+export function selectArticleAffiliates(entries = [], limit = 2) {
+  return getValidArticleAffiliateLinks(entries)
+    .map((entry, index) => ({
+      entry,
+      index,
+      priority: bookingContextPriority[entry.context] ?? 20,
+    }))
+    .sort((a, b) => a.priority - b.priority || a.index - b.index)
+    .slice(0, limit)
+    .map(({ entry }) => entry);
+}
+
+export function affiliateContextLabel(context) {
+  const labels = {
+    tour: "Tour booking option",
+    "day-tour": "Tour booking option",
+    ticket: "Ticket option",
+    "private-day-trip": "Private day-trip option",
+    "private-transfer": "Private transfer option",
+    transfer: "Transfer option",
+    "airport-transfer": "Airport transfer option",
+    transport: "Transport option",
+    accommodation: "Stay option",
+    esim: "Connectivity option",
+    connectivity: "Connectivity option",
+  };
+  return labels[context] || "Booking option";
+}
+
+export function affiliateProviderName(entry) {
+  return affiliateRegistry[entry?.provider]?.provider || entry?.provider || "Provider";
+}

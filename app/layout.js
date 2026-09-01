@@ -4,6 +4,7 @@ import { siteConfig } from "../lib/site-config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import StructuredData from "../components/StructuredData";
+import AffiliateClickTracker from "../components/analytics/AffiliateClickTracker";
 import { createPageMetadata } from "../lib/seo.js";
 import {
   organizationStructuredData,
@@ -48,9 +49,18 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <AffiliateClickTracker />
+        {siteConfig.gaId && (
+          <>
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(siteConfig.gaId)}`} strategy="afterInteractive" />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('js',new Date());gtag('config',${JSON.stringify(siteConfig.gaId)});`}
+            </Script>
+          </>
+        )}
         <Script
           id="travelpayouts-drive"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           nowprocket=""
           data-noptimize="1"
           data-cfasync="false"

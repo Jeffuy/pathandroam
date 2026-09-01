@@ -21,8 +21,8 @@ export default function Hero() {
           Independent destination guides, practical itineraries and transport
           advice for planning trips with or without a car.
         </p>
-        <a className="text-link text-link--light" href="#destinations">
-          Start exploring <span aria-hidden="true">→</span>
+        <a className="text-link text-link--light" href="#bookable-guides">
+          Explore bookable trips <span aria-hidden="true">→</span>
         </a>
       </div>
     </section>

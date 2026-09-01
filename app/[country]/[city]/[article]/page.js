@@ -9,6 +9,7 @@ import {
   getContentMetadata,
   getContentRoute,
   getRelatedContent,
+  isPublishedMonetizedContent,
 } from "../../../../lib/content";
 import {
   articleStructuredData,
@@ -46,6 +47,7 @@ export default async function ArticlePage({ params }) {
   const author = getAuthor(entry.author);
   if (!author) notFound();
   const related = await getRelatedContent(entry.relatedSlugs, entry.slug);
+  const commercialRelated = related.filter(isPublishedMonetizedContent).slice(0, 3);
   const articleContent = {
     category: entry.contentType === "article" ? "Travel guide" : entry.contentType,
     destination: entry.city,
@@ -65,12 +67,20 @@ export default async function ArticlePage({ params }) {
     ],
     affiliateDisclosure: entry.affiliateDisclosure,
     affiliateKeys: entry.affiliateKeys,
+    affiliateLinks: entry.affiliateLinks,
+    affiliateWidgets: entry.affiliateWidgets,
     practicalSummary: null,
     tableOfContents: entry.tableOfContents,
     monetizationSlots: [],
     practicalInfo: [],
     sources: entry.sources,
-    relatedArticles: related.map((item) => ({
+    commercialRelatedArticles: commercialRelated.map((item) => ({
+      label: item.affiliateLinks?.[0]?.context || item.affiliateWidgets?.[0]?.context || "Booking guide",
+      title: item.title,
+      description: item.description,
+      href: getContentRoute(item),
+    })),
+    relatedArticles: related.filter((item) => !commercialRelated.includes(item)).map((item) => ({
       label: item.contentType === "country" ? "Country guide" : item.contentType === "city" ? "City guide" : "Article",
       title: item.title,
       href: getContentRoute(item),
@@ -80,7 +90,7 @@ export default async function ArticlePage({ params }) {
         affiliateLinks={entry.affiliateLinks}
         affiliateWidgets={entry.affiliateWidgets}
         html={entry.html}
-        showAffiliateDisclosure={entry.affiliateDisclosure}
+        showAffiliateDisclosure={entry.affiliateDisclosure && !entry.affiliateLinks.length}
       />
     ),
   };

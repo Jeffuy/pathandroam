@@ -81,10 +81,11 @@ async function readEntries() {
     const sourcePath = path.relative(process.cwd(), file).replaceAll(path.sep, "/");
     try {
       const source = await readFile(file, "utf8");
-      const { data } = matter(source);
+      const { data, content } = matter(source);
       const relativeParts = path.relative(contentRoot, file).split(path.sep);
       entries.push({
         ...data,
+        body: content,
         sourcePath,
         rawPublishedAt: rawFrontmatterValue(source, "publishedAt"),
         rawUpdatedAt: rawFrontmatterValue(source, "updatedAt"),
@@ -211,16 +212,20 @@ for (const entry of entries) {
   }
 
   const articleAffiliateKeys = new Set();
+  const articleLinkKeys = new Set();
+  const articleWidgetKeys = new Set();
   const affiliateLinks = toArray(entry.affiliateLinks);
   const affiliateWidgets = toArray(entry.affiliateWidgets);
 
   for (const link of affiliateLinks) {
     const key = String(link?.key || "");
     const provider = String(link?.provider || "").toLowerCase();
+    if (!slugPattern.test(key)) addError(entry.sourcePath, `invalid article affiliate key "${key}"`);
     if (!key || articleAffiliateKeys.has(key)) {
       addError(entry.sourcePath, `missing or duplicate article affiliate key "${key}"`);
     }
     articleAffiliateKeys.add(key);
+    articleLinkKeys.add(key);
     if (!affiliateRegistry[provider]) {
       addError(entry.sourcePath, `unknown article affiliate provider "${provider}"`);
     }
@@ -235,10 +240,12 @@ for (const entry of entries) {
   for (const widget of affiliateWidgets) {
     const key = String(widget?.key || "");
     const provider = String(widget?.provider || "").toLowerCase();
+    if (!slugPattern.test(key)) addError(entry.sourcePath, `invalid article affiliate key "${key}"`);
     if (!key || articleAffiliateKeys.has(key)) {
       addError(entry.sourcePath, `missing or duplicate article affiliate key "${key}"`);
     }
     articleAffiliateKeys.add(key);
+    articleWidgetKeys.add(key);
     if (!affiliateRegistry[provider]) {
       addError(entry.sourcePath, `unknown article affiliate provider "${provider}"`);
     }
@@ -252,6 +259,18 @@ for (const entry of entries) {
 
   if ((affiliateLinks.length || affiliateWidgets.length) && entry.affiliateDisclosure !== true) {
     addError(entry.sourcePath, "article affiliate configuration requires disclosure");
+  }
+
+  const placeholderPattern = /\{\{affiliate-(link|widget):([a-z0-9]+(?:-[a-z0-9]+)*)\}\}/g;
+  for (const match of String(entry.body || "").matchAll(placeholderPattern)) {
+    const [, type, key] = match;
+    if (type === "link" && articleWidgetKeys.has(key)) {
+      addError(entry.sourcePath, `link placeholder "${key}" references a widget definition`);
+    } else if (type === "widget" && articleLinkKeys.has(key)) {
+      addError(entry.sourcePath, `widget placeholder "${key}" references a link definition`);
+    } else if (!articleAffiliateKeys.has(key)) {
+      addError(entry.sourcePath, `${type} placeholder references undefined affiliate key "${key}"`);
+    }
   }
 }
 

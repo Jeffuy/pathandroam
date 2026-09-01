@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 import Image from "next/image";
 import {
+  affiliateContextLabel,
+  affiliateProviderName,
   getArticleAffiliateLink,
   getArticleAffiliateWidget,
 } from "../data/affiliates";
@@ -108,10 +110,8 @@ export default function MarkdownContent({
 
           content = (
             <div className={`article-affiliate-cta${isCompact ? " article-affiliate-cta--compact" : ""}`}>
-              <p className="article-affiliate-cta__eyebrow">
-                {isCompact ? "Stay option" : "Booking option"}
-              </p>
-              <AffiliateLink articleAffiliate={block.entry} className="article-affiliate-cta__button">
+              <p className="article-affiliate-cta__eyebrow">{affiliateContextLabel(block.entry.context)} · {affiliateProviderName(block.entry)}</p>
+              <AffiliateLink articleAffiliate={block.entry} className="article-affiliate-cta__button" placement="article_inline">
                 {block.entry.label} <span aria-hidden="true">↗</span>
               </AffiliateLink>
             </div>

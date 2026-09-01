@@ -10,7 +10,7 @@ export default function Header() {
         <Logo />
         <nav className="desktop-nav" aria-label="Primary navigation">
           {primaryNavigation.map((item) => (
-            <Link href={item.href} key={item.label}>
+            <Link className={item.emphasis ? "desktop-nav__featured" : undefined} href={item.href} key={item.label}>
               {item.label}
             </Link>
           ))}
