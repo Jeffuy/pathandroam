@@ -18,6 +18,7 @@
 16. Never fabricate personal travel experience.
 17. Mara Vale is an editorial pen name, not a real traveler persona.
 18. Never claim Mara visited, stayed, tested or personally experienced something unless explicitly supplied as factual.
+    Existing firsthand observations in published content are confirmed owner-supplied factual experiences. Preserve them under Mara Vale's editorial pen name; do not neutralize them because it is a pen name. Never invent new experiences or expand existing ones beyond the original account. Where relevant, distinguish time-sensitive observations from guaranteed current conditions.
 19. AI-generated imagery is illustrative and must not be presented as documentary evidence.
 20. Affiliate links must be centralized, never hardcoded in article content.
 21. Affiliate links use `rel="sponsored nofollow noopener"`.

@@ -13,8 +13,8 @@ export default function robots() {
 
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: "/templates/" },
-      { userAgent: "Googlebot", allow: "/", disallow: "/templates/" },
+      { userAgent: "*", allow: "/" },
+      { userAgent: "Googlebot", allow: "/" },
     ],
     sitemap: absoluteUrl("/sitemap.xml"),
     host: siteConfig.siteUrl,
