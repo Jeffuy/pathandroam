@@ -132,7 +132,7 @@ The journey is direct. There is no reason to change buses between Limerick and A
 
 A typical trip can take around 20 minutes in light traffic, but allowing 20 to 30 minutes is more realistic. Adare sits directly on the N21, and traffic through the village can slow the final part of the journey.
 
-Check the current Route 13 timetable for the direct journey from Limerick Colbert Station to Adare. Allow extra time for traffic and check travel updates when roadworks are active.
+On a previous Route 13 journey from Limerick Colbert Station, the trip was direct and took about 20 to 30 minutes depending on traffic. Treat that as a practical observation, not a guaranteed running time. Check current travel updates if roadworks are active.
 
 ![Illustrative coach journey toward an Irish village](/images/articles/limerick-to-adare-without-a-car/adare-public-transport-illustration.webp)
 
