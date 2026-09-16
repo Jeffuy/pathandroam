@@ -1,3 +1,5 @@
+import { siteConfig } from "../lib/site-config.js";
+
 export const primaryNavigation = [
   { label: "Ireland", href: "/ireland/" },
   { label: "Limerick", href: "/ireland/limerick/" },
@@ -8,7 +10,7 @@ export const primaryNavigation = [
 export const footerNavigation = [
   ...primaryNavigation,
   { label: "Editorial Policy", href: "/editorial-policy" },
-  { label: "Contact", href: "/contact" },
+  ...(siteConfig.contactEmail ? [{ label: "Contact", href: "/contact" }] : []),
   { label: "Affiliate Disclosure", href: "/affiliate-disclosure" },
   { label: "Privacy", href: "/privacy" },
   { label: "Cookies", href: "/cookies" },

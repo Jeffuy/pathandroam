@@ -1,3 +1,4 @@
+import Link from "next/link";
 import EditorialPage from "../../components/EditorialPage";
 import { createPageMetadata } from "../../lib/seo.js";
 
@@ -26,15 +27,20 @@ export default function PrivacyPage() {
       <section>
         <h2>Technical information</h2>
         <p>
-          Hosting, analytics or affiliate technology may process standard technical data,
-          such as device, browser, referral and interaction information.
+          Hosting processes technical information needed to deliver and protect this
+          website. With your consent, Google Analytics (when configured) measures visits
+          and booking-link interactions, while Travelpayouts provides affiliate tracking
+          and booking widgets. These providers may process device, browser, referral
+          and interaction information. Optional scripts do not load before consent.
         </p>
       </section>
       <section>
         <h2>Your choices</h2>
         <p>
-          Available privacy rights and request procedures depend on applicable law and
-          the visitor&apos;s location.
+          Use Cookie settings at the bottom of any page to reject optional tracking
+          or revise your choices. See the <Link href="/cookies">cookie policy</Link> for
+          storage duration, provider policies and withdrawal details. Ordinary
+          outbound booking links remain available without optional tracking consent.
         </p>
       </section>
     </EditorialPage>

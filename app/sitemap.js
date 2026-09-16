@@ -20,7 +20,7 @@ export default async function sitemap() {
     { url: absoluteUrl("/about"), changeFrequency: "yearly", priority: 0.5 },
     { url: absoluteUrl("/authors/mara-vale"), changeFrequency: "yearly", priority: 0.4 },
     { url: absoluteUrl("/editorial-policy"), changeFrequency: "yearly", priority: 0.3 },
-    { url: absoluteUrl("/contact"), changeFrequency: "yearly", priority: 0.2 },
+    ...(siteConfig.contactEmail ? [{ url: absoluteUrl("/contact"), changeFrequency: "yearly", priority: 0.2 }] : []),
     { url: absoluteUrl("/affiliate-disclosure"), changeFrequency: "yearly", priority: 0.2 },
     ...contentEntries,
   ];

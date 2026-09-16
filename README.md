@@ -1,10 +1,13 @@
 # Path & Roam
 
-Travel affiliate publication built with Next.js App Router.
+Independent travel guides at https://pathandroam.vercel.app, built with Next.js App Router and local Markdown.
+
+Copy `.env.example` to `.env.local` for local configuration.
 
 ```bash
-npm install
+npm ci
 npm run dev
+npm run check
+npm run build
+npm start
 ```
-
-Copy `.env.example` to `.env.local` before configuring an environment.

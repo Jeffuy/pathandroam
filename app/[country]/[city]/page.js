@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
 export default async function CityPage({ params }) {
   const { country, city } = await params;
   const entry = await getCity(country, city);
-  if (!entry) notFound();
+  if (!entry || entry.draft) notFound();
 
   const related = await getRelatedContent(entry.relatedSlugs);
   const commercialEntries = sortCommercialContent((await getAllContent())

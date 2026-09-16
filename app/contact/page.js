@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import EditorialPage from "../../components/EditorialPage";
 import { createPageMetadata } from "../../lib/seo.js";
 import { siteConfig } from "../../lib/site-config.js";
@@ -6,9 +7,11 @@ export const metadata = createPageMetadata({
   title: "Contact",
   description: "Contact Path & Roam about corrections, sources or editorial questions.",
   pathname: "/contact",
+  noindex: !siteConfig.contactEmail,
 });
 
 export default function ContactPage() {
+  if (!siteConfig.contactEmail) notFound();
   return (
     <EditorialPage
       eyebrow="Get in touch"

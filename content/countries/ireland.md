@@ -10,13 +10,13 @@ primaryKeyword: ireland travel guide
 secondaryKeywords:
   - ireland trip planning
 publishedAt: 2026-08-07
-updatedAt: 2026-08-07
+updatedAt: 2026-09-16
 author: mara-vale
 heroImage: /images/destinations/ireland-coast-placeholder.webp
 heroAlt: Illustrative green coastal landscape with a winding road
 featured: true
-draft: true
-noindex: true
+draft: false
+noindex: false
 affiliateDisclosure: false
 affiliateKeys: []
 relatedSlugs:

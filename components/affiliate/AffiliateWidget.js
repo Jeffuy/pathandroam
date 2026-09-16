@@ -2,14 +2,16 @@
 
 import { useEffect, useRef } from "react";
 import { isValidAffiliateWidgetUrl } from "../../lib/affiliate-widget.js";
+import { useTrackingConsent } from "../../lib/tracking-consent.js";
 
 export default function AffiliateWidget({ affiliateKey, context, scriptSrc, label, placement, position, provider }) {
   const containerRef = useRef(null);
   const isValid = isValidAffiliateWidgetUrl(scriptSrc);
+  const allowed = useTrackingConsent()?.affiliates === true;
 
   useEffect(() => {
     const container = containerRef.current;
-    if (!container || !isValid) return undefined;
+    if (!container || !isValid || !allowed) return undefined;
 
     const script = document.createElement("script");
     script.async = true;
@@ -17,9 +19,9 @@ export default function AffiliateWidget({ affiliateKey, context, scriptSrc, labe
     container.replaceChildren(script);
 
     return () => container.replaceChildren();
-  }, [isValid, scriptSrc]);
+  }, [isValid, scriptSrc, allowed]);
 
-  if (!isValid) return null;
+  if (!isValid || !allowed) return null;
 
   return (
     <section
