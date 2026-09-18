@@ -29,7 +29,8 @@ export default function PrivacyPage() {
         <p>
           Hosting processes technical information needed to deliver and protect this
           website. With your consent, Google Analytics (when configured) measures visits
-          and booking-link interactions, and affiliate booking widgets load when you
+          and booking-link interactions, content engagement and page performance.
+          Affiliate booking widgets load when you
           accept that category. Travelpayouts Drive loads on every page independently
           of these choices for the site&apos;s affiliate integration. These providers
           may process device, browser, referral and interaction information.

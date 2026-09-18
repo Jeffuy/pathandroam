@@ -25,7 +25,7 @@ export default function CookiesPage() {
         </p>
         <p>
           Optional Google Analytics, when configured, measures visits and interactions
-          with booking links and may set _ga cookies. Optional affiliate booking
+          with booking links, content engagement and page performance, and may set _ga cookies. Optional affiliate booking
           widgets use third-party technology for affiliate attribution
           and displaying booking options. These services load only after you accept
           their respective category. Their providers may process device, referral

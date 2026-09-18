@@ -2,12 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Script from "next/script";
 import { siteConfig } from "../../lib/site-config.js";
 import { saveTrackingConsent, useTrackingConsent } from "../../lib/tracking-consent.js";
-import AffiliateClickTracker from "./AffiliateClickTracker";
+import GoogleAnalytics from "./GoogleAnalytics";
 
-export default function TrackingConsent() {
+export default function TrackingConsent({ deployment, catalog }) {
   const consent = useTrackingConsent();
   const [editing, setEditing] = useState(false);
   const expires = consent?.expires;
@@ -57,15 +56,7 @@ export default function TrackingConsent() {
           </form>
         </section>
       )}
-      {consent?.analytics && siteConfig.gaId && (
-        <>
-          <AffiliateClickTracker />
-          <Script src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(siteConfig.gaId)}`} strategy="afterInteractive" />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('js',new Date());gtag('config',${JSON.stringify(siteConfig.gaId)});window.dispatchEvent(new Event('ga-ready'));`}
-          </Script>
-        </>
-      )}
+      <GoogleAnalytics consent={consent?.analytics} deployment={deployment} catalog={catalog} />
     </>
   );
 }

@@ -62,7 +62,7 @@ export default async function Home() {
       </section>
       <section className="car-free page-width" aria-labelledby="car-free-title">
         <div className="car-free__image"><Image src="/images/articles/rail-journey-placeholder.webp" alt="Illustrative train journey with a map and cup beside the window" fill sizes="(min-width: 768px) 55vw, 100vw" /><span className="image-note">Illustrative image</span></div>
-        <div className="car-free__body"><p className="eyebrow">Travel without a car</p><h2 id="car-free-title">Plan the journey without a car.</h2><p>Use buses, trains, ferries and walking routes to connect the places on your trip.</p><Link className="text-link" href="/ireland/limerick/limerick-without-a-car/">Read the Limerick guide <span aria-hidden="true">→</span></Link></div>
+        <div className="car-free__body"><p className="eyebrow">Travel without a car</p><h2 id="car-free-title">Plan the journey without a car.</h2><p>Use buses, trains, ferries and walking routes to connect the places on your trip.</p><Link className="text-link" href="/ireland/limerick/limerick-without-a-car/" data-analytics-cta="read_guide" data-analytics-location="car_free">Read the Limerick guide <span aria-hidden="true">→</span></Link></div>
       </section>
       <section className="about-section page-width" id="about" aria-labelledby="about-title"><p className="about-section__mark" aria-hidden="true">P&amp;R</p><div><p className="eyebrow">About Path &amp; Roam</p><h2 id="about-title">Travel guides built around the details.</h2><p>Independent destination guides, walking itineraries and transport advice focused on the decisions that matter before you go.</p></div></section>
     </main>

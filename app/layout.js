@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import StructuredData from "../components/StructuredData";
 import TrackingConsent from "../components/analytics/TrackingConsent";
 import { createPageMetadata } from "../lib/seo.js";
+import { getAllContent, getContentRoute } from "../lib/content.js";
 import {
   organizationStructuredData,
   websiteStructuredData,
@@ -27,7 +28,17 @@ export const metadata = {
     : undefined,
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const catalog = Object.fromEntries((await getAllContent())
+    .filter((entry) => !entry.draft && !entry.noindex)
+    .map((entry) => [getContentRoute(entry), {
+      content_type: entry.contentType === "article" ? "article" : "destination",
+      content_id: entry.slug,
+      content_title: entry.title,
+      destination: entry.citySlug || entry.countrySlug || entry.slug,
+      country: entry.country,
+    }]));
+  catalog["/"] = { content_type: "homepage", content_id: "home", content_title: siteConfig.name };
   return (
     <html lang="en">
       <head>
@@ -59,7 +70,10 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <TrackingConsent />
+        <TrackingConsent
+          catalog={catalog}
+          deployment={process.env.NODE_ENV === "production" ? process.env.VERCEL_ENV || "unknown" : "development"}
+        />
       </body>
     </html>
   );
