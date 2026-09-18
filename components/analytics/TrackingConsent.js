@@ -39,7 +39,7 @@ export default function TrackingConsent() {
       {(!consent || editing) && (
         <section className="consent-panel page-width" id="tracking-preferences" aria-labelledby="consent-title">
           <h2 id="consent-title">Your privacy choices</h2>
-          <p>With your permission, Google Analytics measures visits and booking-link interactions, and Travelpayouts loads affiliate tracking and booking widgets. Guides and ordinary booking links work without these. <Link href="/cookies">Cookie policy</Link> · <Link href="/privacy">Privacy policy</Link></p>
+          <p>These choices control optional Google Analytics and embedded affiliate booking widgets. Travelpayouts Drive loads on every page independently of these choices. Guides and ordinary booking links work without optional analytics or widgets. <Link href="/cookies">Cookie policy</Link> · <Link href="/privacy">Privacy policy</Link></p>
           <form onSubmit={(event) => {
             event.preventDefault();
             const values = new FormData(event.currentTarget);
@@ -47,7 +47,7 @@ export default function TrackingConsent() {
           }}>
             <div className="consent-options">
               {siteConfig.gaId && <label><input type="checkbox" name="analytics" defaultChecked={consent?.analytics === true} /> Analytics</label>}
-              <label><input type="checkbox" name="affiliates" defaultChecked={consent?.affiliates === true} /> Affiliate tracking and widgets</label>
+              <label><input type="checkbox" name="affiliates" defaultChecked={consent?.affiliates === true} /> Affiliate booking widgets</label>
             </div>
             <div className="consent-actions">
               <button type="button" onClick={() => choose(false, false)}>Reject all</button>
@@ -66,7 +66,6 @@ export default function TrackingConsent() {
           </Script>
         </>
       )}
-      {consent?.affiliates && <Script id="travelpayouts-drive" src="https://emrld.ltd/NTU5ODY5.js?t=559869" strategy="afterInteractive" data-cmp-ab="2" />}
     </>
   );
 }

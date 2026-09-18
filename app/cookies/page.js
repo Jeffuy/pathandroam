@@ -25,11 +25,17 @@ export default function CookiesPage() {
         </p>
         <p>
           Optional Google Analytics, when configured, measures visits and interactions
-          with booking links and may set _ga cookies. Optional Travelpayouts scripts
-          and booking widgets use third-party technology for affiliate attribution
+          with booking links and may set _ga cookies. Optional affiliate booking
+          widgets use third-party technology for affiliate attribution
           and displaying booking options. These services load only after you accept
           their respective category. Their providers may process device, referral
           and interaction information under their own privacy policies.
+        </p>
+        <p>
+          Travelpayouts Drive loads automatically on every page through emrld.ltd
+          for the site&apos;s affiliate integration. Cookie settings on this site
+          control optional analytics and embedded booking widgets; they do not
+          prevent Drive from loading or withdraw its operation.
         </p>
         <p>
           Provider information: <a href="https://policies.google.com/privacy">Google privacy policy</a>
@@ -41,7 +47,8 @@ export default function CookiesPage() {
         <p>
           Use Cookie settings at the bottom of any page to accept, reject or change
           each optional category. Reject all withdraws optional consent and reloads
-          the page to stop previously loaded services. We remove accessible Google
+            the page to stop previously loaded optional services. Drive still loads.
+            We remove accessible Google
           Analytics cookies when analytics is withdrawn; your browser settings can
           remove any remaining cookies, including those on third-party domains.
         </p>
