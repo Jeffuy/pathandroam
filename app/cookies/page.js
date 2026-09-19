@@ -24,11 +24,11 @@ export default function CookiesPage() {
           Hosting infrastructure may also process information needed to deliver the site.
         </p>
         <p>
-          Optional Google Analytics, when configured, measures visits and interactions
+          Google&apos;s tag loads with analytics storage denied and may send cookieless measurement pings before consent. After Analytics consent, Google Analytics measures visits and interactions
           with booking links, content engagement and page performance, and may set _ga cookies. Optional affiliate booking
           widgets use third-party technology for affiliate attribution
-          and displaying booking options. These services load only after you accept
-          their respective category. Their providers may process device, referral
+          and displaying booking options. Booking widgets load only after you accept
+          their category. Advertising consent remains denied. Their providers may process device, referral
           and interaction information under their own privacy policies.
         </p>
         <p>
@@ -46,8 +46,9 @@ export default function CookiesPage() {
         <h2>Your controls</h2>
         <p>
           Use Cookie settings at the bottom of any page to accept, reject or change
-          each optional category. Reject all withdraws optional consent and reloads
-            the page to stop previously loaded optional services. Drive still loads.
+          each optional category. Reject all denies Analytics storage and stops detailed
+          engagement measurement. Withdrawing booking widgets reloads the page.
+          Google&apos;s tag remains loaded with denied consent; Drive still loads.
             We remove accessible Google
           Analytics cookies when analytics is withdrawn; your browser settings can
           remove any remaining cookies, including those on third-party domains.

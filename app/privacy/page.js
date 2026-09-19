@@ -28,7 +28,9 @@ export default function PrivacyPage() {
         <h2>Technical information</h2>
         <p>
           Hosting processes technical information needed to deliver and protect this
-          website. With your consent, Google Analytics (when configured) measures visits
+          website. Google&apos;s tag loads with analytics storage denied before consent and
+          may send cookieless measurement pings. Advertising consent remains denied.
+          With your consent, Google Analytics (when configured) measures visits
           and booking-link interactions, content engagement and page performance.
           Affiliate booking widgets load when you
           accept that category. Travelpayouts Drive loads on every page independently

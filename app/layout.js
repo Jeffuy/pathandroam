@@ -1,4 +1,6 @@
 import "./globals.css";
+import Script from "next/script";
+import { googleConsentBootstrap } from "../lib/google-consent.js";
 import { siteConfig } from "../lib/site-config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -42,6 +44,9 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <Script id="google-consent-defaults" strategy="beforeInteractive">
+          {googleConsentBootstrap}
+        </Script>
         <script
           id="travelpayouts-drive"
           nowprocket=""

@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { siteConfig } from "../../lib/site-config.js";
 import { saveTrackingConsent, useTrackingConsent } from "../../lib/tracking-consent.js";
+import { updateGoogleConsent, clearAnalyticsCookies } from "../../lib/google-consent.js";
+import { setAnalyticsEnabled } from "../../lib/analytics.js";
 import GoogleAnalytics from "./GoogleAnalytics";
 
 export default function TrackingConsent({ deployment, catalog }) {
@@ -15,7 +17,12 @@ export default function TrackingConsent({ deployment, catalog }) {
     if (!expires) return;
     // Recheck expiry on return to a background tab as well as while browsing.
     function checkExpiry() {
-      if (Date.now() >= expires) window.location.reload();
+      if (Date.now() >= expires) {
+        updateGoogleConsent(false);
+        setAnalyticsEnabled(false);
+        clearAnalyticsCookies();
+        window.location.reload();
+      }
     }
     const timer = window.setInterval(checkExpiry, 60000);
     window.addEventListener("focus", checkExpiry);
@@ -38,7 +45,7 @@ export default function TrackingConsent({ deployment, catalog }) {
       {(!consent || editing) && (
         <section className="consent-panel page-width" id="tracking-preferences" aria-labelledby="consent-title">
           <h2 id="consent-title">Your privacy choices</h2>
-          <p>These choices control optional Google Analytics and embedded affiliate booking widgets. Travelpayouts Drive loads on every page independently of these choices. Guides and ordinary booking links work without optional analytics or widgets. <Link href="/cookies">Cookie policy</Link> · <Link href="/privacy">Privacy policy</Link></p>
+          <p>Google&apos;s tag loads with analytics storage denied until you accept Analytics; cookieless measurement pings may still reach Google. These choices control Analytics cookies, detailed engagement measurement and embedded affiliate booking widgets. Travelpayouts Drive loads on every page independently of these choices. Guides and ordinary booking links work without optional analytics or widgets. <Link href="/cookies">Cookie policy</Link> · <Link href="/privacy">Privacy policy</Link></p>
           <form onSubmit={(event) => {
             event.preventDefault();
             const values = new FormData(event.currentTarget);

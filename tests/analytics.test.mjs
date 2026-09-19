@@ -7,11 +7,9 @@ import vm from "node:vm";
 
 const production = { deployment: "production", siteUrl: "https://pathandroam.vercel.app", href: "https://pathandroam.vercel.app/ireland/limerick" };
 
-test("production gate excludes development, previews, automation and private URL data", () => {
-  assert.equal(productionAnalyticsAllowed(production), true);
-  assert.equal(productionAnalyticsAllowed({ ...production, href: production.href + "?utm_source=google&utm_medium=cpc" }), true);
-  for (const change of [{ deployment: "preview" }, { deployment: "development" }, { automated: true }, { href: "http://localhost:3000" }, { href: "https://preview.vercel.app" }, { href: production.href + "?email=person%40example.com" }, { href: production.href + "?utm_source=person%40example.com" }]) assert.equal(productionAnalyticsAllowed({ ...production, ...change }), false);
-  assert.equal(productionAnalyticsAllowed({ ...production, siteUrl: "https://future.example", href: "https://future.example/ireland" }), true);
+test("production tag allows diagnostics, every route and query without site URL configuration", () => {
+  for (const change of [{}, { automated: true }, { siteUrl: undefined }, { siteUrl: "http://localhost:3000" }, { href: "https://future.example/unknown?email=person%40example.com" }]) assert.equal(productionAnalyticsAllowed({ ...production, ...change }), true);
+  for (const change of [{ deployment: "preview" }, { deployment: "development" }, { deployment: "unknown" }, { href: "http://localhost:3000" }, { href: "https://127.0.0.1" }, { href: "https://localhost" }, { href: "https://[::1]" }]) assert.equal(productionAnalyticsAllowed({ ...production, ...change }), false);
 });
 
 test("route visits, consent rerenders, scroll thresholds and delegated handlers deduplicate", () => {
@@ -80,6 +78,9 @@ test("one affiliate interaction sends one sanitized custom event; ordinary links
   globalThis.window = { location: { href: production.href + "?email=secret#private", origin: production.siteUrl }, gtag: (...args) => calls.push(args) };
   globalThis.document = { referrer: "https://example.org/search?email=secret" };
   try {
+    setAnalyticsEnabled(false);
+    assert.equal(trackEvent("content_view", { content_id: "guide" }), false);
+    assert.equal(calls.length, 0);
     setAnalyticsEnabled(true);
     const link = { href: "https://klook.tpx.lv/abc?email=secret", dataset: { affiliateKey: "tour", affiliateProvider: "klook", affiliateContext: "tour", affiliatePlacement: "article_inline" } };
     assert.equal(trackAffiliateClick(link, { content_id: "guide", content_type: "article", email: "private@example.com" }), true);
@@ -93,8 +94,86 @@ test("one affiliate interaction sends one sanitized custom event; ordinary links
     assert.equal(payload.send_to, "G-1R8H9BMBVT");
     assert.equal(trackAffiliateClick({ href: production.href, dataset: {} }, {}), false);
     assert.equal(trackEvent("page_view", {}), false); // Page views belong exclusively to GA.
+    setAnalyticsEnabled(false);
+    assert.equal(trackAffiliateClick(link, {}), false);
+    setAnalyticsEnabled(true);
     window[`ga-disable-${siteConfig.gaId}`] = true;
     assert.equal(trackAffiliateClick(link, {}), false);
     assert.equal(calls.length, 1);
   } finally { setAnalyticsEnabled(false); delete globalThis.window; delete globalThis.document; }
+});
+
+
+test("Consent Mode defaults precede initialization and restore only valid saved approval", async () => {
+  const { googleConsentBootstrap } = await import("../lib/google-consent.js");
+  for (const [saved, expected] of [[null, "denied"], ["bad json", "denied"], [JSON.stringify({ analytics: true, expires: 1 }), "denied"], [JSON.stringify({ analytics: false, expires: Date.now() + 10000 }), "denied"], [JSON.stringify({ analytics: true, expires: Date.now() + 10000 }), "granted"]]) {
+    const window = {};
+    const context = vm.createContext({ window, localStorage: { getItem: () => saved }, document: { referrer: "https://example.com/private?email=test" }, URL });
+    vm.runInContext(googleConsentBootstrap, context);
+    window.gtag("js", new Date());
+    window.gtag("config", siteConfig.gaId);
+    const commands = window.dataLayer.map(args => Array.from(args));
+    assert.equal(commands[0][0], "consent");
+    assert.equal(commands[0][1], "default");
+    assert.deepEqual(Object.values(commands[0][2]), ["denied", "denied", "denied", "denied"]);
+    const consent = commands.filter(args => args[0] === "consent").at(-1)[2];
+    assert.equal(consent.analytics_storage, expected);
+    assert.equal(consent.ad_storage, "denied");
+    assert.equal(consent.ad_user_data, "denied");
+    assert.equal(consent.ad_personalization, "denied");
+    assert.equal(commands.find(args => args[0] === "set")[1].allow_google_signals, false);
+    assert.equal(commands.find(args => args[0] === "set")[1].allow_ad_personalization_signals, false);
+    assert.equal(commands.filter(args => args[0] === "config").length, 1);
+    assert.equal(commands.some(args => args[1] === "page_view"), false);
+  }
+});
+
+test("accept, reject and withdrawal update Google, retain its queue and clean identifier cookies", async () => {
+  const { googleConsentState, updateGoogleConsent, clearAnalyticsCookies } = await import("../lib/google-consent.js");
+  const calls = [], deleted = [];
+  global.window = { gtag: (...args) => calls.push(args), location: { hostname: "www.example.com" } };
+  global.document = { get cookie() { return "_ga=one; _ga_ID=two; _gid=three; preference=keep"; }, set cookie(value) { deleted.push(value); } };
+  try {
+    updateGoogleConsent(true);
+    assert.deepEqual(calls[0], ["consent", "update", googleConsentState(true)]);
+    updateGoogleConsent(false);
+    clearAnalyticsCookies();
+    assert.deepEqual(calls[1], ["consent", "update", googleConsentState(false)]);
+    assert.equal(typeof window.gtag, "function");
+    assert.equal(deleted.length, 9);
+    assert.ok(deleted.every(value => value.includes("Max-Age=0") && !value.startsWith("preference")));
+  } finally { delete global.window; delete global.document; }
+});
+
+
+test("consent UI persistence withdraws analytics without removing the tag or reloading", async () => {
+  const { consentStorageKey } = await import("../lib/google-consent.js");
+  const source = fs.readFileSync(new URL("../lib/tracking-consent.js", import.meta.url), "utf8")
+    .replace(/^import .*;\r?\n/gm, "").replaceAll("export function", "function");
+  let stored = null, reloads = 0, cleanups = 0;
+  const states = [], enabled = [], listeners = new Map();
+  const context = vm.createContext({
+    consentStorageKey, Event,
+    updateGoogleConsent: state => states.push(state), clearAnalyticsCookies: () => cleanups++, setAnalyticsEnabled: state => enabled.push(state),
+    window: {
+      localStorage: { getItem: () => stored, setItem: (key, value) => { stored = value; } },
+      location: { reload: () => reloads++ },
+      addEventListener: (name, fn) => listeners.set(name, fn), removeEventListener: name => listeners.delete(name),
+      dispatchEvent: event => listeners.get(event.type)?.(event),
+    },
+  });
+  vm.runInContext(source, context);
+  context.subscribe(() => {});
+  context.saveTrackingConsent({ analytics: true, affiliates: false });
+  assert.equal(states.at(-1), true);
+  assert.equal(JSON.parse(stored).analytics, true);
+  context.saveTrackingConsent({ analytics: false, affiliates: false });
+  assert.equal(states.at(-1), false);
+  assert.equal(enabled.at(-1), false);
+  assert.ok(cleanups > 0);
+  assert.equal(reloads, 0);
+  context.saveTrackingConsent({ analytics: true, affiliates: true });
+  context.saveTrackingConsent({ analytics: false, affiliates: false });
+  assert.equal(states.at(-1), false);
+  assert.equal(reloads, 1); // Only widget withdrawal requires unloading third-party code.
 });
