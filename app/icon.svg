@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="icon-title">
+  <title id="icon-title">Path &amp; Roam</title>
+  <rect width="64" height="64" fill="#22372d" />
+  <path
+    fill="#f7f3eb"
+    fill-rule="evenodd"
+    d="M15 10h19c11 0 16 6.5 16 17.5S45 45 34 45h-9v9H15V10Zm10 10v15h9c5 0 6-2.5 6-7.5S39 20 34 20h-9Z"
+  />
+</svg>
